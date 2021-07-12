@@ -1,0 +1,88 @@
+import styled from '@emotion/styled';
+import {css} from '@emotion/css';
+import { SMALL_SCREEN_THRESHOLD } from "../constant";
+
+export const PageWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
+export const Title = styled.div`
+  /* margin-top: 5vh; */
+  font-weight: 600;
+  font-size: 28px;
+  color: #444;
+  margin: 5vh 0;
+  ${({ center }) => center && css` text-align: center; `}
+`;
+
+export const PageBlockWrapper = styled.div`
+  /* width: 80vw; */
+  ${({ maxWidth = 1080 }) =>
+    maxWidth &&
+    css`
+      max-width: ${maxWidth}px;
+    `}
+  margin: 0px auto;
+  padding: 24px 64px;
+  display: flex;
+  justify-content: stretch;
+  @media screen and (max-width: ${({ threshold }) =>
+      threshold || SMALL_SCREEN_THRESHOLD}px) {
+    flex-direction: column;
+    padding: 12px;
+  }
+`;
+
+export const PageBlockWithTitleContentWrapper = styled.div`
+  display: flex;
+  @media screen and (max-width: ${({ threshold }) =>
+      threshold || SMALL_SCREEN_THRESHOLD}px) {
+    flex-direction: column;
+  }
+`
+
+export const PageBlockWithTitle = styled(PageBlockWrapper)`
+  flex-direction: column;
+`
+
+export const PageBlock = (props) => {
+  if(!props.title)
+    return <PageBlockWrapper {...props} />
+  return <PageBlockWithTitle {...props}>
+    <Title>{props.title}</Title>
+    <PageBlockWithTitleContentWrapper {...props}>
+      {props.children}
+    </PageBlockWithTitleContentWrapper>
+  </PageBlockWithTitle>
+}
+
+export const HomeBlock = styled.div`
+  padding: 0 10vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const LayoutRow = styled(PageBlockWithTitleContentWrapper)`
+  flex: 1;
+`
+
+export const PageColumn = styled.div`
+  flex: ${({ width = 10 }) => width / 10};
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Divider = styled.div`
+  padding: 12px;
+  @media screen and (max-width: 765px) {
+    padding: 0;
+  }
+`;
+
+export const TitleRow = styled.div`
+  margin-bottom: 24px;
+`;
