@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import BackgroundImg from '../../assets/mainsecondsection.png';
+import Card1Img from '../../assets/business1.png';
+import Card2Img from '../../assets/business2.png';
+import Card3Img from '../../assets/business3.png';
 
 const SecondSection = () => {
     return (
@@ -10,21 +13,28 @@ const SecondSection = () => {
                 <Title>사업영역</Title>
                 <SubTitle>고객 만족을 최우선으로 혁신적 기술을 적용하여 세계적 품질을 추구합니다.</SubTitle>
             </TitleWrpper>
+            <CardWrapper>
+                <Card1></Card1>
+                <Card2></Card2>
+                <Card3></Card3>
+            </CardWrapper>
         </Background>
     );
 }
 
 const Background = styled.div`
     width: 100vw;
-    height: 90vh;
+    height: 70vh;
+    padding: 10vh 0;
     background: #fff;
     background-image: url(${BackgroundImg});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 `;
 
 const TitleWrpper = styled.div`
@@ -34,15 +44,45 @@ const TitleWrpper = styled.div`
 `;
 
 const Remark = styled.div`
+    color: #98272B;
+    font-size: 20px;
 
 `;
 
 const Title = styled.div`
-
+    font-size: 38px;
+    margin: 15px 0 22px 0; 
 `;
 
 const SubTitle = styled.div`
+    font-size: 22px;
+`;
+
+const CardWrapper = styled.div`
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+`;
+
+const Card1 = styled.div`
+    width: 355px;
+    height: 450px;
+    background: #fff;
+    background-image: url(${Card1Img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+`;
+
+const Card2 = styled(Card1)`
+    background-image: url(${Card2Img});
 
 `;
 
+const Card3 = styled(Card1)`
+    background-image: url(${Card3Img});
+`;
 export default SecondSection;
