@@ -4,6 +4,7 @@ import BackgroundImg from '../../assets/mainsecondsection.png';
 import Card1Img from '../../assets/business1.png';
 import Card2Img from '../../assets/business2.png';
 import Card3Img from '../../assets/business3.png';
+import {TitleWrpper, Remark, Title, SubTitle } from '../../components/PageStyle';
 
 const SecondSection = () => {
     return (
@@ -25,7 +26,7 @@ const SecondSection = () => {
 const Background = styled.div`
     width: 100vw;
     height: 70vh;
-    padding: 10vh 0;
+    padding: 7vh 0;
     background: #fff;
     background-image: url(${BackgroundImg});
     background-size: cover;
@@ -35,27 +36,6 @@ const Background = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-`;
-
-const TitleWrpper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
-
-const Remark = styled.div`
-    color: #98272B;
-    font-size: 20px;
-
-`;
-
-const Title = styled.div`
-    font-size: 38px;
-    margin: 15px 0 22px 0; 
-`;
-
-const SubTitle = styled.div`
-    font-size: 22px;
 `;
 
 const CardWrapper = styled.div`

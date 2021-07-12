@@ -7,15 +7,6 @@ export const PageWrapper = styled.div`
   height: 100%;
 `;
 
-export const Title = styled.div`
-  /* margin-top: 5vh; */
-  font-weight: 600;
-  font-size: 28px;
-  color: #444;
-  margin: 5vh 0;
-  ${({ center }) => center && css` text-align: center; `}
-`;
-
 export const PageBlockWrapper = styled.div`
   /* width: 80vw; */
   ${({ maxWidth = 1080 }) =>
@@ -85,4 +76,25 @@ export const Divider = styled.div`
 
 export const TitleRow = styled.div`
   margin-bottom: 24px;
+`;
+
+
+export const TitleWrpper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const Remark = styled.div`
+    color: #98272B;
+    font-size: 20px;
+`;
+
+export const Title = styled.div`
+    font-size: 38px;
+    margin: 15px 0 22px 0; 
+`;
+
+export const SubTitle = styled.div`
+    font-size: 22px;
 `;
