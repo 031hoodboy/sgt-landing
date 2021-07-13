@@ -130,9 +130,6 @@ const NewsContent = styled.div`
     flex-wrap: wrap;
     font-size: 14px;
     max-width: 305px;
-    @media screen and (max-width: 840px) {
-        width: 70vw;
-  }
 `;
 
 const ViewMore = styled.div`
