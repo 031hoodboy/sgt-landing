@@ -211,7 +211,7 @@ const NavBarWrapper = styled.div`
     top: calc(30vh + 56px);
     box-shadow:  0px 3px 6px #d9d9d9;
     @media screen and (max-width: 1312px) {
-    width: calc(75vw + 3px);
+    width: calc(90vw + 3px);
     height: 80px; 
     flex-wrap: wrap;
     top: calc(30vh + 42px); 
