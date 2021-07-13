@@ -22,7 +22,7 @@ const HamburgerButton = () => {
         <ModalWrapper>
             <CancleButton onClick={onToggle}/>
             <Menu2>
-                <Link to="/login" style={{textDecoration: 'none', color: "#000"}}>
+                <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
                     <MenuContent>회사소개</MenuContent>
                 </Link>  
                 <Link to="/mypage" style={{textDecoration: 'none', color: "#000"}}>
