@@ -85,6 +85,13 @@ export const TitleWrpper = styled.div`
     align-items: center;
 `;
 
+export const PageTitleWrpper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+`;
+
 export const Remark = styled.div`
     color: #98272B;
     font-size: 20px;

@@ -2,21 +2,17 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Link} from 'react-router-dom';
 import SgtNoneImg from '../assets/sgtnone.png'
-import NavBar from './NavBar';
 
 const HeaderNav = () => {
     return (
         <>
         <HeaderBlock>
             <LogoWrapper>
-                <Link to="/" style={{textDecoration: 'none'}}>
                     <Logo />
-                </Link>
-                <Name></Name>
             </LogoWrapper>
             <NavigatorWrapper>
                 <Navigator>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/greet" style={{textDecoration: 'none'}}>
                         <NavContent>CEO인사말</NavContent>
                     </Link>
                     <Link to="/" style={{textDecoration: 'none'}}>
@@ -104,7 +100,6 @@ const HeaderBlock = styled.div`
     color: #4a5568;
     background: #fff;
     z-index: 2;
-    border-bottom: 1px solid #D8D8D8;
     @media screen and (max-width: 1024px) {
     display: none;
   }
@@ -127,12 +122,6 @@ const Logo = styled.div`
     background-repeat: no-repeat;
     background-position: center; 
 `;
-
-const Name = styled.span`
-    font-size: 20px;
-    font-weight: 700;
-`;
-
 
 const Navigator = styled.div`
     padding: 20px 0;

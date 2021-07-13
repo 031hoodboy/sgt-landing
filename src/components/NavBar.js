@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
 
         <Navigator>
-            <Link to="/" style={{textDecoration: 'none'}}>
+            <Link to="/greet" style={{textDecoration: 'none'}}>
                 <NavContent>회사소개</NavContent>
             </Link>
             <Link to="/" style={{textDecoration: 'none'}}>
