@@ -68,7 +68,7 @@ const NewsCardWrapper = styled.div`
     margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media screen and (max-width: 840px) {
+    @media screen and (max-width: 880px) {
         justify-content: space-around;
   }
 `;

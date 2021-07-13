@@ -47,7 +47,7 @@ const Content = styled.div`
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 30px;
+    font-size: 1.7vw;
     font-weight: 600;
     @media screen and (max-width: 840px) {
         height: 15vh;

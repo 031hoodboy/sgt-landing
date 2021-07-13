@@ -33,9 +33,10 @@ const FooterBcakgroundBlock = styled.div`
 
 const FooterBlock = styled.div`
     margin: 0 auto;
+    padding: 0 10vw;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 `;
 
 const TermsWrapper = styled.div`
@@ -64,6 +65,7 @@ const Logo = styled.div`
     font-size: 40px;
     margin-right: 50px;
     opacity: 0.5;
+    margin-bottom: 30px;
 `;
 
 const InfoWrapper = styled.div`
