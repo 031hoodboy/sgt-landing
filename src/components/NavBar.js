@@ -27,7 +27,7 @@ const NavBar = () => {
             <Link to="/" style={{textDecoration: 'none'}}>
                 <NavContent>공지사항</NavContent>
             </Link>
-            <HeaderDropBlock>
+            {/* <HeaderDropBlock>
                 <DropWrapper>
                 <Link to="/" style={{textDecoration: 'none'}}>
                     <DropContent>회사소개</DropContent>
@@ -52,7 +52,7 @@ const NavBar = () => {
                 </Link>
                 </DropWrapper>
 
-            </HeaderDropBlock>
+            </HeaderDropBlock> */}
         </Navigator>
     );
 };
@@ -71,7 +71,7 @@ const Navigator = styled.div`
 `;
 
 const NavContent = styled.div`
-    padding: 30px 42.5px;
+    margin: 0 2vw;
     cursor: pointer;
     color: #000;
     font-size: 18px;
@@ -80,20 +80,21 @@ const NavContent = styled.div`
     }
 `;
 
-const HeaderDropBlock = styled.div`
-    position: absolute;
-    top: 83px;
-    width: 100%;
-    height: 240px;
-    position: fixed;
-    background: #fff;
-    display: none;
-`;
+// const HeaderDropBlock = styled.div`
+//     position: absolute;
+//     top: 83px;
+//     width: 100%;
+//     height: 240px;
+//     position: fixed;
+//     background: #fff;
+//     display: none;
+// `;
 
-const DropContent = styled(NavContent)`
-    padding: 10px 46px;
-    font-size: 16px;
-`;
+// const DropContent = styled(NavContent)`
+//     padding: 10px 46px;
+//     font-size: 16px;
+// `;
+
 // const Ul = styled.div`
 //     display: none;
 //     position: absolute;
@@ -111,6 +112,6 @@ const DropContent = styled(NavContent)`
 //     margin-bottom: 10px;
 // `;
 
-const DropWrapper = styled.div`
-`;
+// const DropWrapper = styled.div`
+// `;
 export default NavBar;

@@ -46,7 +46,7 @@ const Logo = styled.div`
     width: 15vw;
     max-width: 183px;
     min-width: 92px;
-    height: 8vh;
+    height: 9vh;
     max-height: 82px;
     min-height: 41px;
     background-image: url(${SgtLogoImg});
