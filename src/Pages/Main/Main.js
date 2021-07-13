@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {PageWrapper} from '../../components/PageStyle';
