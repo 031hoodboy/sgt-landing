@@ -18,6 +18,7 @@ const Header = () => {
             <NavBar/>
             <HamburgerButton/>
         </HeaderBlock>
+
         </>
     );
 };
@@ -63,5 +64,6 @@ const Name = styled.span`
     font-size: 20px;
     font-weight: 700;
 `;
+
 
 export default Header;

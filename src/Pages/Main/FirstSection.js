@@ -10,13 +10,16 @@ const FirstSection = () => {
         </MobileBackground>
         <Gradient/>
         <Background>
-            <Opacity />
+
             <SloganWrapper>
                 <Slogan>숨겨진 <Emphasis>가치</Emphasis>를 찾는기업,</Slogan>
                 <Slogan>고객이 <Emphasis>신뢰</Emphasis>하는 기업</Slogan>
                 <SmallSlogan><Emphasis>S</Emphasis>ocial <Emphasis>G</Emphasis>ravity <Emphasis>T</Emphasis>echnology Corp.</SmallSlogan>
             </SloganWrapper>
+
         </Background>
+        <Opacity ></Opacity>
+
         </>
     );
 }
@@ -98,11 +101,15 @@ const Emphasis = styled.span`
 
 const Opacity = styled.div`
     position: absolute;
-    bottom: -8.7%;
     width: 100%;
     height: 100vh;
     background: #000;
     opacity: 0.4;
+    top: 0;
+    @media screen and (max-width: 840px) {
+        padding-top: 20vh;
+        height: 100vh;
+  }
 `;
 
 export default FirstSection;

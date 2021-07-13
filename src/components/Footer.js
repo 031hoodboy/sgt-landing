@@ -52,12 +52,18 @@ const Terms = styled.div`
     &:last-child{
         margin-left: 20px;
     }
+    @media screen and (max-width: 840px) {
+        font-size: 14px;
+  }
 `;
 
 const Content = styled.div`
     color: #fff;
     font-size: 16px;
     padding: 5px 0;
+    @media screen and (max-width: 840px) {
+        font-size: 14px;
+  }
 `;
 
 const Logo = styled.div`
@@ -65,7 +71,7 @@ const Logo = styled.div`
     font-size: 40px;
     margin-right: 50px;
     opacity: 0.5;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 `;
 
 const InfoWrapper = styled.div`
