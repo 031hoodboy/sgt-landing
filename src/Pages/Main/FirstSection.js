@@ -108,7 +108,7 @@ const Opacity = styled.div`
     top: 0;
     @media screen and (max-width: 840px) {
         padding-top: 20vh;
-        height: 100vh;
+        height: 90vh;
   }
 `;
 
