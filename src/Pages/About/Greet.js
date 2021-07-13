@@ -6,6 +6,7 @@ import BackgroundImg from '../../assets/aboutbackground.png';
 import {PageTitleWrpper, Title, PageBlockWrapper } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import ProfileImg from '../../assets/profile.png';
+import SignImg from '../../assets/sign.png';
 
 const Greet = () => {
     return (
@@ -37,6 +38,11 @@ const Greet = () => {
                         
                     </Descrip>
                 </HelloWrapper>
+                <SignWrapper>
+                    <Company>(주)에스지티</Company>
+                    <Ceo>대표 이사 김곤</Ceo>
+                    <Sign/>
+                </SignWrapper>
             </PageBlockWrapper>
             <Footer/>
         </PageWrapper>
@@ -119,6 +125,41 @@ const Descrip = styled.div`
     @media screen and (max-width: 780px) {
         font-size: 16px;
   }
+`;
+
+const SignWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 80vw;
+    max-width: 1088px;
+    margin: 10vh auto;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: 780px) {
+        justify-content: center;
+  }
+  `;
+
+const Company = styled.div`
+    color: #b3b3b3;
+`;
+
+const Ceo = styled.div`
+    margin-left: 10px;
+`;
+
+const Sign = styled.div`
+    width: 177px;
+    height: 106px;
+    background-image: url(${SignImg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
 `;
 
 export default Greet;
