@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import {Link} from 'react-router-dom';
+import HeaderNav from './HeaderNav';
 
 const NavBar = () => {
 
     return (
+
         <Navigator>
             <Link to="/" style={{textDecoration: 'none'}}>
                 <NavContent>회사소개</NavContent>
@@ -27,38 +29,17 @@ const NavBar = () => {
             <Link to="/" style={{textDecoration: 'none'}}>
                 <NavContent>공지사항</NavContent>
             </Link>
-            {/* <HeaderDropBlock>
-                <DropWrapper>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>회사소개</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent type="trigger">사업영역</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>설비현황</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>기술현황</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>홍보센터</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>고객지원</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>공지사항</DropContent>
-                </Link>
-                </DropWrapper>
-
-            </HeaderDropBlock> */}
+            <HeaderDropBlock>
+                <HeaderNav/>
+            </HeaderDropBlock> 
         </Navigator>
+        
     );
 };
 
 const Navigator = styled.div`
     display: flex;
+    justify-content: space-around;
     @media screen and (max-width: 1024px) {
     display: none;
   }
@@ -71,7 +52,11 @@ const Navigator = styled.div`
 `;
 
 const NavContent = styled.div`
-    margin: 0 2vw;
+    width: 11vw;
+    padding: 30px 0;
+    max-width: 130px;
+    min-width: 100px;
+    text-align: center;
     cursor: pointer;
     color: #000;
     font-size: 18px;
@@ -80,15 +65,17 @@ const NavContent = styled.div`
     }
 `;
 
-// const HeaderDropBlock = styled.div`
-//     position: absolute;
-//     top: 83px;
-//     width: 100%;
-//     height: 240px;
-//     position: fixed;
-//     background: #fff;
-//     display: none;
-// `;
+const HeaderDropBlock = styled.div`
+    border-top: 1px solid #D8D8D8;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    position: fixed;
+    background: #fff;
+    display: none;
+`;
 
 // const DropContent = styled(NavContent)`
 //     padding: 10px 46px;

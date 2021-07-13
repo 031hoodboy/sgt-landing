@@ -18,7 +18,6 @@ const Header = () => {
             <NavBar/>
             <HamburgerButton/>
         </HeaderBlock>
-
         </>
     );
 };
@@ -35,7 +34,6 @@ const HeaderBlock = styled.div`
     color: #4a5568;
     background: #fff;
     z-index: 2;
-    border-bottom: 1px solid #D8D8D8;
 `;
 
 const LogoWrapper = styled.div`
