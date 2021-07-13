@@ -34,7 +34,7 @@ const Background = styled.div`
 
 const CardWrapper = styled.div`
     display: flex;
-    width: 60vw;
+    width: 80vw;
     justify-content: space-around;
     flex-wrap: wrap;
 `;

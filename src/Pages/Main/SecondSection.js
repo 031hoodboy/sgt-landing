@@ -39,7 +39,8 @@ const Background = styled.div`
 
 const CardWrapper = styled.div`
     display: flex;
-    width: 60vw;
+    width: 80vw;
+    max-width: 1200px;
     margin: 5vh 0;
     justify-content: space-around;
     overflow: hidden;

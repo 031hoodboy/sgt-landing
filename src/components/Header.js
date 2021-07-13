@@ -33,7 +33,7 @@ const HeaderBlock = styled.div`
     justify-content: space-between;
     color: #4a5568;
     background: #fff;
-    z-index: 1;
+    z-index: 2;
     border-bottom: 1px solid #D8D8D8;
 `;
 
@@ -43,8 +43,12 @@ const LogoWrapper = styled.div`
 `;
 
 const Logo = styled.div`
-    width: 183px;
-    height: 82px;
+    width: 15vw;
+    max-width: 183px;
+    min-width: 92px;
+    height: 8vh;
+    max-height: 82px;
+    min-height: 41px;
     background-image: url(${SgtLogoImg});
     background-size: contain;
     background-repeat: no-repeat;

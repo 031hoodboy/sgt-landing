@@ -55,8 +55,8 @@ const HamburgerButton = () => {
 };
 
 const HamburgerWrapper = styled.div`
-    width: 28px;
-    height: 22px;
+    width: 17px;
+    height: 16px;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -68,7 +68,7 @@ const HamburgerWrapper = styled.div`
 
 const Line = styled.div`
     border: 1px solid #000;
-    width: 30px;
+    width: 17px;
 `;
 
 

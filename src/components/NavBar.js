@@ -51,52 +51,7 @@ const NavBar = () => {
                     <DropContent>공지사항</DropContent>
                 </Link>
                 </DropWrapper>
-                <DropWrapper>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>회사소개</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent type="trigger">사업영역</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>설비현황</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>기술현황</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>홍보센터</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>고객지원</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>공지사항</DropContent>
-                </Link>
-                </DropWrapper>
-                <DropWrapper>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>회사소개</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent type="trigger">사업영역</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>설비현황</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent></DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>홍보센터</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>고객지원</DropContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <DropContent>공지사항</DropContent>
-                </Link>
-                </DropWrapper>
+
             </HeaderDropBlock>
         </Navigator>
     );
