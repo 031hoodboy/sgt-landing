@@ -74,7 +74,7 @@ const MainImg = styled.div`
     font-size: 45px;
     font-weight: 600;
     @media screen and (max-width: 1024px) {
-        height: 15vh;
+        height: 17vh;
         font-size: 26px;
   }
 `;
@@ -218,7 +218,7 @@ const NavBarWrapper = styled.div`
     }
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
-        top: calc(15vh + 42px); 
+        top: calc(21vh); 
     }
 `;
 
