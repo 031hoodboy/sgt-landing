@@ -89,7 +89,7 @@ export const PageTitleWrpper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 15vh;
 `;
 
 export const Remark = styled.div`
