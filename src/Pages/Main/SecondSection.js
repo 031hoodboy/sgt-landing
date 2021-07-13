@@ -4,11 +4,12 @@ import BackgroundImg from '../../assets/mainsecondsection.png';
 import Card1Img from '../../assets/business1.png';
 import Card2Img from '../../assets/business2.png';
 import Card3Img from '../../assets/business3.png';
-import {TitleWrpper, Remark, Title, SubTitle } from '../../components/PageStyle';
+import {TitleWrpper, Remark, Title, SubTitle, PageBlockWrapper } from '../../components/PageStyle';
 
 const SecondSection = () => {
     return (
         <Background>
+            <PageBlockWrapper>
             <TitleWrpper>
                 <Remark>BUSINESS</Remark>
                 <Title>사업영역</Title>
@@ -19,6 +20,7 @@ const SecondSection = () => {
                 <Card2></Card2>
                 <Card3></Card3>
             </CardWrapper>
+            </PageBlockWrapper>
         </Background>
     );
 }
@@ -40,9 +42,9 @@ const Background = styled.div`
 const CardWrapper = styled.div`
     display: flex;
     width: 80vw;
-    max-width: 1200px;
-    margin: 5vh 0;
-    justify-content: space-around;
+    max-width: 1088px;
+    margin: 5vh auto;
+    justify-content: space-between;
     overflow: hidden;
 `;
 

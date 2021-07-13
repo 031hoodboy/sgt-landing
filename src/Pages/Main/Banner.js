@@ -24,6 +24,9 @@ const Background = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media screen and (max-width: 840px) {
+        height: 15vh;
+  }
 `;
 
 const Opacity = styled.div`
@@ -34,12 +37,21 @@ const Opacity = styled.div`
 `;
 
 const Content = styled.div`
+    width: 80vw;
+    padding: 0 10vw;
     position: absolute;
     height: 20vh;
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     color: #fff;
     font-size: 30px;
     font-weight: 600;
+    @media screen and (max-width: 840px) {
+        height: 15vh;
+        font-size: 16px;
+  }
 `;
 export default Banner;

@@ -17,10 +17,10 @@ export const PageBlockWrapper = styled.div`
   margin: 0px auto;
   padding: 24px 64px;
   display: flex;
+  flex-direction: column;
   justify-content: stretch;
   @media screen and (max-width: ${({ threshold }) =>
       threshold || SMALL_SCREEN_THRESHOLD}px) {
-    flex-direction: column;
     padding: 12px;
   }
 `;
@@ -88,13 +88,27 @@ export const TitleWrpper = styled.div`
 export const Remark = styled.div`
     color: #98272B;
     font-size: 20px;
+    @media screen and (max-width: ${({ threshold }) =>
+      threshold || SMALL_SCREEN_THRESHOLD}px) {
+    font-size: 16px;
+  }
 `;
 
 export const Title = styled.div`
     font-size: 38px;
+    font-weight: 600;
     margin: 15px 0 22px 0; 
+    @media screen and (max-width: ${({ threshold }) =>
+      threshold || SMALL_SCREEN_THRESHOLD}px) {
+    font-size: 30px;
+  }
 `;
 
 export const SubTitle = styled.div`
     font-size: 22px;
+    @media screen and (max-width: ${({ threshold }) =>
+      threshold || SMALL_SCREEN_THRESHOLD}px) {
+    font-size: 18px;
+    text-align: center;
+  }
 `;
