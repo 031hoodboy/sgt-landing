@@ -2,9 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Link} from 'react-router-dom';
 import SgtLogoImg from '../assets/sgtlogo.png'
+import NavBar from './NavBar';
+import HamburgerButton from './HambuergerButton';
 
 const Header = () => {
-
     return (
         <>
         <HeaderBlock>
@@ -14,46 +15,26 @@ const Header = () => {
                 </Link>
                 <Name></Name>
             </LogoWrapper>
-            <NavnWrapper>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <NavContent>회사소개</NavContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <NavContent>사업영역</NavContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <NavContent>설비현황</NavContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <NavContent>기술현황</NavContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <NavContent>홍보센터</NavContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <NavContent>고객지원</NavContent>
-                </Link>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                    <NavContent>공지사항</NavContent>
-                </Link>
-            </NavnWrapper>
+            <NavBar/>
+            <HamburgerButton/>
         </HeaderBlock>
         </>
     );
 };
 
 const HeaderBlock = styled.div`
-    width: 95vw;
-    padding: 5px 2.5vw;
+    width: 85vw;
+    padding: 0 7.5vw;
     position: sticky;
     margin: 0 auto;
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #4a5568;
     background: #fff;
     z-index: 1;
+    border-bottom: 1px solid #D8D8D8;
 `;
 
 const LogoWrapper = styled.div`
@@ -93,6 +74,5 @@ const NavContent = styled.div`
     color: #000;
     cursor: pointer;
 `;
-
 
 export default Header;

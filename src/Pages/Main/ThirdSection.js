@@ -21,8 +21,7 @@ const ThirdSection = () => {
 
 const Background = styled.div`
     width: 100vw;
-    height: 45vh;
-    padding: 5vh 0;
+    padding: 10vh 0;
     background: #FCF8F8;
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,11 +55,12 @@ const Card1 = styled.div`
     color: #fff;
     font-size: 30px;
     font-weight: 600;
+    margin-top: 5vh;
+
 `;
 
 const Card2 = styled(Card1)`
     background-image: url(${Tech2Img});
-
 `;
 
 export default ThirdSection;

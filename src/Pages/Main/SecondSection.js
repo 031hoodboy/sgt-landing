@@ -25,8 +25,7 @@ const SecondSection = () => {
 
 const Background = styled.div`
     width: 100vw;
-    height: 70vh;
-    padding: 7vh 0;
+    padding: 10vh 0;
     background: #fff;
     background-image: url(${BackgroundImg});
     background-size: cover;
@@ -41,12 +40,14 @@ const Background = styled.div`
 const CardWrapper = styled.div`
     display: flex;
     width: 60vw;
+    margin: 5vh 0;
     justify-content: space-around;
+    overflow: hidden;
 `;
 
 const Card1 = styled.div`
-    width: 355px;
-    height: 450px;
+    min-width: 355px;
+    min-height: 450px;
     background: #fff;
     background-image: url(${Card1Img});
     background-size: cover;

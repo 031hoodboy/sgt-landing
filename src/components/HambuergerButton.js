@@ -1,0 +1,155 @@
+import React,{useState} from 'react';
+import {Link} from 'react-router-dom';
+import styled from '@emotion/styled';
+import {css, keyframes} from '@emotion/react';
+import Cancle from '../assets/cancle.png';
+
+const HamburgerButton = () => {
+
+    const [open, setOpen] = useState(false);
+    const onToggle = () => {
+        setOpen(!open)
+    }
+
+    return (
+        <>
+        <HamburgerWrapper onClick={onToggle}>
+            <Line></Line>
+            <Line></Line>
+            <Line></Line>
+        </HamburgerWrapper>
+        <Wrapper open={open}>
+        <ModalWrapper>
+            <CancleButton onClick={onToggle}/>
+            <Menu2>
+                <Link to="/login" style={{textDecoration: 'none', color: "#000"}}>
+                    <MenuContent>회사소개</MenuContent>
+                </Link>  
+                <Link to="/mypage" style={{textDecoration: 'none', color: "#000"}}>
+                    <MenuContent>사업영역</MenuContent>
+                </Link>  
+                <Link to="/fee-schedule" style={{textDecoration: 'none', color: "#000"}}>
+                    <MenuContent>설비현황</MenuContent>    
+                </Link> 
+                <Link to="/service" style={{textDecoration: 'none', color: "#000"}}>
+                    <MenuContent>기술현황</MenuContent>    
+                </Link> 
+                <Link to="/register" style={{textDecoration: 'none', color: "#000"}}>
+                    <MenuContent>홍보센터</MenuContent>    
+                </Link> 
+                <Link to="/delivery-status" style={{textDecoration: 'none', color: "#000"}}>
+                    <MenuContent>고객지원</MenuContent>    
+                </Link> 
+                <Link to="/inquiry" style={{textDecoration: 'none', color: "#000"}}>
+                    <MenuContent>공지사항</MenuContent>    
+                </Link> 
+                <Link to="/info" style={{textDecoration: 'none', color: "#000"}}>
+                    <MenuContent>정보</MenuContent>    
+                </Link> 
+            </Menu2>
+        </ModalWrapper>
+        <ModalOpacity onClick={onToggle}/>
+    </Wrapper>
+    </>
+    );
+};
+
+const HamburgerWrapper = styled.div`
+    width: 28px;
+    height: 22px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    @media screen and (max-width: 1024px) {
+    display: flex;
+  }
+`;
+
+const Line = styled.div`
+    border: 1px solid #000;
+    width: 30px;
+`;
+
+
+const Wrapper = styled.div`
+    display: flex;
+    right: 0;
+    width: 100vw;
+    display: none;
+    justify-content: space-between;
+    ${props => props.open && css`
+        display:flex;
+    `}
+    position: fixed;
+    z-index: 2;
+    top: 0;
+`;
+ 
+const Fadein = keyframes`
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 0;
+  }
+`;
+
+const ModalWrapper = styled.div`
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    animation: ${Fadein} 500ms ;
+    ${props => props.open && css`
+        display:flex;
+    `}
+`;
+
+const ModalOpacity = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    z-index: 2;
+`;
+
+const CancleButton = styled.div`
+    width: 30px;
+    height: 30px;
+    background-image: url(${Cancle});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    &:hover{
+        opacity: 0.4;
+    }
+`;
+
+const Menu2 = styled.div`
+    position: absolute;
+    top: 70px;
+    justify-content: center;
+`;
+
+const MenuContent = styled.div`
+    margin-top: 20px;
+    font-size: 15px;
+    color: #444;
+    &:hover{
+        color: #666;
+    }
+    width: 130px;
+`;
+
+export default HamburgerButton;
