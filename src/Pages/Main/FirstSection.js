@@ -9,8 +9,8 @@ const FirstSection = () => {
         <MobileBackground>
         </MobileBackground>
         <Gradient/>
-        <Opacity/>
         <Background>
+            <Opacity />
             <SloganWrapper>
                 <Slogan>숨겨진 <Emphasis>가치</Emphasis>를 찾는기업,</Slogan>
                 <Slogan>고객이 <Emphasis>신뢰</Emphasis>하는 기업</Slogan>
@@ -98,9 +98,9 @@ const Emphasis = styled.span`
 
 const Opacity = styled.div`
     position: absolute;
-    bottom: -8.3%;
+    bottom: -8.7%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #000;
     opacity: 0.4;
 `;
