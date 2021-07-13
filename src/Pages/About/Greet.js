@@ -13,7 +13,7 @@ const Greet = () => {
         <PageWrapper>
             <Header/>
             <MainImg>
-
+                회사소개
             </MainImg>
             {/* <NavBar></NavBar> */}
             <PageTitleWrpper>
@@ -42,6 +42,7 @@ const Greet = () => {
                     <Company>(주)에스지티</Company>
                     <Ceo>대표 이사 김곤</Ceo>
                     <Sign/>
+                    <Profile2/>
                 </SignWrapper>
             </PageBlockWrapper>
             <Footer/>
@@ -58,11 +59,15 @@ const MainImg = styled.div`
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
     @media screen and (max-width: 1024px) {
         height: 15vh;
+        font-size: 26px;
   }
 `;
 
@@ -110,10 +115,29 @@ const Profile = styled.div`
     flex-direction: column;
     margin-top: 50px;
     @media screen and (max-width: 780px) {
+        display: none;
+  }
+`;
+
+const Profile2 = styled.div`
+    width: 400px;
+    height: 450px;
+    background: #282D27;
+    background-image: url(${ProfileImg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    display: none;
+    @media screen and (max-width: 780px) {
         width: 195px;
         max-height: 270px;
         margin: 0 auto;
-        margin-top: 50px;
+        display: flex;
   }
 `;
 
