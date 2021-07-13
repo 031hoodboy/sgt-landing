@@ -14,9 +14,17 @@ const Greet = () => {
             <Header/>
             <MainImg>
                 회사소개
+                <NavBarWrapper>
+                    <SelectNavBlock>ceo인사말</SelectNavBlock>
+                    <NavBlock>비전</NavBlock>
+                    <NavBlock>연혁</NavBlock>
+                    <NavBlock>사업파트너</NavBlock>
+                    <NavBlock>오시는 길</NavBlock>
+                    <NavBlock>조직도</NavBlock>
+                </NavBarWrapper>
             </MainImg>
-            {/* <NavBar></NavBar> */}
             <PageTitleWrpper>
+                
                 <Title>CEO 인사말</Title>
                 <TitleUnderBar/>
             </PageTitleWrpper>
@@ -52,7 +60,7 @@ const Greet = () => {
 
 const MainImg = styled.div`
     width: 100%;
-    height: 18vw;
+    height: 30vh;
     background: #282D27;
     background-image: url(${BackgroundImg});
     background-size: cover;
@@ -80,9 +88,9 @@ const HelloWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 80vw;
-    max-width: 1088px;
+    max-width: 1100px;
     margin: 5vh auto;
-    justify-content: space-between;
+    justify-content: space-around;
     @media screen and (max-width: 780px) {
         justify-content: center;
   }
@@ -120,8 +128,6 @@ const Profile = styled.div`
 `;
 
 const Profile2 = styled.div`
-    width: 400px;
-    height: 450px;
     background: #282D27;
     background-image: url(${ProfileImg});
     background-size: cover;
@@ -131,13 +137,16 @@ const Profile2 = styled.div`
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
-    margin-top: 50px;
     display: none;
     @media screen and (max-width: 780px) {
-        width: 195px;
-        max-height: 270px;
+        width: 60vw;
+        height: 80vw;
+        max-width: 400px;
+        max-height: 450px;
         margin: 0 auto;
         display: flex;
+        margin-top: 150px;
+        margin-bottom: 30px;
   }
 `;
 
@@ -183,7 +192,55 @@ const Sign = styled.div`
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
-    margin: 20px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 780px) {
+    width: 130px;
+    height: 78px;  
+    }
+`;
+
+const NavBarWrapper = styled.div`
+    width: 60vw;
+    height: 58px;
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    top: calc(30vh + 56px);
+    box-shadow:  0px 3px 6px #d9d9d9;
+    @media screen and (max-width: 1312px) {
+    width: calc(75vw + 3px);
+    height: 80px; 
+    flex-wrap: wrap;
+    top: calc(30vh + 42px); 
+    }
+    @media screen and (max-width: 1024px) {
+        width: calc(90vw + 3px);
+        top: calc(15vh + 42px); 
+    }
+`;
+
+const NavBlock = styled.div`
+    width: 25vw;
+    height: 58px;
+    border-left: 1px solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #D9D9D9;
+    @media screen and (max-width: 1312px) {
+    width: 30vw;
+    height: 40px; 
+    }
+`;
+
+const SelectNavBlock = styled(NavBlock)`
+    background: #930E14;
+    color: #fff;
+    border-left: 1px solid #930E14;
 `;
 
 export default Greet;
