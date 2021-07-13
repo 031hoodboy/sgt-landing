@@ -64,19 +64,4 @@ const Name = styled.span`
     font-weight: 700;
 `;
 
-const NavnWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    @media screen and (max-width: 1024px) {
-    display: none;
-  }
-`;
-
-const NavContent = styled.div`
-    font-size: 18;
-    padding: 0 40px;
-    color: #000;
-    cursor: pointer;
-`;
-
 export default Header;

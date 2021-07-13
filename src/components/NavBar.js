@@ -80,12 +80,6 @@ const NavContent = styled.div`
     }
 `;
 
-const DropMenu = styled.div`
-    display: flex;
-    flex-direction: flex-end;
-`;
-
-
 const HeaderDropBlock = styled.div`
     position: absolute;
     top: 83px;
