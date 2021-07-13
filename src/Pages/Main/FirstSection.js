@@ -102,13 +102,13 @@ const Emphasis = styled.span`
 const Opacity = styled.div`
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 108.5vh;
     background: #000;
     opacity: 0.4;
     top: 0;
     @media screen and (max-width: 840px) {
         padding-top: 20vh;
-        height: 90vh;
+        height: 89vh;
   }
 `;
 
