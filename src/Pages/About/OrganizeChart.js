@@ -10,7 +10,7 @@ import styled from '@emotion/styled';
 // import ProfileImg from '../../assets/profile.png';
 
 
-const Vision = () => {
+const OrganizeChart = () => {
     return (
         <PageWrapper>
             <Header/>
@@ -88,4 +88,4 @@ const MainImg = styled.div`
 //   }
 // `;
 
-export default Vision;
+export default OrganizeChart;

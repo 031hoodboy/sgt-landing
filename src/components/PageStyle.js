@@ -127,7 +127,8 @@ export const SubTitle = styled.div`
 
 export const PageTitle = styled(Title)`
     border-bottom: 2px solid #851F1C;
-    padding: 20px 5px;
+    padding: 10px 5px;
+    margin: 0;
     @media screen and (max-width: ${({ threshold }) =>
       threshold || SMALL_SCREEN_THRESHOLD}px) {
     font-size: 20px;
@@ -182,7 +183,7 @@ export const SelectNavBlock = styled(NavBlock)`
 export const PageSubTitle = styled.div`
   font-size: 30px;
   text-align: center;
-  padding: 5vh 0 20vh 0;
+  padding: 5vh 0;
   @media screen and (max-width: ${({ threshold }) =>
       threshold || SMALL_SCREEN_THRESHOLD}px) {
         width: 90vw;

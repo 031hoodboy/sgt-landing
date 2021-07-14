@@ -8,7 +8,7 @@ import BackgroundImg from '../../assets/aboutbackground.png';
 import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
-const Vision = () => {
+const WayToCome = () => {
     return (
         <PageWrapper>
             <Header/>
@@ -67,4 +67,4 @@ const MainImg = styled.div`
   }
 `;
 
-export default Vision;
+export default WayToCome;
