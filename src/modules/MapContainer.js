@@ -1,31 +1,34 @@
+/*global kakao */
+import React, { useEffect } from "react";
 
-import React, { useEffect } from 'react';
+export default function Map() {
+  useEffect(() => {
+    mapscript();
+  }, []);
 
-const { kakao } = window;
+  const mapscript = () => {
+    let container = document.getElementById("map");
+    let options = {
+      center: new kakao.maps.LatLng(36.867091766051, 127.12488130338),
+      level: 4,
+    };
+    //map
+    const map = new kakao.maps.Map(container, options);
 
-const MapContainer = () => {
-
-    useEffect(() => {
-      const container = document.getElementById('myMap');
-      const markers = {position: new kakao.maps.LatLng(36.867091766051, 127.12488130338)};
-
-      const options = {
-        center: new kakao.maps.LatLng(36.867091766051, 127.12488130338),
-        level: 3,
-        marker: markers
-      };
-        // eslint-disable-next-line no-unused-vars
-      const map = new kakao.maps.Map(container, options);
-        
-        
-    }, []);
-
-    return (
-        <div id='myMap' style={{
-            width: '100%', 
-            height: '100%'
-        }}></div>
+    //마커가 표시 될 위치
+    let markerPosition = new kakao.maps.LatLng(
+      36.867091766051,
+      127.12488130338
     );
-}
 
-export default MapContainer; 
+    // 마커를 생성
+    let marker = new kakao.maps.Marker({
+      position: markerPosition,
+    });
+
+    // 마커를 지도 위에 표시
+    marker.setMap(map);
+  };
+
+  return <div id="map" style={{ width: "100%", height: "100%" }}></div>;
+}
