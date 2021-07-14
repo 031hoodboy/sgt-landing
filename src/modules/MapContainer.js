@@ -14,7 +14,8 @@ const MapContainer = () => {
         level: 3,
         marker: markers
       };
-        const map = new kakao.maps.Map(container, options);
+        // eslint-disable-next-line no-unused-vars
+      const map = new kakao.maps.Map(container, options);
         
         
     }, []);
