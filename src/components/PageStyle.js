@@ -90,6 +90,10 @@ export const PageTitleWrpper = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 15vh;
+    @media screen and (max-width: ${({ threshold }) =>
+      threshold || SMALL_SCREEN_THRESHOLD}px) {
+    margin-top: 10vh;
+  }
 `;
 
 export const Remark = styled.div`
@@ -124,4 +128,64 @@ export const SubTitle = styled.div`
 export const PageTitle = styled(Title)`
     border-bottom: 2px solid #851F1C;
     padding: 20px 5px;
+    @media screen and (max-width: ${({ threshold }) =>
+      threshold || SMALL_SCREEN_THRESHOLD}px) {
+    font-size: 20px;
+  }
+`;
+
+
+export const NavBarWrapper = styled.div`
+    width: 60vw;
+    height: 58px;
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    top: calc(30vh + 56px);
+    box-shadow:  0px 3px 6px #d9d9d9;
+    @media screen and (max-width: 1312px) {
+    width: calc(90vw + 3px);
+    height: 80px; 
+    flex-wrap: wrap;
+    top: calc(30vh + 42px); 
+    }
+    @media screen and (max-width: 1024px) {
+        width: calc(90vw + 3px);
+        top: calc(23vh); 
+    }
+`;
+
+export const NavBlock = styled.div`
+    width: 10vw;
+    height: 58px;
+    border-left: 1px solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #D9D9D9;
+    @media screen and (max-width: 1312px) {
+    width: 30vw;
+    height: 40px; 
+    }
+`;
+
+export const SelectNavBlock = styled(NavBlock)`
+    background: #930E14;
+    color: #fff;
+    border-left: 1px solid #930E14;
+`;
+
+export const PageSubTitle = styled.div`
+  font-size: 30px;
+  text-align: center;
+  padding: 5vh 0 20vh 0;
+  @media screen and (max-width: ${({ threshold }) =>
+      threshold || SMALL_SCREEN_THRESHOLD}px) {
+        width: 90vw;
+    font-size: 19px;
+  }
 `;

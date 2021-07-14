@@ -91,11 +91,6 @@ const MainImg = styled.div`
   }
 `;
 
-const TitleUnderBar = styled.div`
-    border-top: 2px solid #851F1C;
-    width: 200px;
-`;
-
 const HelloWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
