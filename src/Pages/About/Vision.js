@@ -18,10 +18,10 @@ const Greet = () => {
                 회사소개
                 <NavBarWrapper>
                 <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
-                    <SelectNavBlock>ceo인사말</SelectNavBlock>
+                    <NavBlock>ceo인사말</NavBlock>
                     </Link>
                     <Link to="/vision" style={{textDecoration: 'none', color: "#000"}}>
-                        <NavBlock>비전</NavBlock>
+                        <SelectNavBlock>비전</SelectNavBlock>
                     </Link>
                     <Link to="/history" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>연혁</NavBlock>
