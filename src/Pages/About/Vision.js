@@ -5,12 +5,12 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
-import {PageTitleWrpper, Title, PageBlockWrapper } from '../../components/PageStyle';
+import {PageTitleWrpper, PageBlockWrapper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import ProfileImg from '../../assets/profile.png';
 import SignImg from '../../assets/sign.png';
 
-const Greet = () => {
+const Vision = () => {
     return (
         <PageWrapper>
             <Header/>
@@ -38,9 +38,7 @@ const Greet = () => {
                 </NavBarWrapper>
             </MainImg>
             <PageTitleWrpper>
-                
-                <Title>CEO 인사말</Title>
-                <TitleUnderBar/>
+                <PageTitle>비전</PageTitle>
             </PageTitleWrpper>
             <PageBlockWrapper>
                 <HelloWrapper>
@@ -91,11 +89,6 @@ const MainImg = styled.div`
         height: 17vh;
         font-size: 26px;
   }
-`;
-
-const TitleUnderBar = styled.div`
-    border-top: 2px solid #851F1C;
-    width: 200px;
 `;
 
 const HelloWrapper = styled.div`
@@ -257,4 +250,4 @@ const SelectNavBlock = styled(NavBlock)`
     border-left: 1px solid #930E14;
 `;
 
-export default Greet;
+export default Vision;

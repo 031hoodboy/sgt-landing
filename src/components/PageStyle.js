@@ -119,3 +119,9 @@ export const SubTitle = styled.div`
     text-align: center;
   }
 `;
+
+
+export const PageTitle = styled(Title)`
+    border-bottom: 2px solid #851F1C;
+    padding: 20px 5px;
+`;

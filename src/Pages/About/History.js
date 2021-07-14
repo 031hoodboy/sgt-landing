@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
-import {PageTitleWrpper, Title, PageBlockWrapper } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, PageBlockWrapper } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import ProfileImg from '../../assets/profile.png';
 import SignImg from '../../assets/sign.png';
@@ -38,9 +38,7 @@ const Greet = () => {
                 </NavBarWrapper>
             </MainImg>
             <PageTitleWrpper>
-                
-                <Title>CEO 인사말</Title>
-                <TitleUnderBar/>
+                <PageTitle>연혁</PageTitle>
             </PageTitleWrpper>
             <PageBlockWrapper>
                 <HelloWrapper>

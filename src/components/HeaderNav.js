@@ -15,19 +15,19 @@ const HeaderNav = () => {
                     <Link to="/greet" style={{textDecoration: 'none'}}>
                         <NavContent>CEO인사말</NavContent>
                     </Link>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/vision" style={{textDecoration: 'none'}}>
                         <NavContent type="trigger">비전</NavContent>
                     </Link>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/history" style={{textDecoration: 'none'}}>
                         <NavContent>연혁</NavContent>
                     </Link>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/business-partner" style={{textDecoration: 'none'}}>
                         <NavContent>사업파트너</NavContent>
                     </Link>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/way-to-come" style={{textDecoration: 'none'}}>
                         <NavContent>오시는 길</NavContent>
                     </Link>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/organize-chart" style={{textDecoration: 'none'}}>
                         <NavContent>조직도</NavContent>
                     </Link>
                 </Navigator>
