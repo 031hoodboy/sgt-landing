@@ -91,7 +91,7 @@ const Block = styled.div`
     border: 1px solid #D0D0D0;
     width: 260px;
     height: 140px;
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
     @media screen and (max-width: 1220px) {
     width: 42vw;
     max-width: 174px;

@@ -8,7 +8,7 @@ import BackgroundImg from '../../assets/aboutbackground.png';
 import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, PageSubTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 // import ProfileImg from '../../assets/profile.png';
-
+import Chart from '../../assets/organizechart.png'
 
 const OrganizeChart = () => {
     return (
@@ -39,11 +39,8 @@ const OrganizeChart = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>조직도</PageTitle>
-                <PageSubTitle>더 나은 세상을 만들어가는 일,<br/>글로벌 바이오제약 기업 메디톡스가 먼저 시작합니다.</PageSubTitle>
             </PageTitleWrpper>
-            <PageBlockWrapper>
-                
-            </PageBlockWrapper>
+            <ChartImg></ChartImg>
             <Footer/>
         </PageWrapper>
     );
@@ -70,22 +67,29 @@ const MainImg = styled.div`
   }
 `;
 
-// const Profile = styled.div`
-//     width: 400px;
-//     height: 450px;
-//     background: #282D27;
-//     background-image: url(${ProfileImg});
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center; 
-//     display: flex;
-//     align-items: flex-end;
-//     justify-content: center;
-//     flex-direction: column;
-//     margin-top: 50px;
-//     @media screen and (max-width: 780px) {
-//         display: none;
-//   }
-// `;
+const ChartImg = styled.div`
+    width: 60vw;
+    max-width: 1021.67px;
+    height: 70vw;
+    max-height: 689px;
+    margin: 0 auto;
+    background-image: url(${Chart});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+    @media screen and (max-width: 1220px) {
+        width: 90vw;
+        min-width: 317.5px;
+        height: 70vw;
+        min-height: 215px;
+        margin-top: 0;
+  }
+`;
 
 export default OrganizeChart;
