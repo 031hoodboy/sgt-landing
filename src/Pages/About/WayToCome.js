@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
-
+import Map from '../../modules/MapContainer';
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
 import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock } from '../../components/PageStyle';
@@ -39,13 +39,27 @@ const WayToCome = () => {
                 <PageTitle>오시는 길</PageTitle>
             </PageTitleWrpper>
             <PageBlockWrapper>
-                
+                <MapContainer>
+                    <Map />
+                </MapContainer>
             </PageBlockWrapper>
             <Footer/>
         </PageWrapper>
     );
 }
 
+const MapContainer = styled.div`
+    width: 1088px;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5vh auto 20vh auto;
+    @media screen and (max-width: 1220px) {
+        width: 90vw;
+        justify-content: space-around;
+  }
+`;
 const MainImg = styled.div`
     width: 100%;
     height: 30vh;

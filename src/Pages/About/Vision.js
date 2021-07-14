@@ -76,7 +76,7 @@ const MainImg = styled.div`
 const VisionCard = styled.div`
     width: 700px;
     height: 450px;
-    margin: 0 auto;
+    margin: 5vh auto;
     background-image: url(${VisionImg});
     background-size: cover;
     background-repeat: no-repeat;

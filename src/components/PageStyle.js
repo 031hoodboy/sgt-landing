@@ -21,7 +21,7 @@ export const PageBlockWrapper = styled.div`
   justify-content: stretch;
   @media screen and (max-width: ${({ threshold }) =>
       threshold || SMALL_SCREEN_THRESHOLD}px) {
-    padding: 12px;
+    padding: 0;
   }
 `;
 

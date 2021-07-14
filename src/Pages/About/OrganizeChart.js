@@ -72,7 +72,7 @@ const ChartImg = styled.div`
     max-width: 1021.67px;
     height: 70vw;
     max-height: 689px;
-    margin: 0 auto;
+    margin: 5vh auto;
     background-image: url(${Chart});
     background-size: contain;
     background-repeat: no-repeat;
@@ -82,13 +82,13 @@ const ChartImg = styled.div`
     justify-content: center;
     flex-direction: column;
     margin-bottom: 20vh;
-    margin-top: 10vh;
     @media screen and (max-width: 1220px) {
         width: 90vw;
         min-width: 317.5px;
         height: 70vw;
         min-height: 215px;
-        margin-top: 0;
+        margin: 3vh auto;
+
   }
 `;
 
