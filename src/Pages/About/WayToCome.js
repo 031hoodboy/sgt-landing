@@ -41,6 +41,10 @@ const WayToCome = () => {
             <PageBlockWrapper>
                 <MapContainer>
                     <Map />
+                    <InfoWrapper>
+                        <Info><b>주소</b> 충청남도 천안시 서북구 직산읍 모시리 215번지</Info>
+                        <Info><b>tel</b> 041-548-012</Info>
+                    </InfoWrapper>
                 </MapContainer>
             </PageBlockWrapper>
             <Footer/>
@@ -57,6 +61,7 @@ const MapContainer = styled.div`
     margin: 5vh auto 20vh auto;
     @media screen and (max-width: 1220px) {
         width: 90vw;
+        height: 60vh;
         justify-content: space-around;
   }
 `;
@@ -78,6 +83,22 @@ const MainImg = styled.div`
     @media screen and (max-width: 1024px) {
         height: 17vh;
         font-size: 26px;
+  }
+`;
+
+const InfoWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+`;
+
+
+const Info = styled.div`
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    @media screen and (max-width: 780px) {
+        font-size: 16px;
   }
 `;
 
