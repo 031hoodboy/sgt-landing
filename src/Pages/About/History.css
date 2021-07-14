@@ -107,7 +107,7 @@
         list-style: none;
         text-align: left;
         font-weight: 300;
-        max-width: 60%;
+        max-width: 50%;
       }
       .timeline .event:after {
         background: #930E14;

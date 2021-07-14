@@ -88,6 +88,7 @@ const ChartImg = styled.div`
         height: 70vw;
         min-height: 215px;
         margin: 3vh auto;
+        margin-bottom: 10vh;
 
   }
 `;

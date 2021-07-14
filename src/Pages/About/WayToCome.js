@@ -63,6 +63,8 @@ const MapContainer = styled.div`
         width: 90vw;
         height: 60vh;
         justify-content: space-around;
+        margin: 5vh auto 30vh auto;
+
   }
 `;
 const MainImg = styled.div`
