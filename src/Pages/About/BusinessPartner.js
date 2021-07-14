@@ -39,9 +39,16 @@ const BusinessPartner = () => {
                 <PageTitle>사업파트너</PageTitle>
                 <PageSubTitle>더 나은 세상을 만들어가는 일,<br/>글로벌 바이오제약 기업 메디톡스가 먼저 시작합니다.</PageSubTitle>
             </PageTitleWrpper>
-            <PageBlockWrapper>
-                
-            </PageBlockWrapper>
+                <Blockwrapper>
+                    <Block></Block>
+                    <Block></Block>
+                    <Block></Block>
+                    <Block></Block>
+                    <Block></Block>
+                    <Block></Block>
+                    <Block></Block>
+                    <Block></Block>
+                </Blockwrapper>
             <Footer/>
         </PageWrapper>
     );
@@ -65,6 +72,30 @@ const MainImg = styled.div`
     @media screen and (max-width: 1024px) {
         height: 17vh;
         font-size: 26px;
+  }
+`;
+
+const Blockwrapper = styled.div`
+    width: 1088px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5vh auto 20vh auto;
+    @media screen and (max-width: 1220px) {
+        width: 90vw;
+        justify-content: space-around;
+  }
+`;
+
+const Block = styled.div`
+    border: 1px solid #D0D0D0;
+    width: 260px;
+    height: 140px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 1220px) {
+    width: 42vw;
+    max-width: 174px;
+    height: 83px;
   }
 `;
 

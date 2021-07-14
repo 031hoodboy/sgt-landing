@@ -128,7 +128,6 @@ export const SubTitle = styled.div`
 export const PageTitle = styled(Title)`
     border-bottom: 2px solid #851F1C;
     padding: 10px 5px;
-    margin: 0;
     @media screen and (max-width: ${({ threshold }) =>
       threshold || SMALL_SCREEN_THRESHOLD}px) {
     font-size: 20px;

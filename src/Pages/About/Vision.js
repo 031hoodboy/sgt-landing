@@ -98,6 +98,7 @@ const Descrip = styled.div`
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 30vh;
+    font-weight: 300;
     @media screen and (max-width: 840px) {
     width: 90vw;
     text-align: left;
