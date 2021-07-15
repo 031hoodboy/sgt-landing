@@ -33,7 +33,7 @@ const SecondaryBattery = () => {
                 </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>Inerface Board [부품공급]</Bar>
+                <Bar>IT, Mobile Device, 소형 가전용 필름 (Cell Pouch Film)</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block1></Block1>
