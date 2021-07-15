@@ -193,6 +193,7 @@ export const PageSubTitle = styled.div`
 export const SubTitle2 = styled(Title)`
   font-size: 25px;
   font-weight: 300;
+  text-align: center;
   @media screen and (max-width: 780px) {
     width: 80vw;
         font-size: 19px;
