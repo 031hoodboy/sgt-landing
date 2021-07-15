@@ -69,15 +69,11 @@ const NavBarWrapper = styled.div`
     font-weight: 400;
     top: calc(30vh + 56px);
     box-shadow:  0px 3px 6px #d9d9d9;
-    @media screen and (max-width: 1312px) {
-    width: calc(90vw + 3px);
-    height: 40px; 
-    flex-wrap: wrap;
-    top: calc(30vh + 42px); 
-    }
+
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
+        height: 40px;
     }
 `;
 
@@ -90,7 +86,7 @@ const NavBlock = styled.div`
     align-items: center;
     background: #fff;
     border-bottom: 1px solid #D9D9D9;
-    @media screen and (max-width: 1312px) {
+    @media screen and (max-width: 1024px) {
     width: 30vw;
     height: 40px; 
     font-size: 14px;
