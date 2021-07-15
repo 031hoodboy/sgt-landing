@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle, PageBlockWrapper } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 const Manufacture = () => {
@@ -15,13 +15,13 @@ const Manufacture = () => {
             <MainImg>
                 사업영역
                 <NavBarWrapper>
-                    <Link to="/processingBusiness" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/processing-business" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>정밀가공사업</NavBlock>
                     </Link>
                     <Link to="/manufacture" style={{textDecoration: 'none', color: "#000"}}>
                         <SelectNavBlock>장비제조사업</SelectNavBlock>
                     </Link>
-                    <Link to="/secondaryBattery" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/secondary-battery" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>2차전지소재사업</NavBlock>
                     </Link>
                 </NavBarWrapper>
@@ -29,9 +29,19 @@ const Manufacture = () => {
             <PageTitleWrpper>
                 <PageTitle>장비제조사업</PageTitle>
             </PageTitleWrpper>
-            <PageBlockWrapper>
-                
-            </PageBlockWrapper>
+            <BarkWrapper>
+                <Bar>Inerface Board [부품공급]</Bar>
+                <Blockwrapper>
+                    <Block></Block>
+                </Blockwrapper>
+                <Bar>Manipulator 제작</Bar>
+                <Blockwrapper>
+                <RemarkWrapper>
+                        <Block></Block>
+                        <Remark>Test Handler와 Test Docking Machine Docking 장비</Remark>
+                    </RemarkWrapper>                
+                </Blockwrapper>
+            </BarkWrapper>
             <Footer/>
         </PageWrapper>
     );
@@ -97,6 +107,66 @@ const SelectNavBlock = styled(NavBlock)`
     background: #930E14;
     color: #fff;
     border-left: 1px solid #930E14;
+`;
+
+const Bar = styled.div`
+    width: 1048px;
+    height: 52px;
+    padding: 0 20px;
+    background: #F2F2F2;
+    margin: 10vh auto 5vh auto;
+    color: #930E14;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+        width: calc(90vw - 40px);
+        height: 2vh;
+        min-height: 30px;
+        margin: 5vh 0;
+        font-size: 16px;
+  }
+`;
+
+const BarkWrapper = styled.div`
+    margin-bottom: 10vh;
+    @media screen and (max-width: 1024px) {
+        width: 90vw;
+        margin: 0 auto 20vh auto;
+  }
+`;
+
+
+const Blockwrapper = styled.div`
+    width: 1088px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5vh auto 10vh auto;
+    @media screen and (max-width: 1220px) {
+        width: 90vw;
+        justify-content: space-around;
+  }
+`;
+
+const Block = styled.div`
+    border: 1px solid #D0D0D0;
+    width: 1088px;
+    height: 718px;
+    margin-bottom: 3vh;
+    @media screen and (max-width: 1220px) {
+    width: 90vw;
+    max-width: 360px;
+    height: 208px;
+  }
+`;
+
+const Remark = styled.div`
+    font-size: 18px;
+    margin-bottom: 5vh;
+`;
+
+const RemarkWrapper = styled.div`
+
 `;
 
 export default Manufacture;

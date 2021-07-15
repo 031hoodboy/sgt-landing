@@ -15,13 +15,13 @@ const SecondaryBattery = () => {
             <MainImg>
                 사업영역
                 <NavBarWrapper>
-                    <Link to="/processingBusiness" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/processing-business" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>정밀가공사업</NavBlock>
                     </Link>
                     <Link to="/manufacture" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>장비제조사업</NavBlock>
                     </Link>
-                    <Link to="/secondaryBattery" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/secondary-battery" style={{textDecoration: 'none', color: "#000"}}>
                         <SelectNavBlock>2차전지소재사업</SelectNavBlock>
                     </Link>
                 </NavBarWrapper>

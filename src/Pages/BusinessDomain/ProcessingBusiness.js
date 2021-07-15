@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle, PageBlockWrapper, SubTitle2 } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 const ProcessingBusiness = () => {
@@ -15,13 +15,13 @@ const ProcessingBusiness = () => {
             <MainImg>
                 사업영역
                 <NavBarWrapper>
-                    <Link to="/processingBusiness" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/processing-business" style={{textDecoration: 'none', color: "#000"}}>
                         <SelectNavBlock>정밀가공사업</SelectNavBlock>
                     </Link>
                     <Link to="/manufacture" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>장비제조사업</NavBlock>
                     </Link>
-                    <Link to="/secondaryBattery" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/secondary-battery" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>2차전지소재사업</NavBlock>
                     </Link>
                 </NavBarWrapper>
@@ -32,7 +32,7 @@ const ProcessingBusiness = () => {
                     주요 품목 : 디스플레이장비, 2차전지장비, 반도체장비 등
                 </SubTitle2>
             </PageTitleWrpper>
-            <PagekWrapper>
+            <BarkWrapper>
                 <Bar>AL, SUS, STEEL 소형 부품 가공품</Bar>
                 <Blockwrapper>
                     <Block></Block>
@@ -59,7 +59,7 @@ const ProcessingBusiness = () => {
                         <Remark>대형 Plate류</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
-            </PagekWrapper>
+            </BarkWrapper>
             <Footer/>
         </PageWrapper>
     );
@@ -145,10 +145,11 @@ const Bar = styled.div`
   }
 `;
 
-const PagekWrapper = styled.div`
+const BarkWrapper = styled.div`
+    margin-bottom: 10vh;
     @media screen and (max-width: 1024px) {
         width: 90vw;
-        margin: 0 auto;
+        margin: 0 auto 20vh auto;
   }
 `;
 

@@ -24,8 +24,8 @@ const App = () => {
         <Route path="/way-to-come" component={WayToCome}  />
         <Route path="/organize-chart" component={OrganizeChart}  />
         <Route path="/manufacture" component={Manufacture}  />
-        <Route path="/processingBusiness" component={ProcessingBusiness}  />
-        <Route path="/secondaryBattery" component={SecondaryBattery}  />
+        <Route path="/processing-business" component={ProcessingBusiness}  />
+        <Route path="/secondary-battery" component={SecondaryBattery}  />
       </Switch>
     </BrowserRouter>
   )
