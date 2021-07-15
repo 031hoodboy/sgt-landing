@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 const Manufacture = () => {
@@ -28,6 +28,9 @@ const Manufacture = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>장비제조사업</PageTitle>
+                <SubTitle2>
+                    반도체 장비 및 디스플레이 장비
+                </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
                 <Bar>Inerface Board [부품공급]</Bar>

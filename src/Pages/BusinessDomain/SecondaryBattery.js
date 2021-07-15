@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle, PageBlockWrapper } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, PageBlockWrapper,SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 const SecondaryBattery = () => {
@@ -28,10 +28,44 @@ const SecondaryBattery = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>2차전지소재사업</PageTitle>
+                <SubTitle2>
+                    반도체 장비 및 디스플레이 장비
+                </SubTitle2>
             </PageTitleWrpper>
-            <PageBlockWrapper>
-                
-            </PageBlockWrapper>
+            <BarkWrapper>
+                <Bar>Inerface Board [부품공급]</Bar>
+                <Blockwrapper>
+                    <RemarkWrapper>
+                        <Block1></Block1>
+                        <Remark>ALMIDE-113-3L - 3-Layer Structure</Remark>
+                    </RemarkWrapper>  
+                    <RemarkWrapper>
+                        <Block2></Block2>
+                        <Remark>ALMIDE-113-3L - 3-Layer SPEC.</Remark>
+                    </RemarkWrapper>                
+                </Blockwrapper>
+                <Blockwrapper>
+                    <RemarkWrapper>
+                        <Block1></Block1>
+                        <Remark>ALMIDE-113-3L - 3-Layer Structure</Remark>
+                    </RemarkWrapper>  
+                    <RemarkWrapper>
+                        <Block2></Block2>
+                        <Remark>ALMIDE-113-3L - 3-Layer SPEC.</Remark>
+                    </RemarkWrapper>                
+                </Blockwrapper>
+                <Bar>Wearable용 필름 (Cell Pouch Film)</Bar>
+                <Blockwrapper>
+                    <RemarkWrapper>
+                        <Block1></Block1>
+                        <Remark>ALMIDE-113-3L - 3-Layer Structure</Remark>
+                    </RemarkWrapper>  
+                    <RemarkWrapper>
+                        <Block2></Block2>
+                        <Remark>ALMIDE-113-3L - 3-Layer SPEC.</Remark>
+                    </RemarkWrapper>                
+                </Blockwrapper>
+            </BarkWrapper>
             <Footer/>
         </PageWrapper>
     );
@@ -98,5 +132,78 @@ const SelectNavBlock = styled(NavBlock)`
     color: #fff;
     border-left: 1px solid #930E14;
 `;
+
+
+const BarkWrapper = styled.div`
+    margin-bottom: 10vh;
+    @media screen and (max-width: 1024px) {
+        width: 90vw;
+        margin: 0 auto 20vh auto;
+  }
+`;
+
+
+const Blockwrapper = styled.div`
+    width: 1088px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5vh auto 10vh auto;
+    @media screen and (max-width: 1220px) {
+        width: 90vw;
+        justify-content: space-around;
+  }
+`;
+
+const Block1 = styled.div`
+    border: 1px solid #D0D0D0;
+    width: 398px;
+    height: 718px;
+    margin-bottom: 3vh;
+    @media screen and (max-width: 1195px) {
+    width: 90vw;
+    height: 430px;
+  }
+`;
+
+const Block2 = styled.div`
+    border: 1px solid #D0D0D0;
+    width: 674px;
+    height: 718px;
+    margin-bottom: 3vh;
+    @media screen and (max-width: 1195px) {
+    width: 90vw;
+    height: 208px;
+  }
+`;
+
+const Remark = styled.div`
+    font-size: 18px;
+    margin-bottom: 5vh;
+`;
+
+const RemarkWrapper = styled.div`
+
+`;
+
+
+const Bar = styled.div`
+    width: 1048px;
+    height: 52px;
+    padding: 0 20px;
+    background: #F2F2F2;
+    margin: 10vh auto 5vh auto;
+    color: #930E14;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+        width: calc(90vw - 40px);
+        height: 2vh;
+        min-height: 30px;
+        margin: 5vh 0;
+        font-size: 16px;
+  }
+`;
+
 
 export default SecondaryBattery;
