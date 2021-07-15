@@ -8,20 +8,20 @@ import BackgroundImg from '../../assets/facilitybackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
-const ProcessingBusiness = () => {
+const Processing = () => {
     return (
         <PageWrapper>
             <Header/>
             <MainImg>
                 설비현황
                 <NavBarWrapper>
-                    <Link to="/processing-business" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/processing" style={{textDecoration: 'none', color: "#000"}}>
                         <SelectNavBlock>가공 설비</SelectNavBlock>
                     </Link>
-                    <Link to="/manufacture" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/measure" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>측정 설비</NavBlock>
                     </Link>
-                    <Link to="/secondary-battery" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/production" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>생산 설비</NavBlock>
                     </Link>
                 </NavBarWrapper>
@@ -184,4 +184,4 @@ const RemarkWrapper = styled.div`
     padding-bottom: 15px;
     margin-bottom: 5vh;
 `;
-export default ProcessingBusiness;
+export default Processing;

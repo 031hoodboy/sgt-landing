@@ -30,9 +30,9 @@ const App = () => {
         <Route path="/manufacture" component={Manufacture}  />
         <Route path="/processing-business" component={ProcessingBusiness}  />
         <Route path="/secondary-battery" component={SecondaryBattery}  />
-        <Route path="/Measure" component={Measure}  />
-        <Route path="/Processing" component={Processing}  />
-        <Route path="/Production" component={Production}  />
+        <Route path="/measure" component={Measure}  />
+        <Route path="/processing" component={Processing}  />
+        <Route path="/production" component={Production}  />
       </Switch>
     </BrowserRouter>
   )

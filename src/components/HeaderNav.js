@@ -43,13 +43,13 @@ const HeaderNav = () => {
                     </Link>
                 </Navigator>
                 <Navigator>
-                    <Link to="/Processing" style={{textDecoration: 'none'}}>
+                    <Link to="processing" style={{textDecoration: 'none'}}>
                         <NavContent>가공설비</NavContent>
                     </Link>
-                    <Link to="/Measure" style={{textDecoration: 'none'}}>
+                    <Link to="/measure" style={{textDecoration: 'none'}}>
                         <NavContent type="trigger">측정설비</NavContent>
                     </Link>
-                    <Link to="/Production" style={{textDecoration: 'none'}}>
+                    <Link to="/production" style={{textDecoration: 'none'}}>
                         <NavContent>생산설비</NavContent>
                     </Link>
                 </Navigator>
