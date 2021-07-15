@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle, PageBlockWrapper } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, PageBlockWrapper, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 const ProcessingBusiness = () => {
@@ -28,10 +28,38 @@ const ProcessingBusiness = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>정밀가공사업</PageTitle>
+                <SubTitle2>
+                    주요 품목 : 디스플레이장비, 2차전지장비, 반도체장비 등
+                </SubTitle2>
             </PageTitleWrpper>
-            <PageBlockWrapper>
-                
-            </PageBlockWrapper>
+            <PagekWrapper>
+                <Bar>AL, SUS, STEEL 소형 부품 가공품</Bar>
+                <Blockwrapper>
+                    <Block></Block>
+                    <Block></Block>
+                    <Block></Block>
+                    <Block></Block>
+                </Blockwrapper>
+                <Bar>정밀 Steel 및 대형 가공품</Bar>
+                <Blockwrapper>
+                    <RemarkWrapper>
+                        <Block></Block>
+                        <Remark>Vacuum Plate</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block></Block>
+                        <Remark>정밀 Steel 가공품</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block></Block>
+                        <Remark>Chamber cover류</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block></Block>
+                        <Remark>대형 Plate류</Remark>
+                    </RemarkWrapper>
+                </Blockwrapper>
+            </PagekWrapper>
             <Footer/>
         </PageWrapper>
     );
@@ -99,4 +127,62 @@ const SelectNavBlock = styled(NavBlock)`
     border-left: 1px solid #930E14;
 `;
 
+const Bar = styled.div`
+    width: 1048px;
+    height: 52px;
+    padding: 0 20px;
+    background: #F2F2F2;
+    margin: 10vh auto 5vh auto;
+    color: #930E14;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+        width: calc(90vw - 40px);
+        height: 2vh;
+        min-height: 30px;
+        margin: 5vh 0;
+        font-size: 16px;
+  }
+`;
+
+const PagekWrapper = styled.div`
+    @media screen and (max-width: 1024px) {
+        width: 90vw;
+        margin: 0 auto;
+  }
+`;
+
+
+const Blockwrapper = styled.div`
+    width: 1088px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5vh auto 10vh auto;
+    @media screen and (max-width: 1220px) {
+        width: 90vw;
+        justify-content: space-around;
+  }
+`;
+
+const Block = styled.div`
+    border: 1px solid #D0D0D0;
+    width: 535px;
+    height: 350px;
+    margin-bottom: 3vh;
+    @media screen and (max-width: 1220px) {
+    width: 90vw;
+    max-width: 360px;
+    height: 208px;
+  }
+`;
+
+const Remark = styled.div`
+    font-size: 18px;
+    margin-bottom: 5vh;
+`;
+
+const RemarkWrapper = styled.div`
+
+`;
 export default ProcessingBusiness;

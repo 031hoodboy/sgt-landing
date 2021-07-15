@@ -189,3 +189,13 @@ export const PageSubTitle = styled.div`
     font-size: 19px;
   }
 `;
+
+export const SubTitle2 = styled(Title)`
+  font-size: 25px;
+  font-weight: 300;
+  @media screen and (max-width: 780px) {
+    width: 80vw;
+        font-size: 19px;
+        text-align: center;
+    }
+`;
