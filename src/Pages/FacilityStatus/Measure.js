@@ -34,26 +34,118 @@ const measure = () => {
                 </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>가공 설비 : 3대</Bar>
+                <Bar>하이트 게이지</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block></Block>
-                        <Remark>제조사 : 화천기계</Remark>
-                        <Remark>규격 : HMT-1100</Remark>
-                        <Remark>보유 현황 : 2대</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 남선기계</Remark>
-                        <Remark>규격 : 400-1060</Remark>
+                        <Remark>제조사 : 두산</Remark>
+                        <Remark>규격 : DNM 5700 [6호기]</Remark>
                         <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block></Block>
-                        <Remark>제조사 : 금광톱기계</Remark>
-                        <Remark>규격 : KHA-340</Remark>
+                        <Remark>제조사 : 두산</Remark>
+                        <Remark>규격 : DNM 750L [7.5호기]</Remark>
+                        <Remark>보유 현황 : 21</Remark>
+                    </RemarkWrapper>
+                </Blockwrapper>
+                <Bar>3차원 좌표 측정기</Bar>
+                <Blockwrapper>
+                    <RemarkWrapper>
+                        <Block></Block>
+                        <Remark>제조사 : 한화</Remark>
+                        <Remark>규격 : XD38II</Remark>
                         <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
+                </Blockwrapper>
+                <Bar>기타 계측 장치</Bar>
+                <Blockwrapper>
+                    <MeasuringDeviceWrapper>
+                        <DeviceWrapper>
+                            <Device></Device>
+                            <Device style={{border: 'none'}}></Device>
+                        </DeviceWrapper>
+                        <Table>
+                            <Tr>
+                                <Td>품목</Td>
+                                <Td>규격</Td>
+                                <Td>제조사</Td>
+                                <Td>수량</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>버니어 켈리퍼스</Td>
+                                <Td>0~300 등</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>9</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>디지털 마이크로미터</Td>
+                                <Td>0~25 등</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>4</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>아날로그 마이크로미터</Td>
+                                <Td>0~25mm 등</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>4</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>다이얼 인디게이터</Td>
+                                <Td>0.8mm 등</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>4</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>핀 게이지 SET</Td>
+                                <Td>1.99-12.01 등</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>3</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>블록 게이지 SET</Td>
+                                <Td>1.005-100mm</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>1</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>겝 게이지</Td>
+                                <Td>‘0.03mm-1mm</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>1</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>나사 피치 게이지</Td>
+                                <Td>‘0.35mm-6mm</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>1</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>R 게이지</Td>
+                                <Td>1-7mm</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>1</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>석정반</Td>
+                                <Td>1500*2000</Td>
+                                <Td>유일</Td>
+                                <Td>2</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>표면 조도 측정기</Td>
+                                <Td>360/5.6mm</Td>
+                                <Td>Mitutoyo</Td>
+                                <Td>1</Td>
+                            </Tr>
+                            <Tr>
+                                <Td>저항 측정기</Td>
+                                <Td>10^3-10^13</Td>
+                                <Td>TREK</Td>
+                                <Td>1</Td>
+                            </Tr>
+                        </Table>
+                    </MeasuringDeviceWrapper>
                 </Blockwrapper>
             </BarkWrapper>
             <Footer/>
@@ -154,7 +246,7 @@ const Blockwrapper = styled.div`
     width: 1088px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 5vh auto 10vh auto;
     @media screen and (max-width: 1220px) {
         width: 90vw;
@@ -183,5 +275,97 @@ const RemarkWrapper = styled.div`
     border: 1px solid #DBDBDB;
     padding-bottom: 15px;
     margin-bottom: 5vh;
+    margin-right: 7.5px;
+    @media screen and (max-width: 1220px) {
+        margin: 0;
+        margin-bottom: 5vh;
+  }
 `;
+
+const MeasuringDeviceWrapper = styled.div`
+    width: 1088px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media screen and (max-width: 1220px) {
+        margin: 0;
+        margin-bottom: 5vh;
+  }
+`;
+
+const DeviceWrapper = styled.div`
+    border: 1px solid #D0D0D0;
+    width: 353px;
+    height: 636px;
+    @media screen and (max-width: 1220px) {
+    width: 90vw;
+    max-width: 360px;
+    height: 633px;
+  }
+`;
+
+const Device = styled.div`
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #D0D0D0;
+    @media screen and (max-width: 1220px) {
+    width: 90vw;
+    max-width: 360px;
+    height: 316px;
+  }
+`;
+
+const Table = styled.table`
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    border-collapse:collapse;
+    @media screen and (max-width: 902px) {
+        margin-top: 5vh;
+
+    }
+    @media screen and (max-width: 780px) {
+    width: 90vw;
+    max-width: 360px;
+    height: 316px;
+  }
+`;
+
+const Tr = styled.tr`
+    padding: 0 45px;
+    border: 1px solid #d0d0d0;
+    @media screen and (max-width: 1184px) {
+        padding: 0 2vw;
+        max-width: 160px;
+        font-size: 14px;
+  }
+    @media screen and (max-width: 902px) {
+            padding: 2vw;
+            max-width: 160px;
+            font-size: 14px;
+    }
+    @media screen and (max-width: 780px) {
+        padding: 0 ;
+        font-size: 8px;
+  }
+`;
+
+const Td = styled.td`
+    padding: 0 45px;
+    border: 1px solid #d0d0d0;
+    @media screen and (max-width: 1184px) {
+        padding: 0 2vw;
+        max-width: 160px;
+        font-size: 14px;
+  }
+  @media screen and (max-width: 902px) {
+            padding: 2vw;
+            max-width: 160px;
+            font-size: 14px;
+    }
+    @media screen and (max-width: 780px) {
+        padding: 0 ;
+        font-size: 8px;
+  }
+`;
+
 export default measure;
