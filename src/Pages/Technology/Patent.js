@@ -133,24 +133,6 @@ const SelectNavBlock = styled(NavBlock)`
     border-left: 1px solid #930E14;
 `;
 
-const Bar = styled.div`
-    width: 1048px;
-    height: 52px;
-    padding: 0 20px;
-    background: #F2F2F2;
-    margin: 10vh auto 5vh auto;
-    color: #930E14;
-    display: flex;
-    align-items: center;
-    @media screen and (max-width: 1024px) {
-        width: calc(90vw - 40px);
-        height: 2vh;
-        min-height: 30px;
-        margin: 5vh 0;
-        font-size: 16px;
-  }
-`;
-
 const BarkWrapper = styled.div`
     margin-bottom: 10vh;
     @media screen and (max-width: 1024px) {
@@ -163,7 +145,6 @@ const Blockwrapper = styled.div`
     width: 1088px;
     display: flex;
     flex-wrap: wrap;
-
     margin: 5vh auto 10vh auto;
     @media screen and (max-width: 1220px) {
         width: 90vw;
