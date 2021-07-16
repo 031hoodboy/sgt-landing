@@ -17,7 +17,7 @@ const NavBar = () => {
             <Link to="/processing" style={{textDecoration: 'none'}}>
                 <NavContent>설비현황</NavContent>
             </Link>
-            <Link to="/" style={{textDecoration: 'none'}}>
+            <Link to="/introduce" style={{textDecoration: 'none'}}>
                 <NavContent>기술현황</NavContent>
             </Link>
             <Link to="/" style={{textDecoration: 'none'}}>

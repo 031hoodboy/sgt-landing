@@ -13,6 +13,8 @@ import SecondaryBattery from './Pages/BusinessDomain/SecondaryBattery';
 import Measure from './Pages/FacilityStatus/Measure';
 import Processing from './Pages/FacilityStatus/Processing';
 import Production from './Pages/FacilityStatus/Production';
+import Introduce from './Pages/Technology/Introduce';
+import Patent from './Pages/Technology/Patent';
 
 // import Fee2 from './pages/Fee/Fee2';
 
@@ -33,6 +35,9 @@ const App = () => {
         <Route path="/measure" component={Measure}  />
         <Route path="/processing" component={Processing}  />
         <Route path="/production" component={Production}  />
+        <Route path="/introduce" component={Introduce}  />
+        <Route path="/patent" component={Patent}  />
+
       </Switch>
     </BrowserRouter>
   )

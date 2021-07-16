@@ -200,3 +200,16 @@ export const SubTitle2 = styled(Title)`
         text-align: center;
     }
 `;
+
+export const SubTitle3 = styled(Title)`
+  font-size: 25px;
+  font-weight: 300;
+  width: 80vw;
+  max-width: 1088px;
+  margin: 10vh 0 5vh 0;
+  @media screen and (max-width: 780px) {
+    width: 80vw;
+        font-size: 19px;
+        text-align: center;
+    }
+`;
