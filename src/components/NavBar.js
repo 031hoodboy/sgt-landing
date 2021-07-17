@@ -23,7 +23,7 @@ const NavBar = () => {
             <Link to="/" style={{textDecoration: 'none'}}>
                 <NavContent>홍보센터</NavContent>
             </Link>
-            <Link to="/" style={{textDecoration: 'none'}}>
+            <Link to="/quote-contact" style={{textDecoration: 'none'}}>
                 <NavContent>고객지원</NavContent>
             </Link>
             <Link to="/" style={{textDecoration: 'none'}}>

@@ -70,10 +70,10 @@ const HeaderNav = () => {
                     </Link>
                 </Navigator>
                 <Navigator>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/quote-contact" style={{textDecoration: 'none'}}>
                         <NavContent>견적문의</NavContent>
                     </Link>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/recruitment" style={{textDecoration: 'none'}}>
                         <NavContent type="trigger">채용안내</NavContent>
                     </Link>
                 </Navigator>
