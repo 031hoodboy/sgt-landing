@@ -1,71 +1,38 @@
 import React from 'react';
+
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
-
+import Email from '../../components/Email';
 import {PageWrapper} from '../../components/PageStyle';
-import BackgroundImg from '../../assets/technologybackground.png';
+import BackgroundImg from '../../assets/customersupportbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
-const Patent = () => {
+const QuoteContact = () => {
     return (
         <PageWrapper>
             <Header/>
             <MainImg>
-                설비현황
+                고객지원
                 <NavBarWrapper>
-                    <Link to="/introduce" style={{textDecoration: 'none', color: "#000"}}>
-                        <NavBlock>연구소 소개</NavBlock>
+                    <Link to="/quote-contact" style={{textDecoration: 'none', color: "#000"}}>
+                        <SelectNavBlock>견적문의</SelectNavBlock>
                     </Link>
-                    <Link to="/patent" style={{textDecoration: 'none', color: "#000"}}>
-                        <SelectNavBlock>특허 및 인증</SelectNavBlock>
+                    <Link to="/recruitment" style={{textDecoration: 'none', color: "#000"}}>
+                        <NavBlock>채용안내</NavBlock>
                     </Link>
                 </NavBarWrapper>
             </MainImg>
             <PageTitleWrpper>
-                <PageTitle>특허 및 인증</PageTitle>
+                <PageTitle>견적문의</PageTitle>
                 <SubTitle2>
                 고효율 태양광 셀과 고출력 태양광 모듈 신기술을 상용화 함으로써<br/>
                 화석 연료의 사용을 감축할 수 있도록 기술개발과 상용화에 매진하고 있습니다.
                 </SubTitle2>
+                <Email/>
             </PageTitleWrpper>
-            <BarkWrapper>
-                <Blockwrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                </Blockwrapper>
-            </BarkWrapper>
+
             <Footer/>
         </PageWrapper>
     );
@@ -133,53 +100,4 @@ const SelectNavBlock = styled(NavBlock)`
     border-left: 1px solid #930E14;
 `;
 
-const BarkWrapper = styled.div`
-    margin-bottom: 10vh;
-    @media screen and (max-width: 1024px) {
-        width: 90vw;
-        margin: 0 auto 20vh auto;
-  }
-`;
-
-const Blockwrapper = styled.div`
-    width: 1088px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5vh auto 10vh auto;
-    @media screen and (max-width: 1220px) {
-        width: 90vw;
-        justify-content: space-around;
-  }
-`;
-
-const Block = styled.div`
-    width: 353px;
-    height: 425px;
-    margin-bottom: 15px;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 316px;
-  }
-`;
-
-const Remark = styled.div`
-    font-size: 18px;
-    padding: 20px;
-    border-bottom: 1px solid #D0D0D0;
-    text-align: center;
-
-`;
-
-const RemarkWrapper = styled.div`
-    border: 1px solid #DBDBDB;
-    padding-bottom: 15px;
-    margin-bottom: 5vh;
-    margin-right: 7.5px;
-    @media screen and (max-width: 1220px) {
-        margin: 0;
-        margin-bottom: 5vh;
-  }
-`;
-
-export default Patent;
+export default QuoteContact;
