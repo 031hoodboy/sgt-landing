@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 import styled from '@emotion/styled';
+import {css} from '@emotion/react';
+
+export default function Email() {
 
 
-export default function ContactUs() {
-
+    const [Buttonopen, setButtonOpen] = useState(true);
+    const onToggleButton = () => {
+      setButtonOpen(!Buttonopen);
+    };
+  
   function sendEmail(e) {
     e.preventDefault();
 
@@ -15,6 +21,11 @@ export default function ContactUs() {
           console.log(error.text);
       });
   }
+
+  function btn(){
+    alert('메일이 전송되었습니다');
+    }
+
 
   return (
     <form className="contact-form" onSubmit={sendEmail}>
@@ -43,7 +54,13 @@ export default function ContactUs() {
             <Label>내용</Label>
             <Textarea name="message" />
         </InputWrapper>
-        <Input type="submit" value="Send" />
+        <TermsWrapper>
+            <Label >
+                <input type="checkbox" onClick={onToggleButton} checked /> 
+                약관에 동의합니다.
+            </Label>        
+        </TermsWrapper>
+        <Button type="submit" value="보내기" open={Buttonopen} onClick={btn}/>
         </Blockwrapper>
     </form>
   );
@@ -83,12 +100,20 @@ const Label = styled.label`
 `;
 
 const Textarea = styled.textarea`
-    width: 90vw;
-    max-width: 1088px;
+    width: calc(90vw - 40px);
+    max-width: 1048px;
     height: 30vh;
     padding: 0;
     border: 1px solid #C9C9C9;
     border-radius: 3px;
+    padding: 20px;
+    font-size: 20px;
+    @media screen and (max-width: 780px) {
+    padding: 5px 10px;
+    width: calc(90vw - 20px) ;
+    height: 30vh;
+    font-size: 16px;
+  }
 `;
 
 const Input = styled.input`
@@ -118,3 +143,32 @@ const EmailInput = styled(Input)`
   }
 `;
 
+
+const Button = styled.input`
+    margin: 0 auto;
+    width: 90vw;
+    height: 60px;
+    border: 1px solid #930E14;
+    background: #930E14;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    &:active {
+    transform: scale(0.97);
+    }
+    ${(props) =>
+    props.open &&
+    css`
+      display: flex;
+    `}
+`;
+
+const TermsWrapper = styled.div`
+    margin: 5vh 0 10vh 0;
+`;
