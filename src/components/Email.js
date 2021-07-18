@@ -5,10 +5,9 @@ import {css} from '@emotion/react';
 
 export default function Email() {
 
-
-    const [Buttonopen, setButtonOpen] = useState(true);
-    const onToggleButton = () => {
-      setButtonOpen(!Buttonopen);
+    const [CheckBoxopen, setCheckBoxopen] = useState(true);
+    const onToggleCheckBox = () => {
+      setCheckBoxopen(!CheckBoxopen);
     };
   
   function sendEmail(e) {
@@ -22,9 +21,14 @@ export default function Email() {
       });
   }
 
-  function btn(){
-    alert('메일이 전송되었습니다');
+  function Alert(){
+    {CheckBoxopen
+        ?
+        alert('메일이 전송되었습니다')
+        :
+        alert('약관동의 버튼을 클릭하세요')
     }
+}
 
 
   return (
@@ -56,11 +60,15 @@ export default function Email() {
         </InputWrapper>
         <TermsWrapper>
             <Label >
-                <input type="checkbox" onClick={onToggleButton} checked /> 
+                <input type="checkbox" onClick={onToggleCheckBox} checked={CheckBoxopen}/> 
                 약관에 동의합니다.
             </Label>        
         </TermsWrapper>
-        <Button type="submit" value="보내기" open={Buttonopen} onClick={btn}/>
+        {CheckBoxopen?
+                <Button type="submit" value="보내기" open={CheckBoxopen} onClick={Alert}/>
+                :
+        <div></div>
+        }
         </Blockwrapper>
     </form>
   );
