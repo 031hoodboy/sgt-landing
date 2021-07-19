@@ -20,7 +20,7 @@ const NavBar = () => {
             <Link to="/introduce" style={{textDecoration: 'none'}}>
                 <NavContent>기술현황</NavContent>
             </Link>
-            <Link to="/" style={{textDecoration: 'none'}}>
+            <Link to="/news" style={{textDecoration: 'none'}}>
                 <NavContent>홍보센터</NavContent>
             </Link>
             <Link to="/quote-contact" style={{textDecoration: 'none'}}>

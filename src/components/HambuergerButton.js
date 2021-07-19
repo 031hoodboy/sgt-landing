@@ -34,7 +34,7 @@ const HamburgerButton = () => {
                 <Link to="/introduce" style={{textDecoration: 'none', color: "#000"}}>
                     <MenuContent>기술현황</MenuContent>    
                 </Link> 
-                <Link to="/register" style={{textDecoration: 'none', color: "#000"}}>
+                <Link to="/news" style={{textDecoration: 'none', color: "#000"}}>
                     <MenuContent>홍보센터</MenuContent>    
                 </Link> 
                 <Link to="/quote-contact" style={{textDecoration: 'none', color: "#000"}}>

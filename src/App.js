@@ -17,6 +17,8 @@ import Introduce from './Pages/Technology/Introduce';
 import Patent from './Pages/Technology/Patent';
 import Recruitment from './Pages/CustomerSupport/Recruitment';
 import QuoteContact from './Pages/CustomerSupport/QuoteContact';
+import News from './Pages/PRCenter/News';
+import Catalogue from './Pages/PRCenter/Catalogue';
 
 // import Fee2 from './pages/Fee/Fee2';
 
@@ -41,6 +43,8 @@ const App = () => {
         <Route path="/patent" component={Patent}  />
         <Route path="/recruitment" component={Recruitment}  />
         <Route path="/quote-contact" component={QuoteContact}  />
+        <Route path="/news" component={News}  />
+        <Route path="/catalogue" component={Catalogue}  />
 
       </Switch>
     </BrowserRouter>

@@ -62,10 +62,10 @@ const HeaderNav = () => {
                     </Link>
                 </Navigator>
                 <Navigator>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/news" style={{textDecoration: 'none'}}>
                         <NavContent>뉴스</NavContent>
                     </Link>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/catalogue" style={{textDecoration: 'none'}}>
                         <NavContent type="trigger">e-카탈로그</NavContent>
                     </Link>
                 </Navigator>
@@ -141,7 +141,6 @@ const NavContent = styled.div`
     &:hover {
         color: #930E14;
     }
-
 `;
 
 const NavigatorWrapper = styled.div`
