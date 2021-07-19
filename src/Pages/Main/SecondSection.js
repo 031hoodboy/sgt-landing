@@ -41,10 +41,10 @@ const Background = styled.div`
 
 const CardWrapper = styled.div`
     display: flex;
-    width: 80vw;
+    width: 90vw;
     max-width: 1088px;
-    margin: 5vh auto;
     justify-content: space-between;
+    margin: 5vh auto;
     overflow: hidden;
 `;
 

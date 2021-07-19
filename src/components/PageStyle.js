@@ -119,6 +119,7 @@ export const SubTitle = styled.div`
     font-size: 22px;
     @media screen and (max-width: ${({ threshold }) =>
       threshold || SMALL_SCREEN_THRESHOLD}px) {
+    width: 90vw;
     font-size: 18px;
     text-align: center;
   }

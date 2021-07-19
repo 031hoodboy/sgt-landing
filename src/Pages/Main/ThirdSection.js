@@ -36,9 +36,9 @@ const Background = styled.div`
 
 const CardWrapper = styled.div`
     display: flex;
-    width: 80vw;
+    width: 90vw;
     max-width: 1088px;
-    justify-content: space-between;
+    justify-content: space-around; 
     flex-wrap: wrap;
 `;
  
@@ -47,6 +47,8 @@ const Card1 = styled.div`
     max-width: 536px;
     max-height: 198px;
     min-height: 198px;
+    min-width: 450px;
+
     width: 38vw;
     background: #fff;
     background-image: url(${Tech1Img});

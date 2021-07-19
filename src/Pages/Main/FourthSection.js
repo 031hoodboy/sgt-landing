@@ -63,7 +63,7 @@ const Background = styled.div`
 
 const NewsCardWrapper = styled.div`
     display: flex;
-    width: 80vw;
+    width: 90vw;
     max-width: 1088px;
     margin: 0 auto;
     justify-content: space-between;
@@ -91,7 +91,7 @@ const NewsImg = styled.div`
     align-items: center;
     flex-direction: column;
     @media screen and (max-width: 840px) {
-        width: 80vw;
+        width: 90vw;
   }
   `;
 
@@ -105,11 +105,11 @@ const News3 = styled(NewsImg)`
 
 const Line = styled.div`
     min-height: 5px;
-    width: 80vw;
+    width: 90vw;
     max-width: 350px;
     background: #98272B;
     @media screen and (max-width: 840px) {
-        width: 80vw;
+        width: 90vw;
   }
 `;
 
