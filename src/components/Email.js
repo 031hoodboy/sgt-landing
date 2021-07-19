@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 import {css} from '@emotion/react';
 
 export default function Email() {
-
     const [CheckBoxopen, setCheckBoxopen] = useState(true);
     const onToggleCheckBox = () => {
       setCheckBoxopen(!CheckBoxopen);
@@ -22,14 +21,13 @@ export default function Email() {
   }
 
   function Alert(){
-    {CheckBoxopen
-        ?
-        alert('메일이 전송되었습니다')
-        :
-        alert('약관동의 버튼을 클릭하세요')
+        {CheckBoxopen
+            ?
+            alert('메일이 전송되었습니다')
+            :
+            alert('약관동의 버튼을 클릭하세요')
+        }
     }
-}
-
 
   return (
     <form className="contact-form" onSubmit={sendEmail}>
@@ -145,12 +143,10 @@ const EmailInput = styled(Input)`
         width: calc(90vw - 40px);
     @media screen and (max-width: 780px) {
         padding: 5px 10px;
-
         width: calc(90vw - 23px);
     max-width: 1088px;
   }
 `;
-
 
 const Button = styled.input`
     margin: 0 auto;
