@@ -209,7 +209,7 @@ export const SubTitle3 = styled(Title)`
   max-width: 1088px;
   margin: 10vh 0 5vh 0;
   @media screen and (max-width: 780px) {
-    width: 80vw;
+    width: 90vw;
         font-size: 19px;
         text-align: center;
     }

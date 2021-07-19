@@ -116,7 +116,8 @@ const Blockwrapper = styled.div`
     @media screen and (max-width: 1220px) {
         width: 90vw;
         justify-content: space-around;
-  }
+        margin-bottom: 20vh;
+    }
 `;
 
 const Card = styled.div`
