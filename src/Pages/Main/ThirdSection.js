@@ -38,8 +38,11 @@ const CardWrapper = styled.div`
     display: flex;
     width: 90vw;
     max-width: 1088px;
-    justify-content: space-around; 
+    justify-content: space-between; 
     flex-wrap: wrap;
+    @media screen and (max-width: 840px) {
+        justify-content: space-around; 
+  }
 `;
  
 
@@ -48,7 +51,6 @@ const Card1 = styled.div`
     max-height: 198px;
     min-height: 198px;
     min-width: 450px;
-
     width: 38vw;
     background: #fff;
     background-image: url(${Tech1Img});
