@@ -26,7 +26,7 @@ const NavBar = () => {
             <Link to="/quote-contact" style={{textDecoration: 'none'}}>
                 <NavContent>고객지원</NavContent>
             </Link>
-            <Link to="/" style={{textDecoration: 'none'}}>
+            <Link to="/notice" style={{textDecoration: 'none'}}>
                 <NavContent>공지사항</NavContent>
             </Link>
             <HeaderDropBlock>

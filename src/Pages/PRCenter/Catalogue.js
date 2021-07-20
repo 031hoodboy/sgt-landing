@@ -7,9 +7,8 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/prbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2} from '../../components/PageStyle';
 import styled from '@emotion/styled';
-import NewsImg1 from '../../assets/newscard1.png';
-import NewsImg2 from '../../assets/newscard2.png';
-import NewsImg3 from '../../assets/newscard3.png';
+
+
 
 const Catalogue = () => {
     return (

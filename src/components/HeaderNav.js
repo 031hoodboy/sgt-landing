@@ -78,7 +78,7 @@ const HeaderNav = () => {
                     </Link>
                 </Navigator>
                 <Navigator>
-                    <Link to="/" style={{textDecoration: 'none'}}>
+                    <Link to="/notice" style={{textDecoration: 'none'}}>
                         <NavContent>공지사항</NavContent>
                     </Link>
                 </Navigator>
