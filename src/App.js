@@ -20,6 +20,7 @@ import QuoteContact from './Pages/CustomerSupport/QuoteContact';
 import News from './Pages/PRCenter/News';
 import Catalogue from './Pages/PRCenter/Catalogue';
 import Notice from './Pages/Notice/Notice';
+import NoticePost from './Pages/Notice/NoticePost';
 
 // import Fee2 from './pages/Fee/Fee2';
 
@@ -47,6 +48,8 @@ const App = () => {
         <Route path="/news" component={News}  />
         <Route path="/catalogue" component={Catalogue}  />
         <Route path="/notice" component={Notice}  />
+        <Route path="/notice-post" component={NoticePost}  />
+
       </Switch>
     </BrowserRouter>
   )

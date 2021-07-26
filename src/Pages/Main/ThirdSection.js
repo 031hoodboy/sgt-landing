@@ -53,6 +53,7 @@ const Card1 = styled.div`
     min-width: 450px;
     width: 38vw;
     background: #fff;
+    margin: 0 auto;
     background-image: url(${Tech1Img});
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,6 +68,8 @@ const Card1 = styled.div`
     margin-top: 5vh;
     @media screen and (max-width: 840px) {
         width: 90vw;
+        min-height: 178px;
+        min-width: 0;
   }
 `;
 

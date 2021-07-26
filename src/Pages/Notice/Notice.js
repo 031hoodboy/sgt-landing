@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect, useState} from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -6,8 +6,40 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/noticebackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
+import axios from 'axios';
+
 
 const Notice = () => {
+
+    const [news, setNews] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        // 요청이 시작 할 때에는 error 와 users 를 초기화하고
+        setError(null);
+        setNews(null);
+        // loading 상태를 true 로 바꿉니다.
+        setLoading(true);
+        const response = await axios.get(
+          'http://118.67.132.125:8080/notice/noticelist.do'
+        );
+        setNews(response.data); // 데이터는 response.data 안에 들어있습니다.
+      } catch (e) {
+        setError(e);
+      }
+      setLoading(false);
+    };
+
+    fetchNews();
+  }, []);
+
+  if (loading) return <div>로딩중..</div>;
+  if (error) return <div>에러가 발생했습니다</div>;
+  if (!news) return null;
+
     return (
         <PageWrapper>
             <Header/>
@@ -22,12 +54,10 @@ const Notice = () => {
                 </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Blockwrapper>
-                    <Block/>
-                    <Block/>
-                    <Block/>
-                    <Block/>
-                </Blockwrapper>
+                <BoardHeader>
+
+                </BoardHeader>
+
             </BarkWrapper>
             <Button>지원하기</Button>
             <Footer/>
@@ -153,4 +183,7 @@ const Button = styled.div`
   }
 `;
 
+const BoardHeader = styled.div`
+
+`;
 export default Notice;
