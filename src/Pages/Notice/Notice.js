@@ -53,13 +53,30 @@ const Notice = () => {
                 화석 연료의 사용을 감축할 수 있도록 기술개발과 상용화에 매진하고 있습니다.
                 </SubTitle2>
             </PageTitleWrpper>
-            <BarkWrapper>
+            <BoardWrapper>
                 <BoardHeader>
-
+                    <Wrapper>
+                        <Num>번호</Num>
+                    </Wrapper>
+                    <BordHeaderTitle>제목</BordHeaderTitle>
+                    <Wrapper>
+                        <BoardHeaderRegisDate>등록일</BoardHeaderRegisDate>
+                        <Look>조회</Look>
+                    </Wrapper>
                 </BoardHeader>
-
-            </BarkWrapper>
-            <Button>지원하기</Button>
+                {news.map(newss => (
+                    <BoardContent key={newss.idx}>
+                        <Wrapper>
+                            <Num>{newss.idx}</Num>
+                        </Wrapper>
+                        <BordTitle>{newss.subject}</BordTitle>
+                        <Wrapper>
+                            <RegisDate>{newss.regdate.split("", 10)}</RegisDate>
+                            <Look>조회</Look>
+                        </Wrapper>
+                    </BoardContent>
+                ))}
+            </BoardWrapper>
             <Footer/>
         </PageWrapper>
     );
@@ -86,104 +103,68 @@ const MainImg = styled.div`
   }
 `;
 
-const NavBarWrapper = styled.div`
-    width: 60vw;
-    height: 58px;
+const BoardWrapper = styled.div`
     display: flex;
-    margin: 0 auto;
-    position: absolute;
-    color: #000;
-    font-size: 16px;
-    font-weight: 400;
-    top: calc(30vh + 56px);
-    box-shadow:  0px 3px 6px #d9d9d9;
-
-    @media screen and (max-width: 1024px) {
-        width: calc(90vw + 3px);
-        top: calc(23vh); 
-        height: 40px;
-    }
-`;
-
-const NavBlock = styled.div`
-    width: 30vw;
-    height: 58px;
-    border-left: 1px solid #D9D9D9;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background: #fff;
-    border-bottom: 1px solid #D9D9D9;
-    @media screen and (max-width: 1024px) {
-    width: 45vw;
-    height: 40px; 
-    font-size: 14px;
-    }
-`;
-
-const SelectNavBlock = styled(NavBlock)`
-    background: #930E14;
-    color: #fff;
-    border-left: 1px solid #930E14;
-`;
-
-const BarkWrapper = styled.div`
+    margin: 10vh 0;
     @media screen and (max-width: 1024px) {
         width: 90vw;
         margin: 0 auto 0 auto;
   }
 `;
 
-const Blockwrapper = styled.div`
-    width: 1088px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5vh auto 5vh auto;
-    justify-content: space-around;
-    @media screen and (max-width: 1220px) {
-        width: 90vw;
-        justify-content: space-around;
-  }
-`;
-
-const Block = styled.div`
-    width: 260px;
-    height: 260px;
-    margin-bottom: 15px;
-    border: 1px solid #DBDBDB;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 90vw;
-    max-height: 360px;
-  }
-  @media screen and (max-width: 780px) {
-    width: 40vw;
-    max-width: 174px;
-    height: 40vw;
-    max-height: 174px;
-  }
-`;
-
-const Button = styled.div`
-    margin: 0 auto;
-    width: 260px;
-    height: 60px;
-    border: 1px solid #930E14;
-    color: #930E14;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10vh;
-    cursor: pointer;
-    @media screen and (max-width: 780px) {
-    width: 171px;
-    height: 60px;
-  }
-`;
-
 const BoardHeader = styled.div`
+    width: 90vw;
+    max-width: 1088px;
+    height: 52px;
+    background-color: #930E14;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+`;
+
+const BoardContent = styled.div`
+    width: 90vw;
+    max-width: 1088px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    border-bottom: 1px solid #DBDBDB;
+`;
+
+const Num = styled.div`
+    margin: 0 20px;
+    min-width: 20px;
+`;
+
+const BordHeaderTitle = styled.div`
 
 `;
+
+const BordTitle = styled.div`
+    flex:1;
+    padding: 0 50px;
+`;
+
+const BoardHeaderRegisDate = styled(Num)`
+
+`;
+
+const RegisDate = styled.div`
+
+`;
+
+const Look = styled(Num)`
+    margin: 0 20px;
+`;
+
+ const Wrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
 export default Notice;
