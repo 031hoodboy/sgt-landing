@@ -142,53 +142,48 @@ const BoardContent = styled.div`
     justify-content: center;
     color: #000;
     border-bottom: 1px solid #DBDBDB;
-    margin: 3vh 0;
 `;
 
 const Num = styled.div`
     margin: 0 20px;
     min-width: 20px;
     cursor: pointer;
-`;
-
-const BordHeaderTitle = styled.div`
-
+    @media screen and (max-width: 780px) {
+        font-size: 12px;
+    }
 `;
 
 const BordTitle = styled.div`
     flex:1;
     padding: 0 50px;
-`;
-
-const BoardHeaderRegisDate = styled(Num)`
-
+    @media screen and (max-width: 780px) {
+        padding: 0;
+        font-size: 14px;
+    }
 `;
 
 const RegisDate = styled.div`
-
+    @media screen and (max-width: 780px) {
+        padding: 0;
+        font-size: 12px;
+    }
 `;
 
 const Look = styled(Num)`
-    margin: 0 20px;
-`;
-
- const Wrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-`;
-
-const Pagination = styled.div`
-
+    margin: 0 0 0 20px;
 `;
 
 const NewssContnet = styled.div`
     padding: 5vh 0;
+    @media screen and (max-width: 780px) {
+        font-size: 14px;
+    }
 `;
 
 const BorderSubTitle = styled.div`
     width: 90vw;
     max-width: 1088px;
-    height: 52px;
+    padding: 1vh 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -201,6 +196,9 @@ const ButtonWrapper = styled.div`
     max-width: 1088px;
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: 780px) {
+        justify-content: center;
+    }
 `;
 
 const Button = styled.div`
@@ -210,6 +208,8 @@ const Button = styled.div`
     background: #930E14;
     padding: 10px 20px;
     cursor: pointer;
+    margin: 3vh 0;
+    
 `;
 
 
