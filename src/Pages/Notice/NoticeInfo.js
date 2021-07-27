@@ -61,7 +61,7 @@ const NoticeInfo = ({location}) => {
                             <BordTitle>{notices.subject}</BordTitle>
                         </BoardHeader>
                         <BorderSubTitle>
-                            <RegisDate>{notices.regdate.split("", 10)}</RegisDate>
+                            <RegisDate>등록일: {notices.regdate.split("", 10)}</RegisDate>
                             <Look>조회</Look>
                         </BorderSubTitle>
                         <BoardContent>
