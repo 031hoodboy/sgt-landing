@@ -3,7 +3,8 @@ import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
-
+import Pagination from "react-js-pagination";
+import './Pagenation.css'
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/prbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2} from '../../components/PageStyle';
@@ -21,6 +22,9 @@ const News = () => {
 
     const history = useHistory();
 
+    const [page, setPage] = useState(1);
+    const handlePageChange = (page) => { setPage(page); };
+  
     useEffect(() => {
     const fetchNews = async () => {
         try {
@@ -87,6 +91,7 @@ const News = () => {
                         </NewsContentWrapper>
                     </NewsCardBlock>
                 ))}
+                <Pagination activePage={page} itemsCountPerPage={4} totalItemsCount={100} pageRangeDisplayed={5} prevPageText={"‹"} nextPageText={"›"} onChange={handlePageChange} />
                 </NewsCardWrapper>
             <Footer/>
         </PageWrapper>

@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Pagination from "react-js-pagination";
-import './Pagenation.css'
 import BackgroundImg from '../../assets/noticebackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2, PageWrapper } from '../../components/PageStyle';
 import styled from '@emotion/styled';
@@ -19,7 +18,9 @@ const Notice = () => {
   const history = useHistory();
 
   const [page, setPage] = useState(1);
-  const handlePageChange = (page) => { setPage(page); };
+  const handlePageChange = (page) => { 
+        setPage(page); 
+    };
 
   useEffect(() => {
     const fetchNews = async () => {
