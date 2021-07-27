@@ -2,11 +2,10 @@ import React,{ useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { useLocation } from "react-router-dom";
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/noticebackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import axios from 'axios';
 

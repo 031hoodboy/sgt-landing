@@ -2,21 +2,24 @@ import React,{ useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-
-import {PageWrapper} from '../../components/PageStyle';
+import Pagination from "react-js-pagination";
+import './Pagenation.css'
 import BackgroundImg from '../../assets/noticebackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, SubTitle2, PageWrapper } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import axios from 'axios';
 
 
 const Notice = () => {
 
-const [notice, setNotice] = useState(null);
+    const [notice, setNotice] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const history = useHistory();
+
+  const [page, setPage] = useState(1);
+  const handlePageChange = (page) => { setPage(page); };
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -88,6 +91,7 @@ const [notice, setNotice] = useState(null);
                         </Wrapper>
                     </BoardContent>
                 ))}
+                <Pagination activePage={page} itemsCountPerPage={4} totalItemsCount={100} pageRangeDisplayed={5} prevPageText={"‹"} nextPageText={"›"} onChange={handlePageChange} />
             </BoardWrapper>
             <Footer/>
         </PageWrapper>

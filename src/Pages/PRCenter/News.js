@@ -9,8 +9,6 @@ import BackgroundImg from '../../assets/prbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2} from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import NewsImg1 from '../../assets/newscard1.png';
-import NewsImg2 from '../../assets/newscard2.png';
-import NewsImg3 from '../../assets/newscard3.png';
 import axios from 'axios';
 
 
@@ -194,14 +192,6 @@ const NewsImg = styled.div`
   }
   `;
 
-const News2 = styled(NewsImg)`
-  background-image: url(${NewsImg2});
-`;
-
-const News3 = styled(NewsImg)`
-  background-image: url(${NewsImg3});
-`;
-
 const Line = styled.div`
     min-height: 5px;
     width: 90vw;
@@ -213,7 +203,7 @@ const Line = styled.div`
 `;
 
 const NewsContentWrapper = styled.div`
-    width: 60vw;
+    width: 80vw;
     max-width: 305px;
     margin: 0 auto;
     padding: 30px 0;

@@ -2,7 +2,6 @@ import React,{ useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { useLocation } from "react-router-dom";
 import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
@@ -10,7 +9,6 @@ import BackgroundImg from '../../assets/prbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import axios from 'axios';
-import NewsImg1 from '../../assets/newscard1.png';
 
 
 const NewsInfo = ({location}) => {
