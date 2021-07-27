@@ -135,6 +135,10 @@ const BoardHeader = styled.div`
     align-items: center;
     justify-content: space-between;
     color: #fff;
+    @media screen and (max-width: 780px) {
+        background: none;
+        border-bottom: 2px solid #930E14;
+  }
 `;
 
 const BoardContent = styled.div`
@@ -146,11 +150,20 @@ const BoardContent = styled.div`
     justify-content: space-between;
     color: #000;
     border-bottom: 1px solid #DBDBDB;
+    @media screen and (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 `;
 
 const Num = styled.div`
     margin: 0 20px;
     min-width: 20px;
+    @media screen and (max-width: 780px) {
+        display: none;
+  }
 `;
 
 const BordHeaderTitle = styled.div`
@@ -161,6 +174,11 @@ const BordTitle = styled.div`
     flex:1;
     padding: 0 50px;
     cursor: pointer;
+    @media screen and (max-width: 780px) {
+        font-size: 12px;
+        padding: 0;
+        flex: 0;
+  }
 `;
 
 const BoardHeaderRegisDate = styled(Num)`
@@ -168,20 +186,24 @@ const BoardHeaderRegisDate = styled(Num)`
 `;
 
 const RegisDate = styled.div`
-
+    @media screen and (max-width: 780px) {
+        font-size: 12px;
+        padding: 0;
+  }
 `;
 
-const Look = styled(Num)`
+const Look = styled.div`
+    min-width: 20px;
     margin: 0 20px;
-v`;
+    @media screen and (max-width: 780px) {
+        font-size: 12px;
+        padding: 0;
+  }
+`;
 
  const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
-`;
-
-const Pagination = styled.div`
-
 `;
 
 export default Notice;
