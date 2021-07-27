@@ -21,6 +21,7 @@ const News = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
+    const history = useHistory();
 
     useEffect(() => {
     const fetchNews = async () => {
@@ -70,7 +71,16 @@ const News = () => {
             </PageTitleWrpper>
             <NewsCardWrapper>
             {newscard.map(newscards => (
-                    <NewsCardBlock key={newscards.idx}>
+                    <NewsCardBlock key={newscards.idx} 
+                        onClick={() =>
+                            history.push(
+                            {
+                                pathname: `/news-info/${newscards.idx}`,
+                                props: {id: newscards.idx}
+                            }
+                            )
+                        }    
+                    >
                         <NewsImg></NewsImg>
                         <Line/>
                         <NewsContentWrapper>

@@ -18,11 +18,11 @@ import Patent from './Pages/Technology/Patent';
 import Recruitment from './Pages/CustomerSupport/Recruitment';
 import QuoteContact from './Pages/CustomerSupport/QuoteContact';
 import News from './Pages/PRCenter/News';
+import NewsInfo from './Pages/PRCenter/NewsInfo';
 import Catalogue from './Pages/PRCenter/Catalogue';
 import Notice from './Pages/Notice/Notice';
 import NoticeInfo from './Pages/Notice/NoticeInfo';
 import NoticePost from './Pages/Notice/NoticePost';
-
 // import Fee2 from './pages/Fee/Fee2';
 
 const App = () => {
@@ -30,27 +30,28 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Main} exact />
-        <Route path="/greet" component={Greet}  />
-        <Route path="/vision" component={Vision}  />
-        <Route path="/history" component={History}  />
-        <Route path="/business-partner" component={BusinessPartner}  />
-        <Route path="/way-to-come" component={WayToCome}  />
-        <Route path="/organize-chart" component={OrganizeChart}  />
-        <Route path="/manufacture" component={Manufacture}  />
-        <Route path="/processing-business" component={ProcessingBusiness}  />
-        <Route path="/secondary-battery" component={SecondaryBattery}  />
-        <Route path="/measure" component={Measure}  />
-        <Route path="/processing" component={Processing}  />
-        <Route path="/production" component={Production}  />
-        <Route path="/introduce" component={Introduce}  />
-        <Route path="/patent" component={Patent}  />
+        <Route path="/greet" component={Greet} />
+        <Route path="/vision" component={Vision} />
+        <Route path="/history" component={History} />
+        <Route path="/business-partner" component={BusinessPartner} />
+        <Route path="/way-to-come" component={WayToCome} />
+        <Route path="/organize-chart" component={OrganizeChart} />
+        <Route path="/manufacture" component={Manufacture} />
+        <Route path="/processing-business" component={ProcessingBusiness} />
+        <Route path="/secondary-battery" component={SecondaryBattery} />
+        <Route path="/measure" component={Measure} />
+        <Route path="/processing" component={Processing} />
+        <Route path="/production" component={Production} />
+        <Route path="/introduce" component={Introduce} />
+        <Route path="/patent" component={Patent} />
         <Route path="/recruitment" component={Recruitment}  />
         <Route path="/quote-contact" component={QuoteContact}  />
-        <Route path="/news" component={News}  />
-        <Route path="/catalogue" component={Catalogue}  />
-        <Route path="/notice" component={Notice}  />
-        <Route path="/notice-info" component={NoticeInfo}  />
-        <Route path="/notice-post" component={NoticePost}  />
+        <Route path="/news" component={News} />
+        <Route path="/news-info" component={NewsInfo} />
+        <Route path="/catalogue" component={Catalogue} />
+        <Route path="/notice" component={Notice} />
+        <Route path="/notice-info" component={NoticeInfo} />
+        <Route path="/notice-post" component={NoticePost} />
       </Switch>
     </BrowserRouter>
   )
