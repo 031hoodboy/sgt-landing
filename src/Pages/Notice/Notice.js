@@ -12,7 +12,7 @@ import axios from 'axios';
 
 const Notice = () => {
 
-const [news, setNews] = useState(null);
+const [notice, setNotice] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -23,13 +23,13 @@ const [news, setNews] = useState(null);
       try {
         // 요청이 시작 할 때에는 error 와 users 를 초기화하고
         setError(null);
-        setNews(null);
+        setNotice(null);
         // loading 상태를 true 로 바꿉니다.
         setLoading(true);
         const response = await axios.get(
           'http://118.67.132.125:8080/notice/noticelist.do'
         );
-        setNews(response.data); // 데이터는 response.data 안에 들어있습니다.
+        setNotice(response.data); // 데이터는 response.data 안에 들어있습니다.
       } catch (e) {
         setError(e);
       }
@@ -41,7 +41,7 @@ const [news, setNews] = useState(null);
 
   if (loading) return <div>로딩중..</div>;
   if (error) return <div>에러가 발생했습니다</div>;
-  if (!news) return null;
+  if (!notice) return null;
 
     return (
         <PageWrapper>
@@ -67,23 +67,23 @@ const [news, setNews] = useState(null);
                         <Look>조회</Look>
                     </Wrapper>
                 </BoardHeader>
-                {news.map(newss => (
-                    <BoardContent key={newss.idx}>
+                {notice.map(notices => (
+                    <BoardContent key={notices.idx}>
                         <Wrapper>
-                            <Num>{newss.idx}</Num>
+                            <Num>{notices.idx}</Num>
                         </Wrapper>
                         <BordTitle
                                 onClick={() =>
                                     history.push(
                                     {
-                                        pathname: `/notice-info/${newss.idx}`,
-                                        props: {id: newss.idx}
+                                        pathname: `/notice-info/${notices.idx}`,
+                                        props: {id: notices.idx}
                                       }
                                     )
                                 }                        
-                        >{newss.subject}</BordTitle>
+                        >{notices.subject}</BordTitle>
                         <Wrapper>
-                            <RegisDate>{newss.regdate.split("", 10)}</RegisDate>
+                            <RegisDate>{notices.regdate.split("", 10)}</RegisDate>
                             <Look>조회</Look>
                         </Wrapper>
                     </BoardContent>

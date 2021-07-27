@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
@@ -10,8 +11,42 @@ import styled from '@emotion/styled';
 import NewsImg1 from '../../assets/newscard1.png';
 import NewsImg2 from '../../assets/newscard2.png';
 import NewsImg3 from '../../assets/newscard3.png';
+import axios from 'axios';
+
 
 const News = () => {
+
+
+    const [newscard, setNewscard] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
+
+
+    useEffect(() => {
+    const fetchNews = async () => {
+        try {
+        // 요청이 시작 할 때에는 error 와 users 를 초기화하고
+        setError(null);
+        setNewscard(null);
+        // loading 상태를 true 로 바꿉니다.
+        setLoading(true);
+        const response = await axios.get(
+            'http://118.67.132.125:8080/news/newslist.do'
+        );
+        setNewscard(response.data); // 데이터는 response.data 안에 들어있습니다.
+        } catch (e) {
+        setError(e);
+        }
+        setLoading(false);
+    };
+
+    fetchNews();
+    }, []);
+
+    if (loading) return <div>로딩중..</div>;
+    if (error) return <div>에러가 발생했습니다</div>;
+    if (!newscard) return null;
+
     return (
         <PageWrapper>
             <Header/>
@@ -34,30 +69,16 @@ const News = () => {
                 </SubTitle2>
             </PageTitleWrpper>
             <NewsCardWrapper>
-                    <NewsCardBlock>
+            {newscard.map(newscards => (
+                    <NewsCardBlock key={newscards.idx}>
                         <NewsImg></NewsImg>
                         <Line/>
                         <NewsContentWrapper>
-                        <NewsContentTitle>산업통상자원부 사업 재편 기업 승인</NewsContentTitle>
-                        <NewsContent>(주)에스지티가 2021년 산업통상자원부 사업 재편 기업승인을 받았습니다. 향후 5년간 미래차, 유망신산업 분야에 투자하여 수익성을 개선하고 혁신이 가속화 될 것으로 기대됩니다.(주)에스지티가 2021년 산업통상자원부 사업 재편 기업승인을 받았습니다. 향후 5년간 …</NewsContent>
+                        <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>
+                        <NewsContent>{newscards.newscon}</NewsContent>
                         </NewsContentWrapper>
                     </NewsCardBlock>
-                    <NewsCardBlock>
-                        <News2/>
-                        <Line/>
-                        <NewsContentWrapper>
-                        <NewsContentTitle>산업통상자원부 사업 재편 기업 승인</NewsContentTitle>
-                        <NewsContent>(주)에스지티가 2021년 산업통상자원부 사업 재편 기업승인을 받았습니다. 향후 5년간 미래차, 유망신산업 분야에 투자하여 수익성을 개선하고 혁신이 가속화 될 것으로 기대됩니다.(주)에스지티가 2021년 산업통상자원부 사업 재편 기업승인을 받았습니다. 향후 5년간 …</NewsContent>
-                        </NewsContentWrapper>
-                    </NewsCardBlock>
-                    <NewsCardBlock>
-                        <News3/>
-                        <Line/>
-                        <NewsContentWrapper>
-                        <NewsContentTitle>산업통상자원부 사업 재편 기업 승인</NewsContentTitle>
-                        <NewsContent>(주)에스지티가 2021년 산업통상자원부 사업 재편 기업승인을 받았습니다. 향후 5년간 미래차, 유망신산업 분야에 투자하여 수익성을 개선하고 혁신이 가속화 될 것으로 기대됩니다.(주)에스지티가 2021년 산업통상자원부 사업 재편 기업승인을 받았습니다. 향후 5년간 …</NewsContent>
-                        </NewsContentWrapper>
-                    </NewsCardBlock>
+                ))}
                 </NewsCardWrapper>
             <Footer/>
         </PageWrapper>

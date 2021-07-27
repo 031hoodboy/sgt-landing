@@ -13,39 +13,37 @@ import axios from 'axios';
 
 const NoticeInfo = ({location}) => {
 
-const [news, setNews] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+    const [notice, setNotice] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
-  const history = useHistory();
+    const history = useHistory();
 
-  useEffect(() => {
-    console.log(location.props?.id);
+    useEffect(() => {
+        const fetchNews = async () => {
+        try {
+            // 요청이 시작 할 때에는 error 와 users 를 초기화하고
+            setError(null);
+            setNotice(null);
+            // loading 상태를 true 로 바꿉니다.
+            setLoading(true);
+            const response = await axios.get(
+            'http://118.67.132.125:8080/notice/noticelist.do'
+            );
+            setNotice(response.data); // 데이터는 response.data 안에 들어있습니다.
+        } catch (e) {
+            setError(e);
+        }
+        setLoading(false);
+        };
 
-    const fetchNews = async () => {
-      try {
-        // 요청이 시작 할 때에는 error 와 users 를 초기화하고
-        setError(null);
-        setNews(null);
-        // loading 상태를 true 로 바꿉니다.
-        setLoading(true);
-        const response = await axios.get(
-          'http://118.67.132.125:8080/notice/noticelist.do'
-        );
-        setNews(response.data); // 데이터는 response.data 안에 들어있습니다.
-      } catch (e) {
-        setError(e);
-      }
-      setLoading(false);
-    };
+        fetchNews();
+    }, []);
 
-    fetchNews();
-  }, []);
+    if (loading) return <div>로딩중..</div>;
+    if (error) return <div>에러가 발생했습니다</div>;
+    if (!notice) return null;
 
-  if (loading) return <div>로딩중..</div>;
-  if (error) return <div>에러가 발생했습니다</div>;
-  if (!news) return null;
-    
     return (
         <PageWrapper>
             <Header/>
@@ -56,18 +54,18 @@ const [news, setNews] = useState(null);
                 <PageTitle>공지사항</PageTitle>
             </PageTitleWrpper>
             <BoardWrapper>
-                {news.map(newss => (
-                    (newss.idx === location.props?.id?
+                {notice.map(notices => (
+                    (notices.idx === location.props?.id?
                         <>
                         <BoardHeader>
-                            <BordTitle>{newss.subject}</BordTitle>
+                            <BordTitle>{notices.subject}</BordTitle>
                         </BoardHeader>
                         <BorderSubTitle>
-                            <RegisDate>{newss.regdate.split("", 10)}</RegisDate>
+                            <RegisDate>{notices.regdate.split("", 10)}</RegisDate>
                             <Look>조회</Look>
                         </BorderSubTitle>
                         <BoardContent>
-                            <NewssContnet>{newss.content}</NewssContnet>
+                            <NewssContnet>{notices.content}</NewssContnet>
                         </BoardContent>
                     </>
                     :
