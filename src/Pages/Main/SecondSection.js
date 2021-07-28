@@ -37,6 +37,7 @@ const Background = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
 `;
 
 const CardWrapper = styled.div`
@@ -59,6 +60,10 @@ const Card1 = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: all .3s ease-in-out;
+    & :hover{
+        background-size: 110%;
+    }
 `;
 
 const Card2 = styled(Card1)`

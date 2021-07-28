@@ -6,8 +6,8 @@ import BackgroundImg from '../../assets/mainbackgroundimg.png';
 const FirstSection = () => {
     return (
         <>
-        <MobileBackground>
-        </MobileBackground>
+        {/* <MobileBackground>
+        </MobileBackground> */}
         <Gradient/>
         <Background>
 
@@ -18,8 +18,6 @@ const FirstSection = () => {
             </SloganWrapper>
 
         </Background>
-        <Opacity ></Opacity>
-
         </>
     );
 }
@@ -58,7 +56,7 @@ const Background = styled.div`
     justify-content: center;
     flex-direction: column;
     @media screen and (max-width: 840px) {
-        height: 80vh;
+        height: 100vh;
   }
 `;
 
@@ -68,7 +66,7 @@ const SloganWrapper = styled.div`
     z-index: 1;
     @media screen and (max-width: 840px) {
         margin: 0 auto;
-        margin-bottom: 80vh;
+        margin-bottom: 60vh;
         display: flex;
         flex-direction: column;
         align-items: center;

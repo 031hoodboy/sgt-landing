@@ -2,6 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Link} from 'react-router-dom';
 import SgtLogoImg from '../assets/sgtlogo.png'
+import MobileLogoImg from '../assets/sgtmobilelogo.png'
+
 import NavBar from './NavBar';
 import HamburgerButton from './HambuergerButton';
 
@@ -12,6 +14,7 @@ const Header = () => {
             <LogoWrapper>
                 <Link to="/" style={{textDecoration: 'none'}}>
                     <Logo />
+                    <MobileLogo/>
                 </Link>
                 <Name></Name>
             </LogoWrapper>
@@ -44,7 +47,6 @@ const LogoWrapper = styled.div`
 const Logo = styled.div`
     width: 15vw;
     max-width: 183px;
-    min-width: 92px;
     height: 9vh;
     max-height: 82px;
     min-height: 41px;
@@ -56,6 +58,30 @@ const Logo = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    @media screen and (max-width: 840px) {
+        display: none;
+  }
+`;
+
+const MobileLogo = styled.div`
+    width: 15vw;
+    max-width: 183px;
+    min-width: 92px;
+    height: 9vh;
+    max-height: 82px;
+    min-height: 41px;
+    background-image: url(${MobileLogoImg});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+    @media screen and (max-width: 840px) {
+        display: flex;
+  }
 `;
 
 const Name = styled.span`
