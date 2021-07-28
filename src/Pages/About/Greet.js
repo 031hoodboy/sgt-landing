@@ -18,10 +18,10 @@ const Greet = () => {
                 회사소개
                 <NavBarWrapper>
                 <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
-                    <SelectNavBlock>ceo인사말</SelectNavBlock>
+                    <SelectNavBlock>인사말</SelectNavBlock>
                     </Link>
                     <Link to="/vision" style={{textDecoration: 'none', color: "#000"}}>
-                        <NavBlock>비전</NavBlock>
+                        <NavBlock>경영이념</NavBlock>
                     </Link>
                     <Link to="/history" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>연혁</NavBlock>
@@ -29,26 +29,25 @@ const Greet = () => {
                     <Link to="/business-partner" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>사업파트너</NavBlock>
                     </Link>
-                    <Link to="/way-to-come" style={{textDecoration: 'none', color: "#000"}}>
+                    {/* <Link to="/way-to-come" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>오시는 길</NavBlock>
                     </Link>
                         <Link to="/organize-chart" style={{textDecoration: 'none', color: "#000"}}>
                     <NavBlock>조직도</NavBlock>
-                    </Link>
+                    </Link> */}
                 </NavBarWrapper>
             </MainImg>
             <PageTitleWrpper>
-                <PageTitle>CEO 인사말</PageTitle>
+                <PageTitle>인사말</PageTitle>
             </PageTitleWrpper>
             <PageBlockWrapper>
                 <HelloWrapper>
-                    <ProfileWrapper>
                         <Hello>
                         안녕하십니까?<br/>                    
                         (주)에스지티 대표이사 김곤 입니다.
                         </Hello>
-                        <Profile/>
-                    </ProfileWrapper>
+                    <ProfileWrapper>
+                    <Profile/>
                     <Descrip>
                         고효율 태양광 셀과 고출력 태양광 모듈 신기술을 상용화 함으로써 무한한 청정 에너지를 이용하여 경제성 있는 무공해 전기를 만들어 보급하고 화석 연료의 사용을 감축할 수 있도록 기술개발과 상용화에 매진하고 있습니다.
                             <br/><br/>
@@ -57,12 +56,13 @@ const Greet = () => {
                         이러한 글로벌 환경 트렌드 및 국가 정책에 선제적으로 대응함으로써 기술과 시장을 선도하여 지속가능한 경제발전과 환경보호에 앞장서도록 하겠습니다. 국가경쟁력 측면에서는, 반도체와 디스플레이 산업에 이어 태양광 산업에서도 세계를 주도함으로써 새로운 국가성장동력원을 확보할 수 있는 기반을 마련하는데 기여하고자 합니다
                         
                     </Descrip>
+                    </ProfileWrapper>
                 </HelloWrapper>
+                <Profile2/>
                 <SignWrapper>
                     <Company>(주)에스지티</Company>
                     <Ceo>대표 이사 김곤</Ceo>
                     <Sign/>
-                    <Profile2/>
                 </SignWrapper>
             </PageBlockWrapper>
             <Footer/>
@@ -105,14 +105,17 @@ const HelloWrapper = styled.div`
 
 const ProfileWrapper = styled.div`
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
 `;
 
 const Hello = styled.div`
+    width: 100%;
     font-size: 30px;
     @media screen and (max-width: 780px) {
-        font-size: 19px;
         text-align: center;
+        font-size: 19px;
   }
 `;
 
@@ -135,7 +138,6 @@ const Profile = styled.div`
 `;
 
 const Profile2 = styled.div`
-    background: #282D27;
     background-image: url(${ProfileImg});
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,10 +148,8 @@ const Profile2 = styled.div`
     flex-direction: column;
     display: none;
     @media screen and (max-width: 780px) {
-        width: 60vw;
-        height: 80vw;
-        max-width: 400px;
-        max-height: 450px;
+        width: 95vw;
+        height: 60vw;
         margin: 0 auto;
         display: flex;
         margin-top: 150px;
@@ -173,6 +173,7 @@ const SignWrapper = styled.div`
     width: 80vw;
     max-width: 1088px;
     margin: 10vh auto;
+    margin-top: 0;
     justify-content: flex-end;
     align-items: center;
     @media screen and (max-width: 780px) {
@@ -218,19 +219,18 @@ const NavBarWrapper = styled.div`
     top: calc(30vh + 56px);
     box-shadow:  0px 3px 6px #d9d9d9;
     @media screen and (max-width: 1312px) {
-    width: calc(90vw + 3px);
     height: 80px; 
     flex-wrap: wrap;
     top: calc(30vh + 42px); 
     }
     @media screen and (max-width: 1024px) {
-        width: calc(90vw + 3px);
+        width: calc(90vw + 2px);
         top: calc(23vh); 
     }
 `;
 
 const NavBlock = styled.div`
-    width: 10vw;
+    width: 15vw;
     height: 58px;
     border-left: 1px solid #D9D9D9;
     display: flex;
@@ -239,8 +239,11 @@ const NavBlock = styled.div`
     background: #fff;
     border-bottom: 1px solid #D9D9D9;
     @media screen and (max-width: 1312px) {
-    width: 30vw;
+    width: calc(30vw - 1px);
     height: 40px; 
+    }
+    @media screen and (max-width: 1024px) {
+        width: 45vw;
     }
 `;
 
