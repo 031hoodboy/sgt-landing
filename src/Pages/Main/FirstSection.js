@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {keyframes} from '@emotion/react';
 import BackgroundImg from '../../assets/mainbackgroundimg.png';
 import Arrow from '../../assets/arrow.png'
 const FirstSection = () => {
@@ -86,18 +85,8 @@ const Emphasis = styled.span`
     color: #AC2F32;
 `;
 
-const ScrollDownKeyframes = keyframes`
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(46px);
-  }
-`;
-
 const ScrollDownIcon = styled.div`
-  position: absolute;
+    position: absolute;
     left: 50%;
     margin-left: -20px;
     bottom: -5%;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import {keyframes} from '@emotion/react';
 import {
     TitleWrpper, 
     Remark, 
@@ -73,10 +74,22 @@ const NewsCardWrapper = styled.div`
   }
 `;
  
+
 const NewsCardBlock = styled.div`
     max-width: 350px;
     border: 1px solid #D8D8D8;
     margin-top: 5vh;
+    transition: all .5s;
+
+`;
+
+const Fade = keyframes`
+0% {
+    background-size: 100%;
+}
+100% {
+        background-size: 110%;
+    }
 `;
 
 const NewsImg = styled.div`
@@ -90,6 +103,11 @@ const NewsImg = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;  
+    &:hover{
+    animation: ${Fade};
+    }
     @media screen and (max-width: 840px) {
         width: 90vw;
   }
