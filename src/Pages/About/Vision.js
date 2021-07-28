@@ -17,27 +17,27 @@ const Vision = () => {
                 회사소개
                 <NavBarWrapper>
                 <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
-                    <NavBlock>ceo인사말</NavBlock>
+                    <NavBlock>인사말</NavBlock>
                     </Link>
                     <Link to="/vision" style={{textDecoration: 'none', color: "#000"}}>
-                        <SelectNavBlock>비전</SelectNavBlock>
+                        <SelectNavBlock>경영이념</SelectNavBlock>
                     </Link>
                     <Link to="/history" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>연혁</NavBlock>
                     </Link>
-                    <Link to="/business-partner" style={{textDecoration: 'none', color: "#000"}}>
+                    {/* <Link to="/business-partner" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>사업파트너</NavBlock>
-                    </Link>
+                    </Link> */}
                     <Link to="/way-to-come" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>오시는 길</NavBlock>
                     </Link>
-                        <Link to="/organize-chart" style={{textDecoration: 'none', color: "#000"}}>
+                        {/* <Link to="/organize-chart" style={{textDecoration: 'none', color: "#000"}}>
                     <NavBlock>조직도</NavBlock>
-                    </Link>
+                    </Link> */}
                 </NavBarWrapper>
             </MainImg>
             <PageTitleWrpper>
-                <PageTitle>비전</PageTitle>
+                <PageTitle>경영이념</PageTitle>
             </PageTitleWrpper>
             <PageBlockWrapper>
                 <VisionCard/>

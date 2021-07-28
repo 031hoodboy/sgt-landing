@@ -148,19 +148,18 @@ export const NavBarWrapper = styled.div`
     top: calc(30vh + 56px);
     box-shadow:  0px 3px 6px #d9d9d9;
     @media screen and (max-width: 1312px) {
-    width: calc(90vw + 3px);
     height: 80px; 
     flex-wrap: wrap;
     top: calc(30vh + 42px); 
     }
     @media screen and (max-width: 1024px) {
-        width: calc(90vw + 3px);
+        width: calc(90vw + 2px);
         top: calc(23vh); 
     }
 `;
 
 export const NavBlock = styled.div`
-    width: 10vw;
+    width: 15vw;
     height: 58px;
     border-left: 1px solid #D9D9D9;
     display: flex;
@@ -169,8 +168,11 @@ export const NavBlock = styled.div`
     background: #fff;
     border-bottom: 1px solid #D9D9D9;
     @media screen and (max-width: 1312px) {
-    width: 30vw;
+    width: calc(30vw - 1px);
     height: 40px; 
+    }
+    @media screen and (max-width: 1024px) {
+        width: 45vw;
     }
 `;
 
