@@ -10,9 +10,12 @@ import {
 import NewsImg1 from '../../assets/newscard1.png';
 import NewsImg2 from '../../assets/newscard2.png';
 import NewsImg3 from '../../assets/newscard3.png';
+import { useHistory } from 'react-router-dom';
 
 
 const FourthSection = () => {
+    const history = useHistory();
+
     return (
         <Background>
             <PageBlockWrapper>
@@ -47,7 +50,7 @@ const FourthSection = () => {
                     </NewsCardBlock>
                 </NewsCardWrapper>
                 <ViewMore/>
-                <Button>
+                <Button onClick={() => {history.push("/news")}}>
                     더보기
                 </Button>
             </PageBlockWrapper>            
