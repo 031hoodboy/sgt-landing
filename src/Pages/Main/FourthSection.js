@@ -47,6 +47,9 @@ const FourthSection = () => {
                     </NewsCardBlock>
                 </NewsCardWrapper>
                 <ViewMore/>
+                <Button>
+                    더보기
+                </Button>
             </PageBlockWrapper>            
         </Background>
     );
@@ -152,5 +155,23 @@ const NewsContent = styled.div`
 
 const ViewMore = styled.div`
 
+`;
+
+
+const Button = styled.div`
+    width: 170px;
+    height: 60px;
+    margin: 5vh auto;
+    border: 1px solid #930E14;
+    color: #930E14;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @media screen and (max-width: 780px) {
+    width: 43.5vw;
+    height: 60px;
+  }
 `;
 export default FourthSection;
