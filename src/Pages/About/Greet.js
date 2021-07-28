@@ -97,7 +97,7 @@ const MainImg = styled.div`
 const HelloWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 90vw;
     max-width: 1100px;
     margin: 5vh auto;
     justify-content: space-between;
