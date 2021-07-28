@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
-
+import {keyframes} from '@emotion/react';
 import BackgroundImg from '../../assets/mainbackgroundimg.png';
-
+import Arrow from '../../assets/arrow.png'
 const FirstSection = () => {
     return (
         <>
-        {/* <MobileBackground>
-        </MobileBackground> */}
         <Gradient/>
         <Background>
 
@@ -16,20 +14,11 @@ const FirstSection = () => {
                 <Slogan>고객이 <Emphasis>신뢰</Emphasis>하는 기업</Slogan>
                 <SmallSlogan><Emphasis>S</Emphasis>ocial <Emphasis>G</Emphasis>ravity <Emphasis>T</Emphasis>echnology Corp.</SmallSlogan>
             </SloganWrapper>
-
         </Background>
+        <ScrollDownIcon/>
         </>
     );
 }
-
-const MobileBackground = styled.div`
-    background: #282D27;
-    height: 20vh;
-    display: none;
-    @media screen and (max-width: 840px) {
-        display: flex;
-  }
-`;
 
 const Gradient = styled.div`
     position: absolute;
@@ -97,17 +86,32 @@ const Emphasis = styled.span`
     color: #AC2F32;
 `;
 
-const Opacity = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 108.5vh;
-    background: #000;
-    opacity: 0.4;
-    top: 0;
-    @media screen and (max-width: 840px) {
-        padding-top: 20vh;
-        height: 89vh;
+const ScrollDownKeyframes = keyframes`
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
   }
 `;
+
+const ScrollDownIcon = styled.div`
+  position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    bottom: -5%;
+    width: 61.5px;
+    height: 39px;
+    background-image: url(${Arrow});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  @media screen and (max-width: 1024px) {
+    width: 43.5px;
+    height: 21px;
+  }
+`;
+
 
 export default FirstSection;
