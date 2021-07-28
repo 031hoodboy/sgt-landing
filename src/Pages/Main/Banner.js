@@ -5,7 +5,6 @@ import BackgroundImg from '../../assets/mainbanner.png';
 const Banner = () => {
     return (
         <Background>
-            <Opacity/>
             <Content>
                 고객 만족을 최우선으로 혁신적 기술을 적용하여 세계적 품질을 추구합니다.
             </Content>
@@ -27,13 +26,6 @@ const Background = styled.div`
     @media screen and (max-width: 840px) {
         height: 15vh;
   }
-`;
-
-const Opacity = styled.div`
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.4;
 `;
 
 const Content = styled.div`
