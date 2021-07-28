@@ -38,7 +38,7 @@ const History = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>연혁</PageTitle>
-                <PageSubTitle>더 나은 세상을 만들어가는 일,<br/>글로벌 바이오제약 기업 메디톡스가 먼저 시작합니다.</PageSubTitle>
+                <PageSubTitle>더 나은 세상을 만들어가는 일,<br/>(주)에스지티가 먼저 시작합니다.</PageSubTitle>
 
             </PageTitleWrpper>
             <PageBlockWrapper>

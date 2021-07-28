@@ -113,7 +113,7 @@ const Chart2 = styled.div`
     font-size: 45px;
     font-weight: 600;
     display: none;
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 780px) {
         display: flex;
         margin: 0;
   }
@@ -151,17 +151,14 @@ export const CardTitle = styled.div`
 
 const Descrip = styled.div`
     width: 90vw;
-    margin: 0 auto;
     text-align: center;
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 10vh;
+    margin: 0 auto 10vh auto;
     font-weight: 300;
     @media screen and (max-width: 840px) {
-        width: 90vw;
-        text-align: left;
-        margin: 0;
-        margin-bottom: 10vh;
+        width: 100vw;
+
     }
 `;
 
