@@ -49,12 +49,15 @@ const Greet = () => {
                     <ProfileWrapper>
                     <Profile/>
                     <Descrip>
-                        고효율 태양광 셀과 고출력 태양광 모듈 신기술을 상용화 함으로써 무한한 청정 에너지를 이용하여 경제성 있는 무공해 전기를 만들어 보급하고 화석 연료의 사용을 감축할 수 있도록 기술개발과 상용화에 매진하고 있습니다.
-                            <br/><br/>
-                        특히, 국제 기후변화 대응체제인 파리협정이 2016년 11월 4일 발효되었고, 우리나라는 온실가스 배출전망치 대비 37% 감축안을 자발적 감축목표로 제출한 바, 범 부처별로 기후변화 대응전략을 수립하고 태양광을 목표달성을 위한 주요기술로 제시하고 있으며, 태양전지 기술혁신을 통한 이산화탄소 355만톤 감축을 예상하고 있는 등 태양광 발전원의 확대가 불가피하게 요청되고 있습니다.
-                            <br/><br/>
-                        이러한 글로벌 환경 트렌드 및 국가 정책에 선제적으로 대응함으로써 기술과 시장을 선도하여 지속가능한 경제발전과 환경보호에 앞장서도록 하겠습니다. 국가경쟁력 측면에서는, 반도체와 디스플레이 산업에 이어 태양광 산업에서도 세계를 주도함으로써 새로운 국가성장동력원을 확보할 수 있는 기반을 마련하는데 기여하고자 합니다
-                        
+                        숨겨진 가치를 찾는 기업, 고객이 신뢰하는 기업
+                        <br/><br/>
+                        ㈜ 에스지티는 반도체/디스플레이에서 이차전지분야까지 최첨단 산업에
+                        대응하기 위해 혁신적 기술을 바탕으로 고객만족을  추구하고자 노력하고
+                        있습니다. 
+                        <br/><br/>
+                        본사는 2016년 창립 이래 정밀부품가공을 주요 사업으로 현재 이차전지 패키징 분야로의 도약을 추진하고 있으며, 우수한 인재와 혁신 기술개발에 대한 지속적인 투자를 진행하여 지속적인 성장을 이루어 왔습니다. 
+                        <br/><br/>
+                        앞으로도 지속적인 기술개발과 가치 투자를 진행하여 본사가 추구하는 숨겨진 가치를 찾으며, 고객이 신뢰하는 기업으로 인정받으며 보다 나은 미래 가치를 찾기 위하여 항상 발전하는 (주)에스지티가 되도록 최선을 다하겠습니다. 
                     </Descrip>
                     </ProfileWrapper>
                 </HelloWrapper>
@@ -97,7 +100,7 @@ const HelloWrapper = styled.div`
     width: 80vw;
     max-width: 1100px;
     margin: 5vh auto;
-    justify-content: space-around;
+    justify-content: space-between;
     @media screen and (max-width: 780px) {
         justify-content: center;
   }
@@ -113,6 +116,7 @@ const ProfileWrapper = styled.div`
 const Hello = styled.div`
     width: 100%;
     font-size: 30px;
+    margin-left: 15px;
     @media screen and (max-width: 780px) {
         text-align: center;
         font-size: 19px;
@@ -160,7 +164,7 @@ const Profile2 = styled.div`
 const Descrip = styled.div`
     max-width: 640px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     line-height: 32px;
     @media screen and (max-width: 780px) {
         font-size: 16px;
