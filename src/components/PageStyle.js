@@ -186,6 +186,7 @@ export const PageSubTitle = styled.div`
   font-size: 30px;
   text-align: center;
   padding: 5vh 0;
+  margin: 0 auto;
   @media screen and (max-width: ${({ threshold }) =>
       threshold || SMALL_SCREEN_THRESHOLD}px) {
         width: 90vw;
