@@ -77,11 +77,6 @@ const HeaderNav = () => {
                         <NavContent type="trigger">채용안내</NavContent>
                     </Link>
                 </Navigator>
-                <Navigator>
-                    <Link to="/notice" style={{textDecoration: 'none'}}>
-                        <NavContent>공지사항</NavContent>
-                    </Link>
-                </Navigator>
             </NavigatorWrapper>
         </HeaderBlock>
 

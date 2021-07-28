@@ -49,9 +49,6 @@ const App = () => {
         <Route path="/news" component={News} />
         <Route path="/news-info" component={NewsInfo} />
         <Route path="/catalogue" component={Catalogue} />
-        <Route path="/notice" component={Notice} />
-        <Route path="/notice-info" component={NoticeInfo} />
-        <Route path="/notice-post" component={NoticePost} />
       </Switch>
     </BrowserRouter>
   )
