@@ -7,6 +7,10 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
+import ProcessImg1 from '../../assets/processimg1.png';
+import ProcessImg2 from '../../assets/processimg2.png';
+import ProcessImg3 from '../../assets/processimg3.png';
+import ProcessImg4 from '../../assets/processimg4.png';
 
 const ProcessingBusiness = () => {
     return (
@@ -33,12 +37,12 @@ const ProcessingBusiness = () => {
                 <Bar>정밀 가공</Bar>
                 <Blockwrapper>
                     <Block></Block>
-                    <Block></Block>
+                    <Block2></Block2>
                 </Blockwrapper>
                 <Bar>품질 측정</Bar>
                 <Blockwrapper>
-                    <Block></Block>
-                    <Block></Block>
+                    <Block3></Block3>
+                    <Block4></Block4>
                 </Blockwrapper>
             </BarkWrapper>
             <Footer/>
@@ -153,13 +157,33 @@ const Block = styled.div`
     max-width: 535px;
     height: 30vw;
     max-height: 350px;
+    background-image: url(${ProcessImg1});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
     margin-bottom: 3vh;
-    @media screen and (max-width: 780px) {
-    max-width: 10000px;
+    @media screen and (max-width: 767px) {
+    max-width: 1000px;
     width: 100vw;
     height: 30vw;
     min-height: 208px;
   }
+  
+`;
+
+const Block2 = styled(Block)`
+    background-image: url(${ProcessImg2});
+
+`;
+
+const Block3 = styled(Block)`
+    background-image: url(${ProcessImg3});
+
+`;
+
+const Block4 = styled(Block)`
+    background-image: url(${ProcessImg4});
+
 `;
 
 const Remark = styled.div`
