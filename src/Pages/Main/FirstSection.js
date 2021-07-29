@@ -99,6 +99,7 @@ const ScrollDownIcon = styled.div`
   @media screen and (max-width: 1024px) {
     width: 43.5px;
     height: 21px;
+    bottom: -20%;
   }
 `;
 
