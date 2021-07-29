@@ -34,7 +34,7 @@ const News = () => {
         // loading 상태를 true 로 바꿉니다.
         setLoading(true);
         const response = await axios.get(
-            'https://www.sgtapi.tk/notice/noticelist.do'
+            'https://www.sgtapi.tk/news/newslist.do'
         );
         setNewscard(response.data); // 데이터는 response.data 안에 들어있습니다.
         } catch (e) {
@@ -86,8 +86,8 @@ const News = () => {
                         <NewsImg></NewsImg>
                         <Line/>
                         <NewsContentWrapper>
-                        <NewsContentTitle>{newscards.subject}</NewsContentTitle>
-                        <NewsContent>{newscards.content}</NewsContent>
+                        <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>
+                        <NewsContent>{newscards.newscon}</NewsContent>
                         </NewsContentWrapper>
                     </NewsCardBlock>
                 ))}
