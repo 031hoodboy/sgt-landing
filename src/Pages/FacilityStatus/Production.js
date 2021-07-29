@@ -154,31 +154,4 @@ const Blockwrapper = styled.div`
   }
 `;
 
-const Block = styled.div`
-    border-bottom: 1px solid #D0D0D0;
-    width: 353px;
-    height: 350px;
-    margin-bottom: 15px;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 316px;
-  }
-`;
-
-const Remark = styled.div`
-    font-size: 18px;
-    padding: 5px 20px;
-`;
-
-const RemarkWrapper = styled.div`
-    border: 1px solid #DBDBDB;
-    padding-bottom: 15px;
-    margin-bottom: 5vh;
-    margin-right: 7.5px;
-    @media screen and (max-width: 1220px) {
-        margin: 0;
-        margin-bottom: 5vh;
-  }
-`;
 export default production;

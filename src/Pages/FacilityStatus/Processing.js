@@ -18,7 +18,6 @@ import Machine8 from '../../assets/machine8.png';
 import Machine9 from '../../assets/machine9.png';
 import Machine10 from '../../assets/machine10.png';
 import Machine11 from '../../assets/machine11.png';
-import Machine12 from '../../assets/machine12.png';
 
 const Processing = () => {
     return (
@@ -41,8 +40,7 @@ const Processing = () => {
             <PageTitleWrpper>
                 <PageTitle>가공 설비</PageTitle>
                 <SubTitle2>
-                고효율 태양광 셀과 고출력 태양광 모듈 신기술을 상용화 함으로써<br/>
-                화석 연료의 사용을 감축할 수 있도록 기술개발과 상용화에 매진하고 있습니다.
+                    (주)에스지티의 주요 측정 설비 현황입니다.
                 </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
@@ -280,10 +278,6 @@ const Block10 = styled(Block)`
 `;
 const Block11 = styled(Block)`
     background-image: url(${Machine11});
-`;
-
-const Block12 = styled(Block)`
-    background-image: url(${Machine12});
 `;
 
 const Remark = styled.div`
