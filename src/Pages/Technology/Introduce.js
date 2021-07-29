@@ -7,13 +7,16 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/technologybackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2, SubTitle3 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
+import IntroImg1 from '../../assets/introimg1.png';
+import IntroImg2 from '../../assets/introimg2.png';
+import IntroImg3 from '../../assets/introimg3.png';
 
 const Introduce = () => {
     return (
         <PageWrapper>
             <Header/>
             <MainImg>
-                설비현황
+                기술현황
                 <NavBarWrapper>
                     <Link to="/introduce" style={{textDecoration: 'none', color: "#000"}}>
                         <SelectNavBlock>연구소 소개</SelectNavBlock>
@@ -26,15 +29,16 @@ const Introduce = () => {
             <PageTitleWrpper>
                 <PageTitle>연구소 소개</PageTitle>
                 <SubTitle2>
-                고효율 태양광 셀과 고출력 태양광 모듈 신기술을 상용화 함으로써<br/>
-                화석 연료의 사용을 감축할 수 있도록 기술개발과 상용화에 매진하고 있습니다.
+                    각종 산업용 장비 관련 부품 정밀 가공 기술 부터 소재 내후성 테스트 및 보관 건조기술과 이차전지분야 
+                    <br/>
+                    관련 기술까지 다양한 분야의 산업 기술의 개발 및 상용화를 위해 최선을 가치를 찾고자 노력합니다.
                 </SubTitle2>
                 <SubTitle3>
-                연구분야 : 수분 동결 건조 기술, 마이크로파 건조 기술, 소재 내후성 테스트 기술, 반도체 검사 장비 관리, 전밀 부품 가공 기술, 필름소재 관련 기술
+                연구분야 :정밀가공기술, 소재 건조 기술, 반도체/디스플레이 측정·검사 기술, 이차전지소재기술 등  
                 </SubTitle3>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>동결 건조 기술</Bar>
+                <Bar>산업용 건조기술 : 동결건조장비</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block></Block>
@@ -61,7 +65,7 @@ const Introduce = () => {
                 </Blockwrapper>
                 <Blockwrapper>
                     <RemarkWrapper>
-                        <Block></Block>
+                        <Block2/>
                         <Remark>실시간 수분 측정 장치 개발</Remark>
                     </RemarkWrapper>
                     <BlockContent>
@@ -86,8 +90,8 @@ const Introduce = () => {
                 <Bar>금속 플레이트 및 부품 측면 홀/탭 가공</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
+                        <Block3/>
+                        <Remark>측면 홀/탭 가공 장치</Remark>
                     </RemarkWrapper>
                     <BlockContent>
                         <Contnet>
@@ -221,11 +225,25 @@ const Block = styled.div`
     width: 353px;
     height: 350px;
     margin-bottom: 15px;
+    background-image: url(${IntroImg1});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
     @media screen and (max-width: 1220px) {
     width: 90vw;
     max-width: 360px;
     height: 316px;
   }
+`;
+
+const Block2 = styled(Block)`
+    background-image: url(${IntroImg2});
+
+`;
+
+const Block3 = styled(Block)`
+    background-image: url(${IntroImg3});
+
 `;
 
 const Remark = styled.div`

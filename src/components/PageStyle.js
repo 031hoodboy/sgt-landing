@@ -199,7 +199,7 @@ export const SubTitle2 = styled(Title)`
   font-weight: 300;
   text-align: center;
   @media screen and (max-width: 780px) {
-    width: 80vw;
+    width: 90vw;
         font-size: 18px;
         text-align: center;
     }
@@ -208,9 +208,10 @@ export const SubTitle2 = styled(Title)`
 export const SubTitle3 = styled(Title)`
   font-size: 25px;
   font-weight: 300;
-  width: 80vw;
+  width: 90vw;
   max-width: 1088px;
-  margin: 10vh 0 5vh 0;
+  text-align: center;
+  margin: 10vh auto 5vh auto;
   @media screen and (max-width: 780px) {
     width: 90vw;
         font-size: 19px;

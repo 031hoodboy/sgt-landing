@@ -13,7 +13,7 @@ const Patent = () => {
         <PageWrapper>
             <Header/>
             <MainImg>
-                설비현황
+                기술현황
                 <NavBarWrapper>
                     <Link to="/introduce" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>연구소 소개</NavBlock>
