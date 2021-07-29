@@ -7,6 +7,11 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
+import ManufactureImg1 from '../../assets/manufactureimg1.png';
+import ManufactureImg2 from '../../assets/manufactureimg2.png';
+import ManufactureImg3 from '../../assets/manufactureimg3.png';
+import ManufactureImg4 from '../../assets/manufactureimg4.png';
+import ManufactureImg5 from '../../assets/manufactureimg5.png';
 
 const Manufacture = () => {
     return (
@@ -30,15 +35,29 @@ const Manufacture = () => {
                 <PageTitle>장비제조사업</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>Inerface Board [부품공급]</Bar>
+                <Bar>반도체/디스플레이</Bar>
                 <Blockwrapper>
-                    <Block></Block>
+                    <SmallRemarkWrapper>
+                        <SmallBlock/>
+                        <Remark>LED Chip Stage</Remark>
+                    </SmallRemarkWrapper>   
+                    <SmallRemarkWrapper>
+                        <SmallBlock2/>
+                        <Remark>FOUP Cleaner</Remark>
+                    </SmallRemarkWrapper>   
+                    <SmallRemarkWrapper>
+                        <SmallBlock3/>
+                        <Remark>디스플레이 비전 검사기</Remark>
+                    </SmallRemarkWrapper>   
+                    <SmallRemarkWrapper>
+                        <SmallBlock4/>
+                        <Remark>Manipulator 제작</Remark>
+                    </SmallRemarkWrapper>   
                 </Blockwrapper>
-                <Bar>Manipulator 제작</Bar>
                 <Blockwrapper>
-                <RemarkWrapper>
+                    <RemarkWrapper>
                         <Block></Block>
-                        <Remark>Test Handler와 Test Docking Machine Docking 장비</Remark>
+                        <Remark>Interface Board (부품 공급)</Remark>
                     </RemarkWrapper>                
                 </Blockwrapper>
             </BarkWrapper>
@@ -150,13 +169,20 @@ const Blockwrapper = styled.div`
 
 const Block = styled.div`
     border: 1px solid #D0D0D0;
-    width: 1088px;
-    height: 718px;
-    margin-bottom: 3vh;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 208px;
+    width: 100%;
+    height: 45vw;
+    margin-bottom: 2vh;
+    background-image: url(${ManufactureImg5});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    max-height: 550px;
+    @media screen and (max-width: 767px) {
+    background-size: 100%;
+    max-width: 1000px;
+    width: 100%;
+    height: 50vw;
+    min-height: 208px;
   }
 `;
 
@@ -165,8 +191,49 @@ const Remark = styled.div`
     margin-bottom: 5vh;
 `;
 
+const SmallRemarkWrapper = styled.div`
+    @media screen and (max-width: 767px) {
+        width: 100%;
+  }
+`;
+
+
 const RemarkWrapper = styled.div`
+    width: 90vw;
+`;
+
+const SmallBlock = styled.div`
+    border: 1px solid #D0D0D0;
+    width: 44vw;
+    max-width: 535px;
+    height: 30vw;
+    max-height: 350px;
+    background-image: url(${ManufactureImg1});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 2vh;
+    @media screen and (max-width: 767px) {
+    max-width: 1000px;
+    width: 90vw;
+    height: 50vw;
+    min-height: 208px;
+  }
+`;
+
+
+const SmallBlock2 = styled(SmallBlock)`
+    background-image: url(${ManufactureImg2});
 
 `;
 
+const SmallBlock3 = styled(SmallBlock)`
+    background-image: url(${ManufactureImg3});
+
+`;
+
+const SmallBlock4 = styled(SmallBlock)`
+    background-image: url(${ManufactureImg4});
+
+`;
 export default Manufacture;

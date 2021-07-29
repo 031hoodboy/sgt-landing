@@ -165,7 +165,7 @@ const Block = styled.div`
     @media screen and (max-width: 767px) {
     max-width: 1000px;
     width: 100vw;
-    height: 30vw;
+    height: 50vw;
     min-height: 208px;
   }
   
