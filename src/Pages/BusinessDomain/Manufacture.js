@@ -28,9 +28,6 @@ const Manufacture = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>장비제조사업</PageTitle>
-                <SubTitle2>
-                    반도체 장비 및 디스플레이 장비
-                </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
                 <Bar>Inerface Board [부품공급]</Bar>

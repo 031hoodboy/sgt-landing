@@ -28,9 +28,6 @@ const SecondaryBattery = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>2차전지소재사업</PageTitle>
-                <SubTitle2>
-                    반도체 장비 및 디스플레이 장비
-                </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
                 <Bar>IT, Mobile Device, 소형 가전용 필름 (Cell Pouch Film)</Bar>

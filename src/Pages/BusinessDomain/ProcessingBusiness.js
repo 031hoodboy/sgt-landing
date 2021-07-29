@@ -28,36 +28,17 @@ const ProcessingBusiness = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>정밀가공사업</PageTitle>
-                <SubTitle2>
-                    주요 품목 : 디스플레이장비, 2차전지장비, 반도체장비 등
-                </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>AL, SUS, STEEL 소형 부품 가공품</Bar>
+                <Bar>정밀 가공</Bar>
                 <Blockwrapper>
-                    <Block></Block>
-                    <Block></Block>
                     <Block></Block>
                     <Block></Block>
                 </Blockwrapper>
-                <Bar>정밀 Steel 및 대형 가공품</Bar>
+                <Bar>품질 측정</Bar>
                 <Blockwrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>Vacuum Plate</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>정밀 Steel 가공품</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>Chamber cover류</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>대형 Plate류</Remark>
-                    </RemarkWrapper>
+                    <Block></Block>
+                    <Block></Block>
                 </Blockwrapper>
             </BarkWrapper>
             <Footer/>
@@ -168,13 +149,16 @@ const Blockwrapper = styled.div`
 
 const Block = styled.div`
     border: 1px solid #D0D0D0;
-    width: 535px;
-    height: 350px;
+    width: 44vw;
+    max-width: 535px;
+    height: 30vw;
+    max-height: 350px;
     margin-bottom: 3vh;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 208px;
+    @media screen and (max-width: 780px) {
+    max-width: 10000px;
+    width: 100vw;
+    height: 30vw;
+    min-height: 208px;
   }
 `;
 
