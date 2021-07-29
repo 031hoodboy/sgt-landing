@@ -7,6 +7,18 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/facilitybackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
+import Machine1 from '../../assets/machine1.png';
+import Machine2 from '../../assets/machine2.png';
+import Machine3 from '../../assets/machine3.png';
+import Machine4 from '../../assets/machine4.png';
+import Machine5 from '../../assets/machine5.png';
+import Machine6 from '../../assets/machine6.png';
+import Machine7 from '../../assets/machine7.png';
+import Machine8 from '../../assets/machine8.png';
+import Machine9 from '../../assets/machine9.png';
+import Machine10 from '../../assets/machine10.png';
+import Machine11 from '../../assets/machine11.png';
+import Machine12 from '../../assets/machine12.png';
 
 const Processing = () => {
     return (
@@ -34,22 +46,76 @@ const Processing = () => {
                 </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>가공 설비 : 3대</Bar>
+                <Bar>Machining Center : 9대</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
-                        <Block></Block>
+                        <Block/>
+                        <Remark>제조사 : 두산, 화천기계</Remark>
+                        <Remark>규격 : DNM, VASTA (4.5호기)</Remark>
+                        <Remark>보유 현황 : 2대</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block2/>
+                        <Remark>제조사 : 두산메카텍</Remark>
+                        <Remark>규격 : RAVO 51P (5호기)</Remark>
+                        <Remark>보유 현황 : 1대</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block3/>
+                        <Remark>제조사 : 두산, 화천기계</Remark>
+                        <Remark>규격 : MYNX, VASTA (5.5호기)</Remark>
+                        <Remark>보유 현황 : 4대</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block4/>
+                        <Remark>제조사 : 두산</Remark>
+                        <Remark>규격 : DNM 5700 (6호기)</Remark>
+                        <Remark>보유 현황 : 2대</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block5/>
+                        <Remark>제조사 : 두산</Remark>
+                        <Remark>규격 : DNM 750L (7.5호기)</Remark>
+                        <Remark>보유 현황 : 1대</Remark>
+                    </RemarkWrapper>
+                </Blockwrapper>
+                <Bar>CNC : 3대</Bar>
+                <Blockwrapper>
+                    <RemarkWrapper>
+                        <Block6/>
+                        <Remark>제조사 : 두산</Remark>
+                        <Remark>규격 : PUMA 280LM</Remark>
+                        <Remark>보유 현황 : 1대</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block7/>
+                        <Remark>제조사 : 한화</Remark>
+                        <Remark>규격 : XD38II</Remark>
+                        <Remark>보유 현황 : 1대</Remark>
+                    </RemarkWrapper>
+                    <RemarkWrapper>
+                        <Block8/>
+                        <Remark>제조사 : 두산</Remark>
+                        <Remark>규격 : PUMA 240B</Remark>
+                        <Remark>보유 현황 : 1대</Remark>
+                    </RemarkWrapper>
+                </Blockwrapper>
+                <Bar>기타 가공 장비 : 3대</Bar>
+                <Blockwrapper>
+                    <RemarkWrapper>
+                        <Block9/>
                         <Remark>제조사 : 화천기계</Remark>
                         <Remark>규격 : HMT-1100</Remark>
                         <Remark>보유 현황 : 2대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
-                        <Block></Block>
+                        <Block10/>
                         <Remark>제조사 : 남선기계</Remark>
                         <Remark>규격 : 400-1060</Remark>
                         <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
-                        <Block></Block>
+                        <Block11/>
                         <Remark>제조사 : 금광톱기계</Remark>
                         <Remark>규격 : KHA-340</Remark>
                         <Remark>보유 현황 : 1대</Remark>
@@ -93,7 +159,6 @@ const NavBarWrapper = styled.div`
     font-weight: 400;
     top: calc(30vh + 56px);
     box-shadow:  0px 3px 6px #d9d9d9;
-
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -154,7 +219,7 @@ const Blockwrapper = styled.div`
     width: 1088px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 5vh auto 10vh auto;
     @media screen and (max-width: 1220px) {
         width: 90vw;
@@ -167,11 +232,58 @@ const Block = styled.div`
     width: 353px;
     height: 350px;
     margin-bottom: 15px;
+    background-image: url(${Machine1});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
     @media screen and (max-width: 1220px) {
     width: 90vw;
     max-width: 360px;
     height: 316px;
   }
+`;
+
+const Block2 = styled(Block)`
+    background-image: url(${Machine2});
+`;
+
+const Block3 = styled(Block)`
+    background-image: url(${Machine3});
+`;
+
+const Block4 = styled(Block)`
+    background-image: url(${Machine4});
+`;
+
+const Block5 = styled(Block)`
+    background-image: url(${Machine5});
+`;
+
+const Block6 = styled(Block)`
+    background-image: url(${Machine6});
+`;
+
+const Block7 = styled(Block)`
+    background-image: url(${Machine7});
+`;
+
+const Block8 = styled(Block)`
+    background-image: url(${Machine8});
+`;
+
+const Block9 = styled(Block)`
+    background-image: url(${Machine9});
+`;
+
+const Block10 = styled(Block)`
+    background-image: url(${Machine10});
+`;
+const Block11 = styled(Block)`
+    background-image: url(${Machine11});
+`;
+
+const Block12 = styled(Block)`
+    background-image: url(${Machine12});
 `;
 
 const Remark = styled.div`
@@ -183,5 +295,10 @@ const RemarkWrapper = styled.div`
     border: 1px solid #DBDBDB;
     padding-bottom: 15px;
     margin-bottom: 5vh;
+    margin-right: 7.5px;
+    @media screen and (max-width: 1220px) {
+        margin: 0;
+        margin-bottom: 5vh;
+  }
 `;
 export default Processing;
