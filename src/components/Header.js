@@ -37,7 +37,7 @@ const HeaderBlock = styled.div`
     color: #4a5568;
     background: #fff;
     z-index: 2;
-    box-shadow: -6px 6px 6px -6px black;
+    box-shadow:  6px 6px 6px -6px #000;
 `;
 
 const LogoWrapper = styled.div`

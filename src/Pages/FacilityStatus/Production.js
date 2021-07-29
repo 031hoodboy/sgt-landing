@@ -8,7 +8,7 @@ import BackgroundImg from '../../assets/facilitybackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
-const production = () => {
+const Production = () => {
     return (
         <PageWrapper>
             <Header/>
@@ -154,4 +154,4 @@ const Blockwrapper = styled.div`
   }
 `;
 
-export default production;
+export default Production;
