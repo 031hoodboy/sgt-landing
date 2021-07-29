@@ -200,7 +200,7 @@ export const SubTitle2 = styled(Title)`
   text-align: center;
   @media screen and (max-width: 780px) {
     width: 80vw;
-        font-size: 19px;
+        font-size: 18px;
         text-align: center;
     }
 `;

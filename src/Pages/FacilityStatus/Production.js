@@ -29,64 +29,21 @@ const production = () => {
             <PageTitleWrpper>
                 <PageTitle>생산 설비</PageTitle>
                 <SubTitle2>
-                고효율 태양광 셀과 고출력 태양광 모듈 신기술을 상용화 함으로써<br/>
-                화석 연료의 사용을 감축할 수 있도록 기술개발과 상용화에 매진하고 있습니다.
+                (주)에스지티의 주요 생산 설비 현황입니다.
                 </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>Machining Center : 11대</Bar>
+                <Bar>건식 표면처리기 (드라이 코터)</Bar>
                 <Blockwrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 두산, 화천기계</Remark>
-                        <Remark>규격 : DNM, VASTA [4.5호기]</Remark>
-                        <Remark>보유 현황 : 2대</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 두산메카텍</Remark>
-                        <Remark>규격 : RAVO 51P [5호기]</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 두산, 화천기계</Remark>
-                        <Remark>규격 : MYNX, VASTA [5.5호기]</Remark>
-                        <Remark>보유 현황 : 6대</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : DNM 5700 [6호기]</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : DNM 750L [7.5호기]</Remark>
-                        <Remark>보유 현황 : 21</Remark>
-                    </RemarkWrapper>
+                    준비중입니다.
                 </Blockwrapper>
-                <Bar>CNC : 3대</Bar>
+                <Bar>건식 코팅 합지기1 (드라이 라미네이터)</Bar>
                 <Blockwrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 남선기계</Remark>
-                        <Remark>규격 : DNM, VASTA [4,5ghrl]</Remark>
-                        <Remark>보유 현황 : 2대</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 한화</Remark>
-                        <Remark>규격 : XD38II</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : PUMA 240B</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
-                    </RemarkWrapper>
+                    준비중입니다.
+                </Blockwrapper>
+                <Bar>건식 코팅 합지기2</Bar>
+                <Blockwrapper>
+                    준비중입니다.
                 </Blockwrapper>
             </BarkWrapper>
             <Footer/>
@@ -188,7 +145,9 @@ const Blockwrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5vh auto 10vh auto;
+    margin: 10vh auto;
+    font-size: 24px;
+    color: #848484;
     @media screen and (max-width: 1220px) {
         width: 90vw;
         justify-content: space-around;
