@@ -7,6 +7,12 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/technologybackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
+import PatentImg1 from '../../assets/patentimg1.png';
+import PatentImg2 from '../../assets/patentimg2.png';
+import PatentImg3 from '../../assets/patentimg3.png';
+import PatentImg4 from '../../assets/patentimg4.png';
+import PatentImg5 from '../../assets/patentimg5.png';
+import PatentImg6 from '../../assets/patentimg6.png';
 
 const Patent = () => {
     return (
@@ -33,36 +39,28 @@ const Patent = () => {
             <BarkWrapper>
                 <Blockwrapper>
                     <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
+                        <Remark>기업부설연구소 인정</Remark>
+                        <Block/>
                     </RemarkWrapper>
                     <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
+                        <Remark>ISO 9001 품질경영인증</Remark>
+                        <Block2/>
                     </RemarkWrapper>
                     <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
+                        <Remark>INNO-Biz 인증</Remark>
+                        <Block3/>
                     </RemarkWrapper>
                     <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
+                        <Remark>기업재편 기업 승인</Remark>
+                        <Block4/>
                     </RemarkWrapper>
                     <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
+                        <Remark>특허증</Remark>
+                        <Block5/>
                     </RemarkWrapper>
                     <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
-                    </RemarkWrapper>
-                    <RemarkWrapper>
-                        <Remark>동결 건조 DEMO 장비 개발</Remark>
-                        <Block></Block>
+                        <Remark>특허증</Remark>
+                        <Block6/>
                     </RemarkWrapper>
                 </Blockwrapper>
             </BarkWrapper>
@@ -155,30 +153,63 @@ const Blockwrapper = styled.div`
 const Block = styled.div`
     width: 353px;
     height: 425px;
-    margin-bottom: 15px;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 316px;
+    margin: 0;
+    background-image: url(${PatentImg1});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    @media screen and (max-width: 780px) {
+    width: 42vw;
+    height: 50vw;
   }
 `;
+
+
+const Block2 = styled(Block)`
+    background-image: url(${PatentImg2});
+
+`;
+
+const Block3 = styled(Block)`
+    background-image: url(${PatentImg3});
+
+`;
+
+const Block4 = styled(Block)`
+    background-image: url(${PatentImg4});
+
+`;
+
+
+const Block5 = styled(Block)`
+    background-image: url(${PatentImg5});
+
+`;
+
+const Block6 = styled(Block)`
+    background-image: url(${PatentImg6});
+
+`;
+
 
 const Remark = styled.div`
     font-size: 18px;
     padding: 20px;
     border-bottom: 1px solid #D0D0D0;
     text-align: center;
-
+    @media screen and (max-width: 780px) {
+        padding: 1vw 3vw;
+        font-size: 3.2vw;
+  }
 `;
 
 const RemarkWrapper = styled.div`
     border: 1px solid #DBDBDB;
-    padding-bottom: 15px;
     margin-bottom: 5vh;
     margin-right: 7.5px;
-    @media screen and (max-width: 1220px) {
-        margin: 0;
-        margin-bottom: 5vh;
+    @media screen and (max-width: 780px) {
+        max-width: 42vw;
+        font-size: 16px;
   }
 `;
 
