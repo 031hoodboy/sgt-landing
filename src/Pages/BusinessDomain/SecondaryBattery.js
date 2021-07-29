@@ -5,8 +5,11 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
+import Film1 from '../../assets/film1.png';
+import Film2 from '../../assets/film2.png';
+import Film3 from '../../assets/film3.png';
 
 const SecondaryBattery = () => {
     return (
@@ -30,37 +33,11 @@ const SecondaryBattery = () => {
                 <PageTitle>2차전지소재사업</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>IT, Mobile Device, 소형 가전용 필름 (Cell Pouch Film)</Bar>
+                <Bar>셀파우치 필름</Bar>
                 <Blockwrapper>
-                    <RemarkWrapper>
-                        <Block1></Block1>
-                        <Remark>ALMIDE-113-3L - 3-Layer Structure</Remark>
-                    </RemarkWrapper>  
-                    <RemarkWrapper>
-                        <Block2></Block2>
-                        <Remark>ALMIDE-113-3L - 3-Layer SPEC.</Remark>
-                    </RemarkWrapper>                
-                </Blockwrapper>
-                <Blockwrapper>
-                    <RemarkWrapper>
-                        <Block1></Block1>
-                        <Remark>ALMIDE-113-3L - 3-Layer Structure</Remark>
-                    </RemarkWrapper>  
-                    <RemarkWrapper>
-                        <Block2></Block2>
-                        <Remark>ALMIDE-113-3L - 3-Layer SPEC.</Remark>
-                    </RemarkWrapper>                
-                </Blockwrapper>
-                <Bar>Wearable용 필름 (Cell Pouch Film)</Bar>
-                <Blockwrapper>
-                    <RemarkWrapper>
-                        <Block1></Block1>
-                        <Remark>ALMIDE-113-3L - 3-Layer Structure</Remark>
-                    </RemarkWrapper>  
-                    <RemarkWrapper>
-                        <Block2></Block2>
-                        <Remark>ALMIDE-113-3L - 3-Layer SPEC.</Remark>
-                    </RemarkWrapper>                
+                    <Block/>
+                    <Block2/>
+                    <Block3/>
                 </Blockwrapper>
             </BarkWrapper>
             <Footer/>
@@ -100,7 +77,6 @@ const NavBarWrapper = styled.div`
     font-weight: 400;
     top: calc(30vh + 56px);
     box-shadow:  0px 3px 6px #d9d9d9;
-
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -131,15 +107,6 @@ const SelectNavBlock = styled(NavBlock)`
 `;
 
 
-const BarkWrapper = styled.div`
-    margin-bottom: 10vh;
-    @media screen and (max-width: 1024px) {
-        width: 90vw;
-        margin: 0 auto 20vh auto;
-  }
-`;
-
-
 const Blockwrapper = styled.div`
     width: 1088px;
     display: flex;
@@ -152,37 +119,31 @@ const Blockwrapper = styled.div`
   }
 `;
 
-const Block1 = styled.div`
-    border: 1px solid #D0D0D0;
-    width: 398px;
-    height: 718px;
-    margin-bottom: 3vh;
-    @media screen and (max-width: 1195px) {
-    width: 90vw;
-    height: 430px;
+const Block = styled.div`
+    width: 100%;
+    height: 45vw;
+    margin-bottom: 2vh;
+    background-image: url(${Film1});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    max-height: 550px;
+    @media screen and (max-width: 767px) {
+    background-size: contain;
+    max-width: 1000px;
+    width: 100%;
+    height: 50vw;
+    min-height: 208px;
   }
 `;
 
-const Block2 = styled.div`
-    border: 1px solid #D0D0D0;
-    width: 674px;
-    height: 718px;
-    margin-bottom: 3vh;
-    @media screen and (max-width: 1195px) {
-    width: 90vw;
-    height: 208px;
-  }
+const Block2 = styled(Block)`
+    background-image: url(${Film2});
 `;
 
-const Remark = styled.div`
-    font-size: 18px;
-    margin-bottom: 5vh;
+const Block3 = styled(Block)`
+    background-image: url(${Film3});
 `;
-
-const RemarkWrapper = styled.div`
-
-`;
-
 
 const Bar = styled.div`
     width: 1048px;
@@ -202,5 +163,12 @@ const Bar = styled.div`
   }
 `;
 
+const BarkWrapper = styled.div`
+    margin-bottom: 10vh;
+    @media screen and (max-width: 1024px) {
+        width: 90vw;
+        margin: 0 auto 20vh auto;
+  }
+`;
 
 export default SecondaryBattery;
