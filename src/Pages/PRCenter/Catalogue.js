@@ -35,7 +35,6 @@ const Catalogue = () => {
             <Blockwrapper>
                 <Card></Card>
                 <ButtonWrpper>
-                    <Button>PDF 보기</Button>
                     <Button>PDF 다운로드</Button>
                 </ButtonWrpper>
             </Blockwrapper>
@@ -132,7 +131,7 @@ const ButtonWrpper = styled.div`
     margin-top: 5vh;
     width: 350px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     @media screen and (max-width: 780px) {
         width: 90vw;
     }
