@@ -8,7 +8,11 @@ import BackgroundImg from '../../assets/facilitybackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
-const measure = () => {
+import Measure1 from '../../assets/measure1.png';
+import Measure2 from '../../assets/measure2.png';
+import Measure3 from '../../assets/measure3.png';
+
+const Measure = () => {
     return (
         <PageWrapper>
             <Header/>
@@ -38,27 +42,27 @@ const measure = () => {
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block></Block>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : DNM 5700 [6호기]</Remark>
+                        <Remark>제조사 : 미스토요</Remark>
+                        <Remark>규격 : 601421511</Remark>
                         <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : DNM 750L [7.5호기]</Remark>
-                        <Remark>보유 현황 : 21</Remark>
+                        <Block2/>
+                        <Remark>제조사 : 미스토요</Remark>
+                        <Remark>규격 : 192-613-10</Remark>
+                        <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
                 <Bar>3차원 좌표 측정기</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
-                        <Block></Block>
-                        <Remark>제조사 : 한화</Remark>
-                        <Remark>규격 : XD38II</Remark>
+                        <Block3/>
+                        <Remark>제조사 : 덕인</Remark>
+                        <Remark>규격 : HERO8127S</Remark>
                         <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
-                <Bar>기타 계측 장치</Bar>
+                {/* <Bar>기타 계측 장치</Bar>
                 <Blockwrapper>
                     <MeasuringDeviceWrapper>
                         <DeviceWrapper>
@@ -146,7 +150,7 @@ const measure = () => {
                             </Tr>
                         </Table>
                     </MeasuringDeviceWrapper>
-                </Blockwrapper>
+                </Blockwrapper> */}
             </BarkWrapper>
             <Footer/>
         </PageWrapper>
@@ -259,11 +263,25 @@ const Block = styled.div`
     width: 353px;
     height: 350px;
     margin-bottom: 15px;
+    background-image: url(${Measure1});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
     @media screen and (max-width: 1220px) {
     width: 90vw;
     max-width: 360px;
     height: 316px;
   }
+`;
+
+const Block2 = styled(Block)`
+    background-image: url(${Measure2});
+
+`;
+
+const Block3 = styled(Block)`
+    background-image: url(${Measure3});
+
 `;
 
 const Remark = styled.div`
@@ -282,90 +300,90 @@ const RemarkWrapper = styled.div`
   }
 `;
 
-const MeasuringDeviceWrapper = styled.div`
-    width: 1088px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    @media screen and (max-width: 1220px) {
-        margin: 0;
-        margin-bottom: 5vh;
-  }
-`;
+// const MeasuringDeviceWrapper = styled.div`
+//     width: 1088px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     @media screen and (max-width: 1220px) {
+//         margin: 0;
+//         margin-bottom: 5vh;
+//   }
+// `;
 
-const DeviceWrapper = styled.div`
-    border: 1px solid #D0D0D0;
-    width: 353px;
-    height: 636px;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 633px;
-  }
-`;
+// const DeviceWrapper = styled.div`
+//     border: 1px solid #D0D0D0;
+//     width: 353px;
+//     height: 636px;
+//     @media screen and (max-width: 1220px) {
+//     width: 90vw;
+//     max-width: 360px;
+//     height: 633px;
+//   }
+// `;
 
-const Device = styled.div`
-    width: 100%;
-    height: 50%;
-    border-bottom: 1px solid #D0D0D0;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 316px;
-  }
-`;
+// const Device = styled.div`
+//     width: 100%;
+//     height: 50%;
+//     border-bottom: 1px solid #D0D0D0;
+//     @media screen and (max-width: 1220px) {
+//     width: 90vw;
+//     max-width: 360px;
+//     height: 316px;
+//   }
+// `;
 
-const Table = styled.table`
-    text-align: center;
-    border: 1px solid #d0d0d0;
-    border-collapse:collapse;
-    @media screen and (max-width: 902px) {
-        margin-top: 5vh;
+// const Table = styled.table`
+//     text-align: center;
+//     border: 1px solid #d0d0d0;
+//     border-collapse:collapse;
+//     @media screen and (max-width: 902px) {
+//         margin-top: 5vh;
 
-    }
-    @media screen and (max-width: 780px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 316px;
-  }
-`;
+//     }
+//     @media screen and (max-width: 780px) {
+//     width: 90vw;
+//     max-width: 360px;
+//     height: 316px;
+//   }
+// `;
 
-const Tr = styled.tr`
-    padding: 0 45px;
-    border: 1px solid #d0d0d0;
-    @media screen and (max-width: 1184px) {
-        padding: 0 2vw;
-        max-width: 160px;
-        font-size: 14px;
-  }
-    @media screen and (max-width: 902px) {
-            padding: 2vw;
-            max-width: 160px;
-            font-size: 14px;
-    }
-    @media screen and (max-width: 780px) {
-        padding: 0 ;
-        font-size: 8px;
-  }
-`;
+// const Tr = styled.tr`
+//     padding: 0 45px;
+//     border: 1px solid #d0d0d0;
+//     @media screen and (max-width: 1184px) {
+//         padding: 0 2vw;
+//         max-width: 160px;
+//         font-size: 14px;
+//   }
+//     @media screen and (max-width: 902px) {
+//             padding: 2vw;
+//             max-width: 160px;
+//             font-size: 14px;
+//     }
+//     @media screen and (max-width: 780px) {
+//         padding: 0 ;
+//         font-size: 8px;
+//   }
+// `;
 
-const Td = styled.td`
-    padding: 0 45px;
-    border: 1px solid #d0d0d0;
-    @media screen and (max-width: 1184px) {
-        padding: 0 2vw;
-        max-width: 160px;
-        font-size: 14px;
-  }
-  @media screen and (max-width: 902px) {
-            padding: 2vw;
-            max-width: 160px;
-            font-size: 14px;
-    }
-    @media screen and (max-width: 780px) {
-        padding: 0 ;
-        font-size: 8px;
-  }
-`;
+// const Td = styled.td`
+//     padding: 0 45px;
+//     border: 1px solid #d0d0d0;
+//     @media screen and (max-width: 1184px) {
+//         padding: 0 2vw;
+//         max-width: 160px;
+//         font-size: 14px;
+//   }
+//   @media screen and (max-width: 902px) {
+//             padding: 2vw;
+//             max-width: 160px;
+//             font-size: 14px;
+//     }
+//     @media screen and (max-width: 780px) {
+//         padding: 0 ;
+//         font-size: 8px;
+//   }
+// `;
 
-export default measure;
+export default Measure;
