@@ -86,7 +86,6 @@ const NewsCardBlock = styled.div`
     border: 1px solid #D8D8D8;
     margin-top: 5vh;
     transition: all .5s;
-
 `;
 
 const Fade = keyframes`
@@ -138,7 +137,7 @@ const Line = styled.div`
 `;
 
 const NewsContentWrapper = styled.div`
-    width: 60vw;
+    width: 90vw;
     max-width: 305px;
     margin: 0 auto;
     padding: 30px 0;
