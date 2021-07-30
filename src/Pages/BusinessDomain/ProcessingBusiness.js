@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import ProcessImg1 from '../../assets/processimg1.png';
 import ProcessImg2 from '../../assets/processimg2.png';
@@ -81,8 +81,6 @@ const NavBarWrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     top: calc(30vh + 56px);
-    box-shadow:  0px 3px 6px #d9d9d9;
-
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -186,12 +184,4 @@ const Block4 = styled(Block)`
 
 `;
 
-const Remark = styled.div`
-    font-size: 18px;
-    margin-bottom: 5vh;
-`;
-
-const RemarkWrapper = styled.div`
-
-`;
 export default ProcessingBusiness;

@@ -134,5 +134,4 @@ const Blockwrapper = styled.div`
   }
 `;
 
-
 export default QuoteContact;
