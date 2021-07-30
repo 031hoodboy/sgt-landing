@@ -5,6 +5,14 @@ import Card1Img from '../../assets/business1.png';
 import Card2Img from '../../assets/business2.png';
 import Card3Img from '../../assets/business3.png';
 import {TitleWrpper, Remark, Title, SubTitle, PageBlockWrapper } from '../../components/PageStyle';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+
+SwiperCore.use([Navigation, Pagination, Autoplay])
+
 
 const SecondSection = () => {
     return (
@@ -16,10 +24,20 @@ const SecondSection = () => {
                 <SubTitle>고객 만족을 최우선으로 혁신적 기술을 적용하여 세계적 품질을 추구합니다.</SubTitle>
             </TitleWrpper>
             <CardWrapper>
-                <Card1></Card1>
-                <Card2></Card2>
-                <Card3></Card3>
+                <Card1/>
+                <Card2/>
+                <Card3/>
             </CardWrapper>
+            <SwiperWrapper
+                    className="banner"
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    autoplay={{ delay: 1000 }}
+                >
+                    <SwiperSlide><Card1/></SwiperSlide>
+                    <SwiperSlide><Card2/></SwiperSlide>
+                    <SwiperSlide><Card3/></SwiperSlide>
+                </SwiperWrapper>
             </PageBlockWrapper>
         </Background>
     );
@@ -47,6 +65,24 @@ const CardWrapper = styled.div`
     justify-content: space-between;
     margin: 5vh auto;
     overflow: hidden;
+    @media screen and (max-width: 1183px) {
+        display: none;
+        width: 90vw;
+        justify-content: space-around;
+  }
+`;
+
+const SwiperWrapper = styled(Swiper)`
+    display: flex;
+    max-width: 354px;
+    justify-content: space-between;
+    margin: 5vh auto;
+    display: none;
+    @media screen and (max-width: 1183px) {
+        display: flex;
+        width: 90vw;
+        justify-content: space-around;
+  }
 `;
 
 const Card1 = styled.div`
