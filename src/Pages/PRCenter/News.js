@@ -1,9 +1,5 @@
-/* global history */
-/* global location */
-/* global window */
-/* eslint no-restricted-globals: ["off"] */
+
 import React, {useState, useEffect, Component} from 'react';
-import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
@@ -17,7 +13,8 @@ import NewsImg1 from '../../assets/newscard1.png';
 import axios from 'axios';
 import ReactPaginate from 'react-paginate';
 
-export default class App extends Component {
+export default class News extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -30,6 +27,7 @@ export default class App extends Component {
             .handlePageClick
             .bind(this);
     }
+    
     receivedData() {
         axios
             .get(`https://www.sgtapi.tk/news/newslist.do`)
@@ -37,22 +35,25 @@ export default class App extends Component {
                 const data = res.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
                 const postData = slice.map(newscards => 
-                <NewsCardBlock key={newscards.idx} 
-                    // onClick={() =>
-                    //     history.push(
-                    //     {
-                    //         pathname: `/news-info/${newscards.idx}`,
-                    //         props: {id: newscards.idx}
-                    //     })}    
-                >
-                    <NewsImg></NewsImg>
-                    <Line/>
-                    <NewsContentWrapper>
-                    <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>
-                    {newscards.idx}
-                    <NewsContent>{newscards.newscon}</NewsContent>
-                    </NewsContentWrapper>
-                </NewsCardBlock>
+                    <Link to={{pathname: `/news-info/${newscards.idx}`, props: {id: newscards.idx}}} style={{textDecoration: "none", color: "#000"}}>
+                        <NewsCardBlock key={newscards.idx} 
+                            // onClick={
+                            //     this.props.history.push(
+                            //     {
+                            //         pathname: `/news-info/${newscards.idx}`,
+                            //         props: {id: newscards.idx}
+                            //     })
+                            //     }    
+                        >
+                        <NewsImg></NewsImg>
+                        <Line/>
+                        <NewsContentWrapper>
+                        <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>
+                        {newscards.idx}
+                        <NewsContent>{newscards.newscon}</NewsContent>
+                        </NewsContentWrapper>
+                    </NewsCardBlock>
+                </Link>
                 )
 
                 this.setState({
@@ -78,6 +79,7 @@ export default class App extends Component {
         this.receivedData()
     }
     render() {
+                const { history } = this.props;
 
     return (
         <PageWrapper>
@@ -102,22 +104,23 @@ export default class App extends Component {
             </PageTitleWrpper>
             <NewsCardWrapper>
                 {this.state.postData}
-            </NewsCardWrapper>
-                            <Paginate>
-                 <ReactPaginate
-                    previousLabel={"<"}
-                    nextLabel={">"}
-                    breakLabel={"..."}
-                    breakClassName={"break-me"}
-                    pageCount={this.state.pageCount}
-                    marginPagesDisplayed={2}
-                    pageRangeDisplayed={5}
-                    onPageChange={this.handlePageClick}
-                    containerClassName={"pagination"}
-                    subContainerClassName={"pages pagination"}
-                    activeClassName={"active"}
-                />
+                <Paginate>
+                    <ReactPaginate
+                        previousLabel={"<"}
+                        nextLabel={">"}
+                        breakLabel={"..."}
+                        breakClassName={"break-me"}
+                        pageCount={this.state.pageCount}
+                        marginPagesDisplayed={2}
+                        pageRangeDisplayed={5}
+                        onPageChange={this.handlePageClick}
+                        containerClassName={"pagination"}
+                        subContainerClassName={"pages pagination"}
+                        activeClassName={"active"}
+                    />
                 </Paginate>
+            </NewsCardWrapper>
+                
             <Footer/>
         </PageWrapper>
     );
@@ -194,15 +197,14 @@ const NewsCardWrapper = styled.div`
     padding: 10vh 0;
     @media screen and (max-width: 880px) {
         justify-content: space-around;
-        padding: 0;
-        margin-bottom: 10vh;
+        padding: 3vh 0 20vh 0;
   }
 `;
  
 const NewsCardBlock = styled.div`
     max-width: 350px;
     border: 1px solid #D8D8D8;
-    margin-top: 5vh;
+    margin-bottom: 5vh;
 `;
 
 const NewsImg = styled.div`
@@ -251,5 +253,7 @@ const NewsContent = styled.div`
 `;
 
 const Paginate = styled.div`
-    margin: 5vh auto;
+    weight: 90vw;
+    padding: 3vh auto 5vh auto;
+    cursor: pointer;
 `;

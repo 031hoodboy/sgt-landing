@@ -24,7 +24,8 @@ export default class App extends Component {
 
                 const data = res.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
-                const postData = slice.map(newscards => <NewsCardBlock key={newscards.idx} 
+                const postData = slice.map(newscards => 
+                <NewsCardBlock key={newscards.idx} 
                     // onClick={() =>
                     //     history.push(
                     //     {
