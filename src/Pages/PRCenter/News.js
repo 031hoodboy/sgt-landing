@@ -103,7 +103,9 @@ export default class News extends Component {
                 </SubTitle2>
             </PageTitleWrpper>
             <NewsCardWrapper>
-                {this.state.postData}
+                <CardWrapper>
+                    {this.state.postData}
+                </CardWrapper>
                 <Paginate>
                     <ReactPaginate
                         previousLabel={"<"}
@@ -189,10 +191,8 @@ const SelectNavBlock = styled(NavBlock)`
 
 const NewsCardWrapper = styled.div`
     display: flex;
-    width: 90vw;
-    max-width: 1088px;
-    margin: 0 auto;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     padding: 10vh 0;
     @media screen and (max-width: 880px) {
@@ -256,4 +256,16 @@ const Paginate = styled.div`
     weight: 90vw;
     padding: 3vh auto 5vh auto;
     cursor: pointer;
+`;
+
+const CardWrapper = styled.div`
+    display: flex;
+    width: 90vw;
+    max-width: 1088px;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @media screen and (max-width: 880px) {
+        justify-content: space-around;
+  }
 `;
