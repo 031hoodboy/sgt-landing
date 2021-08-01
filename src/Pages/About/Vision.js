@@ -100,7 +100,6 @@ const Chart1 = styled.div`
 const Chart2 = styled.div`
     width: 100vw;
     height: 100vw;
-    margin: 0 auto;
     background-image: url(${SmallChart});
     background-size: contain;
     background-repeat: no-repeat;

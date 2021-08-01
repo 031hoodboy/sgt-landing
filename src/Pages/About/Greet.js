@@ -157,7 +157,6 @@ const Profile2 = styled.div`
         margin: 0 auto;
         display: flex;
         margin-top: 150px;
-        margin-bottom: 30px;
   }
 `;
 
@@ -182,6 +181,7 @@ const SignWrapper = styled.div`
     align-items: center;
     @media screen and (max-width: 780px) {
         justify-content: center;
+        margin: 5vh auto 20vh auto;
   }
   `;
 

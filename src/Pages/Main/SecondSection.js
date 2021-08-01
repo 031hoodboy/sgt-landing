@@ -24,9 +24,24 @@ const SecondSection = () => {
                 <SubTitle>고객 만족을 최우선으로 혁신적 기술을 적용하여 세계적 품질을 추구합니다.</SubTitle>
             </TitleWrpper>
             <CardWrapper>
-                <Card1/>
-                <Card2/>
-                <Card3/>
+                <Card1>
+                    <Card1Background>
+                        <CardTitle>정밀가공사업</CardTitle>
+                        <CardSubTitle>반도체 검사, 자동화 설비</CardSubTitle>
+                    </Card1Background>
+                </Card1>
+                <Card2>
+                    <Card2Background>
+                        <CardTitle>장비제조사업</CardTitle>
+                        <CardSubTitle>LCD/LED/OLED 제조장비 제작</CardSubTitle>
+                    </Card2Background>
+                </Card2>
+                <Card3>
+                    <Card3Background>
+                        <CardTitle>2차전지소재사업</CardTitle>
+                        <CardSubTitle>2차전지 셀파우치필름 제조</CardSubTitle>
+                    </Card3Background>
+                </Card3>
             </CardWrapper>
             <SwiperWrapper
                     className="banner"
@@ -34,9 +49,30 @@ const SecondSection = () => {
                     slidesPerView={1}
                     autoplay={{ delay: 1000 }}
                 >
-                    <SwiperSlide><Card1/></SwiperSlide>
-                    <SwiperSlide><Card2/></SwiperSlide>
-                    <SwiperSlide><Card3/></SwiperSlide>
+                    <SwiperSlide>
+                        <Card1>
+                            <Card1Background>
+                                <CardTitle>정밀가공사업</CardTitle>
+                                <CardSubTitle>반도체 검사, 자동화 설비</CardSubTitle>
+                            </Card1Background>
+                        </Card1>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Card2>
+                            <Card2Background>
+                                <CardTitle>장비제조사업</CardTitle>
+                                <CardSubTitle>LCD/LED/OLED 제조장비 제작</CardSubTitle>
+                            </Card2Background>
+                        </Card2>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Card3>
+                            <Card3Background>
+                                <CardTitle>2차전지소재사업</CardTitle>
+                                <CardSubTitle>2차전지 셀파우치필름 제조</CardSubTitle>
+                            </Card3Background>
+                        </Card3>
+                    </SwiperSlide>
                 </SwiperWrapper>
             </PageBlockWrapper>
         </Background>
@@ -73,7 +109,6 @@ const CardWrapper = styled.div`
 `;
 
 const SwiperWrapper = styled(Swiper)`
-    display: flex;
     max-width: 354px;
     justify-content: space-between;
     margin: 5vh auto;
@@ -86,20 +121,9 @@ const SwiperWrapper = styled(Swiper)`
 `;
 
 const Card1 = styled.div`
-    min-width: 355px;
-    min-height: 450px;
-    background: #fff;
-    background-image: url(${Card1Img});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    transition: all .3s ease-in-out;
-    & :hover{
-        background-size: 110%;
-    }
+    width: 355px;
+    height: 450px;
+    overflow: hidden;
 `;
 
 const Card2 = styled(Card1)`
@@ -109,5 +133,43 @@ const Card2 = styled(Card1)`
 
 const Card3 = styled(Card1)`
     background-image: url(${Card3Img});
+`;
+
+const Card1Background = styled.div`
+    min-width: 275px;
+    min-height: 370px;
+    padding: 40px;
+    background-image: url(${Card1Img});
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;  
+    &:hover{
+        background-size: 105%;
+    }
+`;
+
+const Card2Background = styled(Card1Background)`
+    background-image: url(${Card2Img});
+`;
+
+const Card3Background = styled(Card1Background)`
+    background-image: url(${Card3Img});
+`;
+
+const CardTitle = styled.div`
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+`;
+
+const CardSubTitle = styled.div`
+    color: #fff;
+    margin-top: 18px;
+    font-size: 15px;
 `;
 export default SecondSection;
