@@ -100,18 +100,16 @@ const Fade = keyframes`
 const NewsImg = styled.div`
     min-height: 198px;
     max-width: 350px;
-    background: #fff;
     background-image: url(${NewsImg1});
-    background-size: cover;
+    background-size: 101%;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
-    align-items: center;
     flex-direction: column;
     transform: scale(1);
-    transition: all 0.4s ease-in-out;  
+    transition: all 0.2s ease-in-out;  
     &:hover{
-    animation: ${Fade};
+        background-size: 105%;
     }
     @media screen and (max-width: 840px) {
         width: 90vw;

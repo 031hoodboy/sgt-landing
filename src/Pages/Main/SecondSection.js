@@ -145,7 +145,6 @@ const Card1Background = styled.div`
     background-position: center; 
     display: flex;
     flex-direction: column;
-    cursor: pointer;
     transform: scale(1);
     transition: all 0.2s ease-in-out;  
     &:hover{

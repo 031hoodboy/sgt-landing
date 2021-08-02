@@ -91,7 +91,6 @@ const Card1Background = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     transform: scale(1);
     transition: all 0.2s ease-in-out;  
     &:hover{

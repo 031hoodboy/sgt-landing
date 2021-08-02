@@ -210,14 +210,17 @@ const NewsCardBlock = styled.div`
 const NewsImg = styled.div`
     min-height: 198px;
     max-width: 350px;
-    background: #fff;
     background-image: url(${NewsImg1});
-    background-size: cover;
+    background-size: 101%;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
-    align-items: center;
     flex-direction: column;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;  
+    &:hover{
+        background-size: 105%;
+    }
     @media screen and (max-width: 840px) {
         width: 90vw;
   }
