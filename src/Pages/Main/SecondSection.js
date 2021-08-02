@@ -131,6 +131,7 @@ const Card1 = styled.div`
     width: 355px;
     height: 450px;
     overflow: hidden;
+    border: 1px solid #D8D8D8;
 `;
 
 const Card2 = styled(Card1)`
@@ -147,7 +148,7 @@ const Card1Background = styled.div`
     min-height: 380px;
     padding: 35px;
     background-image: url(${Card1Img});
-    background-size: 100%;
+    background-size: 101%;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
