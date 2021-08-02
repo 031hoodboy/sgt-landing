@@ -72,6 +72,8 @@ const HeaderDropBlock = styled.div`
     position: fixed;
     background: #fff;
     display: none;
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.1);
+
 `;
 
 // const DropContent = styled(NavContent)`

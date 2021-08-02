@@ -22,10 +22,12 @@ import NewsInfo from './Pages/PRCenter/NewsInfo';
 import AddNews from './Pages/PRCenter/AddNews';
 import Catalogue from './Pages/PRCenter/Catalogue';
 // import Fee2 from './pages/Fee/Fee2';
+import ScrollTop from './components/PageTop';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollTop/>
       <Switch>
         <Route path="/" component={Main} exact />
         <Route path="/greet" component={Greet} />

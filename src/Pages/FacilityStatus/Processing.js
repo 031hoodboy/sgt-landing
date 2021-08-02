@@ -156,7 +156,7 @@ const NavBarWrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     top: calc(30vh + 56px);
-    box-shadow:  0px 3px 6px #d9d9d9;
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.1);
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -210,7 +210,6 @@ const BarkWrapper = styled.div`
         margin: 0 auto 20vh auto;
   }
 `;
-
 
 const Blockwrapper = styled.div`
     width: 1088px;

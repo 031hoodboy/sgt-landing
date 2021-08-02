@@ -146,6 +146,7 @@ export const NavBarWrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     top: calc(30vh + 56px);
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.1);
     @media screen and (max-width: 1312px) {
     height: 80px; 
     flex-wrap: wrap;
@@ -165,7 +166,6 @@ export const NavBlock = styled.div`
     justify-content: center;
     align-items: center;
     background: #fff;
-    border-bottom: 1px solid #D9D9D9;
     @media screen and (max-width: 1312px) {
     width: calc(30vw - 1px);
     height: 40px; 
