@@ -109,7 +109,10 @@ const Mail = styled.div`
     background-repeat: no-repeat;
     background-position: center; 
     margin-top: 10px;
-    margin-right: 3vw;
+    margin-right: 2vw;
+    @media screen and (max-width: 1220px) {
+    margin-bottom: 5vh;
+  }
     @media screen and (max-width: 780px) {
     width: 75px;
     height: 50px;
