@@ -68,7 +68,7 @@ const HeaderDropBlock = styled.div`
     top: 81px;
     left: 0;
     width: 100%;
-    height: 240px;
+    height: 190px;
     position: fixed;
     background: #fff;
     display: none;
