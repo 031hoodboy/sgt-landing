@@ -13,8 +13,16 @@ const ThirdSection = () => {
                     <Title>설비 및 기술 현황</Title>
                 </TitleWrpper>
                 <CardWrapper>
-                    <Card1>설비 현황</Card1>
-                    <Card2>기술 현황</Card2>
+                    <Card1>
+                    <Card1Background>
+                        <CardTitle>정밀가공사업</CardTitle>
+                    </Card1Background>
+                    </Card1>
+                    <Card2>                    
+                        <Card2Background>
+                        <CardTitle>기술현황</CardTitle>
+                        </Card2Background>
+                    </Card2>
                 </CardWrapper>
             </PageBlockWrapper>
         </Background>
@@ -52,20 +60,12 @@ const Card1 = styled.div`
     min-height: 198px;
     min-width: 450px;
     width: 38vw;
-    background: #fff;
     margin: 0 auto;
-    background-image: url(${Tech1Img});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
+    overflow: hidden;
     margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media screen and (max-width: 840px) {
         width: 90vw;
         min-height: 178px;
@@ -74,7 +74,40 @@ const Card1 = styled.div`
 `;
 
 const Card2 = styled(Card1)`
+
+`;
+
+
+const Card1Background = styled.div`
+    max-width: 530px;
+    max-height: 198px;
+    min-height: 198px;
+    min-width: 450px;
+    width: 38vw;
+    background-image: url(${Tech1Img});
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;  
+    &:hover{
+        background-size: 105%;
+    }
+`;
+
+const Card2Background = styled(Card1Background)`
     background-image: url(${Tech2Img});
+`;
+
+
+const CardTitle = styled.div`
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
 `;
 
 export default ThirdSection;

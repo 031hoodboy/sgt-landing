@@ -136,9 +136,9 @@ const Card3 = styled(Card1)`
 `;
 
 const Card1Background = styled.div`
-    min-width: 275px;
-    min-height: 370px;
-    padding: 40px;
+    min-width: 285px;
+    min-height: 380px;
+    padding: 35px;
     background-image: url(${Card1Img});
     background-size: 100%;
     background-repeat: no-repeat;
