@@ -40,7 +40,7 @@ const NewsInfo = ({location}) => {
         fetchNews();
     }, []);
 
-    if (loading) return <div>로딩중..</div>;
+    if (loading) return <div></div>;
     if (error) return <div>에러가 발생했습니다</div>;
     if (!newscard) return null;
 
@@ -74,7 +74,6 @@ const NewsInfo = ({location}) => {
                         </BoardHeader>
                         <BorderSubTitle>
                             <RegisDate>등록일: {newscards.regdate.split("", 10)}</RegisDate>
-                            <Look>조회</Look>
                         </BorderSubTitle>
                         <BoardContent>
                             <NewssContnet>{newscards.newscon}</NewssContnet>
@@ -177,10 +176,6 @@ const RegisDate = styled.div`
         padding: 0;
         font-size: 12px;
     }
-`;
-
-const Look = styled(Num)`
-    margin: 0 0 0 20px;
 `;
 
 const NewssContnet = styled.div`

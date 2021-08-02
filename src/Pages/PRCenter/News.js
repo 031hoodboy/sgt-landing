@@ -256,7 +256,6 @@ const NewsContent = styled.div`
 `;
 
 const Paginate = styled.div`
-    weight: 90vw;
     padding: 3vh auto 5vh auto;
     cursor: pointer;
 `;
