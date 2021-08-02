@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import {TitleWrpper, Remark, Title, PageBlockWrapper } from '../../components/PageStyle';
 import Tech1Img from '../../assets/tech1.png';
 import Tech2Img from '../../assets/tech2.png';
+import {Link} from 'react-router-dom';
 
 const ThirdSection = () => {
     return (
@@ -13,16 +14,20 @@ const ThirdSection = () => {
                     <Title>설비 및 기술 현황</Title>
                 </TitleWrpper>
                 <CardWrapper>
-                    <Card1>
-                    <Card1Background>
-                        <CardTitle>정밀가공사업</CardTitle>
-                    </Card1Background>
-                    </Card1>
-                    <Card2>                    
-                        <Card2Background>
-                        <CardTitle>기술현황</CardTitle>
-                        </Card2Background>
-                    </Card2>
+                    <Link to="/processing" style={{textDecoration: "none"}}>
+                        <Card1>
+                        <Card1Background>
+                            <CardTitle>설비 현황</CardTitle>
+                        </Card1Background>
+                        </Card1>
+                    </Link>
+                    <Link to="/introduce" style={{textDecoration: "none"}}>
+                        <Card2>                    
+                            <Card2Background>
+                            <CardTitle>기술 현황</CardTitle>
+                            </Card2Background>
+                        </Card2>
+                    </Link>
                 </CardWrapper>
             </PageBlockWrapper>
         </Background>
