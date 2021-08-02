@@ -76,6 +76,7 @@ const NavBarWrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     top: calc(30vh + 56px);
+    box-shadow:  0px 3px 6px #d9d9d9;
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -91,7 +92,6 @@ const NavBlock = styled.div`
     justify-content: center;
     align-items: center;
     background: #fff;
-    border-bottom: 1px solid #D9D9D9;
     @media screen and (max-width: 1024px) {
     width: 30vw;
     height: 40px; 
@@ -104,7 +104,6 @@ const SelectNavBlock = styled(NavBlock)`
     color: #fff;
     border-left: 1px solid #930E14;
 `;
-
 
 const Blockwrapper = styled.div`
     width: 1088px;

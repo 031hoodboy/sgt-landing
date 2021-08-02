@@ -19,9 +19,9 @@ const QuoteContact = () => {
                     <Link to="/quote-contact" style={{textDecoration: 'none', color: "#000"}}>
                         <SelectNavBlock>견적문의</SelectNavBlock>
                     </Link>
-                    {/* <Link to="/recruitment" style={{textDecoration: 'none', color: "#000"}}>
+                    <Link to="/recruitment" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>채용안내</NavBlock>
-                    </Link> */}
+                    </Link>
                 </NavBarWrapper>
             </MainImg>
             <PageTitleWrpper>
@@ -71,6 +71,7 @@ const NavBarWrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     top: calc(30vh + 56px);
+    box-shadow:  0px 3px 6px #d9d9d9;
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -79,16 +80,15 @@ const NavBarWrapper = styled.div`
 `;
 
 const NavBlock = styled.div`
-    width: 60vw;
+    width: 30vw;
     height: 58px;
     border-left: 1px solid #D9D9D9;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fff;
-    border-bottom: 1px solid #D9D9D9;
     @media screen and (max-width: 1024px) {
-    width: 90vw;
+    width: 45vw;
     height: 40px; 
     font-size: 14px;
     }

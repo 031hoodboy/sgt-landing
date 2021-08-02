@@ -7,8 +7,6 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/customersupportbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
-import MailImg from '../../assets/mail.png'
-import {css} from '@emotion/react';
 
 const QuoteContact = () => {
     return (
@@ -92,6 +90,7 @@ const NavBarWrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     top: calc(30vh + 56px);
+    box-shadow:  0px 3px 6px #d9d9d9;
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -100,16 +99,15 @@ const NavBarWrapper = styled.div`
 `;
 
 const NavBlock = styled.div`
-    width: 60vw;
+    width: 20vw;
     height: 58px;
     border-left: 1px solid #D9D9D9;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fff;
-    border-bottom: 1px solid #D9D9D9;
     @media screen and (max-width: 1024px) {
-    width: 90vw;
+    width: 30vw;
     height: 40px; 
     font-size: 14px;
     }
@@ -119,24 +117,6 @@ const SelectNavBlock = styled(NavBlock)`
     background: #930E14;
     color: #fff;
     border-left: 1px solid #930E14;
-`;
-
-const Mail = styled.div`
-    width: 89px;
-    height: 59px;
-    margin: 0;
-    background-image: url(${MailImg});
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-    margin-top: 10px;
-    margin-right: 3vw;
-    @media screen and (max-width: 780px) {
-    width: 75px;
-    height: 50px;
-    margin: 0;
-    margin-bottom: 5vh;
-  }
 `;
 
 const Blockwrapper = styled.div`
