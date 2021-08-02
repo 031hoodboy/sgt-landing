@@ -179,6 +179,7 @@ const SelectNavBlock = styled(NavBlock)`
     color: #fff;
     border-left: 1px solid #930E14;
 `;
+
 const Bar = styled.div`
     width: 1048px;
     height: 52px;
@@ -224,7 +225,7 @@ const Block = styled.div`
     height: 350px;
     margin-bottom: 15px;
     background-image: url(${IntroImg1});
-    background-size: cover;
+    background-size: 101%;
     background-repeat: no-repeat;
     background-position: center; 
     @media screen and (max-width: 1220px) {

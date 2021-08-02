@@ -206,7 +206,7 @@ const SmallBlock = styled.div`
     height: 30vw;
     max-height: 350px;
     background-image: url(${ManufactureImg1});
-    background-size: cover;
+    background-size: 101%;
     background-repeat: no-repeat;
     background-position: center; 
     margin-bottom: 2vh;

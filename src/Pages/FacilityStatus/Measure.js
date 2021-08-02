@@ -242,7 +242,6 @@ const BarkWrapper = styled.div`
   }
 `;
 
-
 const Blockwrapper = styled.div`
     width: 1088px;
     display: flex;
