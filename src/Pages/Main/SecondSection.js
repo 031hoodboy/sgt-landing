@@ -10,6 +10,7 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
+import {Link} from 'react-router-dom';
 
 SwiperCore.use([Navigation, Pagination, Autoplay])
 
@@ -24,24 +25,30 @@ const SecondSection = () => {
                 <SubTitle>고객 만족을 최우선으로 혁신적 기술을 적용하여 세계적 품질을 추구합니다.</SubTitle>
             </TitleWrpper>
             <CardWrapper>
+                <Link to="/processing-business" style={{textDecoration: "none"}}>
                 <Card1>
                     <Card1Background>
                         <CardTitle>정밀가공사업</CardTitle>
                         <CardSubTitle>반도체 검사, 자동화 설비</CardSubTitle>
                     </Card1Background>
                 </Card1>
+                </Link>
+                <Link to="/manufacture" style={{textDecoration: "none"}}>
                 <Card2>
                     <Card2Background>
                         <CardTitle>장비제조사업</CardTitle>
                         <CardSubTitle>LCD/LED/OLED 제조장비 제작</CardSubTitle>
                     </Card2Background>
                 </Card2>
+                </Link>
+                <Link to="/secondary-battery" style={{textDecoration: "none"}}>
                 <Card3>
                     <Card3Background>
                         <CardTitle>2차전지소재사업</CardTitle>
                         <CardSubTitle>2차전지 셀파우치필름 제조</CardSubTitle>
                     </Card3Background>
                 </Card3>
+                </Link>
             </CardWrapper>
             <SwiperWrapper
                     className="banner"
