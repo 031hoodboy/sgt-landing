@@ -7,10 +7,10 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
 import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
-import ProcessImg1 from '../../assets/processimg1.png';
-import ProcessImg2 from '../../assets/processimg2.png';
-import ProcessImg3 from '../../assets/processimg3.png';
-import ProcessImg4 from '../../assets/processimg4.png';
+import ProcessImg1 from '../../assets/processimg1.jpg';
+import ProcessImg2 from '../../assets/processimg2.jpg';
+import ProcessImg3 from '../../assets/processimg3.jpg';
+import ProcessImg4 from '../../assets/processimg4.jpg';
 
 const ProcessingBusiness = () => {
     return (
@@ -81,6 +81,7 @@ const NavBarWrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     top: calc(30vh + 56px);
+    box-shadow:  0px 3px 6px #d9d9d9;
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -96,7 +97,6 @@ const NavBlock = styled.div`
     justify-content: center;
     align-items: center;
     background: #fff;
-    border-bottom: 1px solid #D9D9D9;
     @media screen and (max-width: 1024px) {
     width: 30vw;
     height: 40px; 
@@ -150,7 +150,6 @@ const Blockwrapper = styled.div`
 `;
 
 const Block = styled.div`
-    border: 1px solid #D0D0D0;
     width: 44vw;
     max-width: 535px;
     height: 30vw;

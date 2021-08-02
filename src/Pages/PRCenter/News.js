@@ -79,8 +79,6 @@ export default class News extends Component {
         this.receivedData()
     }
     render() {
-                const { history } = this.props;
-
     return (
         <PageWrapper>
             <Header/>
@@ -217,7 +215,7 @@ const NewsImg = styled.div`
     display: flex;
     flex-direction: column;
     transform: scale(1);
-    transition: all 0.2s ease-in-out;  
+    transition: all 0.3s ease-in-out;  
     &:hover{
         background-size: 105%;
     }
