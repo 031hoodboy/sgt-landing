@@ -261,7 +261,7 @@ const Block = styled.div`
     height: 350px;
     margin-bottom: 15px;
     background-image: url(${Measure1});
-    background-size: cover;
+    background-size: 101%;
     background-repeat: no-repeat;
     background-position: center; 
     @media screen and (max-width: 1220px) {

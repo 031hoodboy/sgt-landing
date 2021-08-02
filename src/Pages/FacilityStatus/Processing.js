@@ -225,14 +225,14 @@ const Blockwrapper = styled.div`
 `;
 
 const Block = styled.div`
-    border-bottom: 1px solid #D0D0D0;
     width: 353px;
     height: 350px;
     margin-bottom: 15px;
     background-image: url(${Machine1});
-    background-size: cover;
+    background-size: 101%;
     background-repeat: no-repeat;
     background-position: center; 
+    border-bottom: 1px solid #DBDBDB;
     @media screen and (max-width: 1220px) {
     width: 90vw;
     max-width: 360px;
