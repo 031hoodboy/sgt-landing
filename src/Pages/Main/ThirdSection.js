@@ -90,16 +90,16 @@ const Card1Background = styled.div`
     min-width: 450px;
     width: 38vw;
     background-image: url(${Tech1Img});
-    background-size: 100%;
+    background-size: 105%;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
     justify-content: center;
     align-items: center;
     transform: scale(1);
-    transition: all 0.2s ease-in-out;  
+    transition: all 0.3s ease-in-out;  
     &:hover{
-        background-size: 105%;
+        background-size: 110%;
     }
 `;
 

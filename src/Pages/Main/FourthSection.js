@@ -88,15 +88,6 @@ const NewsCardBlock = styled.div`
     transition: all .5s;
 `;
 
-const Fade = keyframes`
-0% {
-    background-size: 100%;
-}
-100% {
-        background-size: 110%;
-    }
-`;
-
 const NewsImg = styled.div`
     min-height: 198px;
     max-width: 350px;
@@ -107,7 +98,7 @@ const NewsImg = styled.div`
     display: flex;
     flex-direction: column;
     transform: scale(1);
-    transition: all 0.2s ease-in-out;  
+    transition: all 0.3s ease-in-out;  
     &:hover{
         background-size: 105%;
     }
