@@ -153,15 +153,6 @@ const BoardContent = styled.div`
     border-bottom: 1px solid #DBDBDB;
 `;
 
-const Num = styled.div`
-    margin: 0 20px;
-    min-width: 20px;
-    cursor: pointer;
-    @media screen and (max-width: 780px) {
-        font-size: 12px;
-    }
-`;
-
 const BordTitle = styled.div`
     flex:1;
     padding: 0 50px;

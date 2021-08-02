@@ -2,19 +2,28 @@ import React from 'react';
 import styled from '@emotion/styled';
 import BackgroundImg from '../../assets/mainbackgroundimg.png';
 import Arrow from '../../assets/arrow.png'
+
 const FirstSection = () => {
+    let pageHeight = window.innerHeight;
+
+    const handleTop = () => {  // 클릭하면 스크롤이 위로 올라가는 함수
+    window.scrollTo({
+        top: pageHeight,
+        behavior: "smooth"
+    });
+    }
+
     return (
         <>
         <Gradient/>
         <Background>
-
             <SloganWrapper>
                 <Slogan>숨겨진 <Emphasis>가치</Emphasis>를 찾는기업,</Slogan>
                 <Slogan>고객이 <Emphasis>신뢰</Emphasis>하는 기업</Slogan>
                 <SmallSlogan><Emphasis>S</Emphasis>ocial <Emphasis>G</Emphasis>ravity <Emphasis>T</Emphasis>echnology Corp.</SmallSlogan>
             </SloganWrapper>
         </Background>
-        <ScrollDownIcon/>
+        <ScrollDownIcon onClick={handleTop}/>
         </>
     );
 }
@@ -33,7 +42,7 @@ const Gradient = styled.div`
 
 const Background = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 92vh;
     background: #282D27;
     background-image: url(${BackgroundImg});
     background-size: cover;
@@ -44,12 +53,12 @@ const Background = styled.div`
     justify-content: center;
     flex-direction: column;
     @media screen and (max-width: 840px) {
-        height: 100vh;
+        height: 92vh;
   }
 `;
 
 const SloganWrapper = styled.div`
-    margin-right: 20vw;
+    margin-right: 15vw;
     margin-bottom: 20vh;
     z-index: 1;
     @media screen and (max-width: 840px) {
@@ -66,7 +75,7 @@ const SloganWrapper = styled.div`
 const Slogan = styled.div`
     color: #fff;
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 700;
     @media screen and (max-width: 840px) {
         font-size: 27px;
   }
@@ -89,17 +98,18 @@ const ScrollDownIcon = styled.div`
     position: absolute;
     left: 50%;
     margin-left: -20px;
-    bottom: -5%;
+    bottom: 2%;
     width: 61.5px;
     height: 39px;
     background-image: url(${Arrow});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
+    cursor: pointer;
   @media screen and (max-width: 1024px) {
     width: 43.5px;
     height: 21px;
-    bottom: -25%;
+    bottom: -15%;
   }
 `;
 
