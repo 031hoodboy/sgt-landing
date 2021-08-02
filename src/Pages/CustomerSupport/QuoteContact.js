@@ -129,6 +129,7 @@ const Blockwrapper = styled.div`
     font-size: 40px;
     color: #bfbfbf;
     justify-content: center;
+    align-items: center;
     @media screen and (max-width: 1220px) {
         width: 90vw;
         flex-direction: column;
