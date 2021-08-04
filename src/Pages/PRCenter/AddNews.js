@@ -50,7 +50,7 @@ class Post extends Component {
         editdate: this.state.editdate,
     };
     axios
-      .post("http://118.67.132.125:8080/news/newslist.do", data)
+      .post("https://www.sgtapi.tk/news/newslist.do", data)
       .then(res => console.log(res))
       .catch(err => console.log(err));
   };

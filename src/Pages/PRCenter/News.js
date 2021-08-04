@@ -30,7 +30,7 @@ export default class News extends Component {
     
     receivedData() {
         axios
-            .get(`http://118.67.132.125:8080/news/newslist.do`)
+            .get(`https://www.sgtapi.tk/news/newslist.do`)
             .then(res => {
                 const data = res.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
