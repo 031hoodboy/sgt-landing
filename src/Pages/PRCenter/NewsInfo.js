@@ -227,7 +227,7 @@ const NavBarWrapper = styled.div`
 `;
 
 const NavBlock = styled.div`
-    width: 20vw;
+    width: 30vw;
     height: 58px;
     border-left: 1px solid #D9D9D9;
     display: flex;
