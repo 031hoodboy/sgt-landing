@@ -30,7 +30,7 @@ export default class News extends Component {
     
     receivedData() {
         axios
-            .get(`https://www.sgtapi.tk/news/newslist.do`)
+            .get(`http://118.67.132.125:8080/news/newslist.do`)
             .then(res => {
                 const data = res.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
@@ -158,7 +158,7 @@ const NavBarWrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     top: calc(30vh + 56px);
-    box-shadow:  0px 3px 6px #d9d9d9;
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.1);
     @media screen and (max-width: 1024px) {
         width: calc(90vw + 3px);
         top: calc(23vh); 
@@ -209,7 +209,7 @@ const NewsImg = styled.div`
     min-height: 198px;
     max-width: 350px;
     background-image: url(${NewsImg1});
-    background-size: 101%;
+    background-size: 105%;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
@@ -217,7 +217,7 @@ const NewsImg = styled.div`
     transform: scale(1);
     transition: all 0.3s ease-in-out;  
     &:hover{
-        background-size: 105%;
+        background-size: 108%;
     }
     @media screen and (max-width: 840px) {
         width: 90vw;
