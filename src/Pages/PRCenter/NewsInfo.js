@@ -235,7 +235,7 @@ const NavBlock = styled.div`
     align-items: center;
     background: #fff;
     @media screen and (max-width: 1024px) {
-    width: 30vw;
+    width: 45vw;
     height: 40px; 
     font-size: 14px;
     }
