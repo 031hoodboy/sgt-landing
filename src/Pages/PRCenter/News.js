@@ -30,7 +30,7 @@ export default class News extends Component {
     
     receivedData() {
         axios
-            .get(`https://www.sgtapi.tk/news/newslist.do`)
+            .get(`https://www.sgtapi.co.kr/news/newslist.do`)
             .then(res => {
                 const data = res.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
