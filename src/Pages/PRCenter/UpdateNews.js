@@ -107,7 +107,7 @@ class CustomerAdd extends React.Component {
                   <Label>이미지</Label>
                   <Input type="file" name="file" file={this.state.file} value={this.state.fileName} onChange={this.handleFileChange} />
                 </InputWrapper>
-                <Button type="submit" onClick={Alert}>추가하기</Button>
+                <Button type="submit" onClick={Alert}>수정하기</Button>
               </form>
               </Blockwrapper>
             <Footer/>
