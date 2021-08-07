@@ -35,6 +35,7 @@ export default class News extends Component {
                 const data = res.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
                 const postData = slice.map(newscards => 
+
                     <Link to={{pathname: `/news-info/${newscards.idx}`, props: {id: newscards.idx}}} style={{textDecoration: "none", color: "#000"}}>
                         <NewsCardBlock key={newscards.idx} 
                             // onClick={
@@ -45,11 +46,14 @@ export default class News extends Component {
                             //     })
                             //     }    
                         >
-                        <NewsImg></NewsImg>
+                        <NewsImg src={newscards?.care_image_list?.[0].url} alt="">
+ 
+                        </NewsImg>
                         <Line/>
                         <NewsContentWrapper>
                         <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>
                         {newscards.idx}
+                        {newscards?.care_image_list?.[0].url}
                         <NewsContent>{newscards.newscon}</NewsContent>
                         </NewsContentWrapper>
                     </NewsCardBlock>
@@ -205,10 +209,9 @@ const NewsCardBlock = styled.div`
     margin-bottom: 5vh;
 `;
 
-const NewsImg = styled.div`
+const NewsImg = styled.img`
     min-height: 198px;
     max-width: 350px;
-    background-image: url(${NewsImg1});
     background-size: 105%;
     background-repeat: no-repeat;
     background-position: center; 
