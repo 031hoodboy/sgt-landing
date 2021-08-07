@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import SgtNoneImg from '../assets/sgtnone.png'
+import {css, keyframes} from '@emotion/react';
 
-const HeaderNav = () => {
-    return (
+export default withRouter(({location: {pathname}}) => (
         <>
         <HeaderBlock>
             <LogoWrapper>
@@ -13,16 +13,16 @@ const HeaderNav = () => {
             <NavigatorWrapper>
                 <Navigator>
                     <Link to="/greet" style={{textDecoration: 'none'}}>
-                        <NavContent>인사말</NavContent>
+                        <NavContent current={pathname === "/greet"}>인사말</NavContent>
                     </Link>
                     <Link to="/vision" style={{textDecoration: 'none'}}>
-                        <NavContent type="trigger">경영이념</NavContent>
+                        <NavContent current={pathname === "/vision"}>경영이념</NavContent>
                     </Link>
                     <Link to="/history" style={{textDecoration: 'none'}}>
-                        <NavContent>연혁</NavContent>
+                        <NavContent current={pathname === "/history"}>연혁</NavContent>
                     </Link>
                     <Link to="/way-to-come" style={{textDecoration: 'none'}}>
-                        <NavContent>오시는 길</NavContent>
+                        <NavContent current={pathname === "/way-to-come"}>오시는 길</NavContent>
                     </Link>
                 </Navigator>
                 <Navigator>
@@ -73,10 +73,9 @@ const HeaderNav = () => {
                 </Navigator>
             </NavigatorWrapper>
         </HeaderBlock>
-
         </>
-    );
-};
+    )
+)
 
 const HeaderBlock = styled.div`
     width: 85vw;
@@ -130,10 +129,12 @@ const NavContent = styled.div`
     &:hover {
         color: #930E14;
     }
+    ${props => props.current && css`
+        color: #930E14;
+    `}
 `;
 
 const NavigatorWrapper = styled.div`
     display: flex;
 `;
 
-export default HeaderNav;

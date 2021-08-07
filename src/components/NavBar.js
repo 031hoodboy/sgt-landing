@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import HeaderNav from './HeaderNav';
+import {css} from '@emotion/react';
 
-const NavBar = () => {
-
-    return (
-
+export default withRouter(({location: {pathname}}) => (
         <Navigator>
             <Link to="/greet" style={{textDecoration: 'none'}}>
-                <NavContent>회사소개</NavContent>
+                <NavContent 
+                    current={
+                            pathname === "/greet" 
+                            || pathname === "/vision" 
+                            || pathname === "/history" 
+                            || pathname === "/way-to-come"}>
+                회사소개</NavContent>
             </Link>
             <Link to="/processing-business" style={{textDecoration: 'none'}}>
                 <NavContent type="trigger">사업영역</NavContent>
@@ -31,8 +35,8 @@ const NavBar = () => {
             </HeaderDropBlock> 
         </Navigator>
         
-    );
-};
+    )
+);
 
 const Navigator = styled.div`
     display: flex;
@@ -60,6 +64,9 @@ const NavContent = styled.div`
     &:hover {
         color: #930E14;
     }
+    ${props => props.current && css`
+        color: #930E14;
+    `}
 `;
 
 const HeaderDropBlock = styled.div`
@@ -100,4 +107,3 @@ const HeaderDropBlock = styled.div`
 
 // const DropWrapper = styled.div`
 // `;
-export default NavBar;
