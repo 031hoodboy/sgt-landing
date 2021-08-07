@@ -27,48 +27,48 @@ export default withRouter(({location: {pathname}}) => (
                 </Navigator>
                 <Navigator>
                     <Link to="/processing-business" style={{textDecoration: 'none'}}>
-                        <NavContent>정밀가공사업</NavContent>
+                        <NavContent current={pathname === "/processing-business"}>정밀가공사업</NavContent>
                     </Link>
                     <Link to="/manufacture" style={{textDecoration: 'none'}}>
-                        <NavContent type="trigger">장비제조사업</NavContent>
+                        <NavContent current={pathname === "/manufacture"}>장비제조사업</NavContent>
                     </Link>
                     <Link to="/secondary-battery" style={{textDecoration: 'none'}}>
-                        <NavContent>이차전지소재사업</NavContent>
+                        <NavContent current={pathname === "/secondary-battery"}>이차전지소재사업</NavContent>
                     </Link>
                 </Navigator>
                 <Navigator>
                     <Link to="processing" style={{textDecoration: 'none'}}>
-                        <NavContent>가공설비</NavContent>
+                        <NavContent current={pathname === "/processing"}>가공설비</NavContent>
                     </Link>
                     <Link to="/measure" style={{textDecoration: 'none'}}>
-                        <NavContent type="trigger">측정설비</NavContent>
+                        <NavContent current={pathname === "/measure"}>측정설비</NavContent>
                     </Link>
                     <Link to="/production" style={{textDecoration: 'none'}}>
-                        <NavContent>생산설비</NavContent>
+                        <NavContent current={pathname === "/production"}>생산설비</NavContent>
                     </Link>
                 </Navigator>
                 <Navigator>
                     <Link to="/introduce" style={{textDecoration: 'none'}}>
-                        <NavContent>연구소 소개</NavContent>
+                        <NavContent current={pathname === "/introduce"}>연구소 소개</NavContent>
                     </Link>
                     <Link to="/patent" style={{textDecoration: 'none'}}>
-                        <NavContent type="trigger">특허 및 인증</NavContent>
+                        <NavContent current={pathname === "/patent"}>특허 및 인증</NavContent>
                     </Link>
                 </Navigator>
                 <Navigator>
                     <Link to="/news" style={{textDecoration: 'none'}}>
-                        <NavContent>뉴스</NavContent>
+                        <NavContent current={pathname === "/news"}>뉴스</NavContent>
                     </Link>
                     <Link to="/catalogue" style={{textDecoration: 'none'}}>
-                        <NavContent type="trigger">e-카탈로그</NavContent>
+                        <NavContent current={pathname === "/catalogue"}>e-카탈로그</NavContent>
                     </Link>
                 </Navigator>
                 <Navigator>
                     <Link to="/quote-contact" style={{textDecoration: 'none'}}>
-                        <NavContent>견적문의</NavContent>
+                        <NavContent current={pathname === "/quote-contact"}>견적문의</NavContent>
                     </Link>
                     <Link to="/recruitment" style={{textDecoration: 'none'}}>
-                        <NavContent type="trigger">채용안내</NavContent>
+                        <NavContent current={pathname === "/recruitment"}>채용안내</NavContent>
                     </Link>
                 </Navigator>
             </NavigatorWrapper>
