@@ -16,19 +16,36 @@ export default withRouter(({location: {pathname}}) => (
                 회사소개</NavContent>
             </Link>
             <Link to="/processing-business" style={{textDecoration: 'none'}}>
-                <NavContent type="trigger">사업영역</NavContent>
+                <NavContent current={
+                    pathname === "/processing-business"
+                    || pathname ==="/manufacture"
+                    || pathname ==="/secondary-battery"
+                }>사업영역</NavContent>
             </Link>
             <Link to="/processing" style={{textDecoration: 'none'}}>
-                <NavContent>설비현황</NavContent>
+                <NavContent current={
+                    pathname === "/processing"
+                    || pathname ==="/measure"
+                    || pathname ==="/production"
+                }>설비현황</NavContent>
             </Link>
             <Link to="/introduce" style={{textDecoration: 'none'}}>
-                <NavContent>기술현황</NavContent>
+                <NavContent current={
+                    pathname === "/introduce"
+                    || pathname ==="/patent"
+                }>기술현황</NavContent>
             </Link>
             <Link to="/news" style={{textDecoration: 'none'}}>
-                <NavContent>홍보센터</NavContent>
+                <NavContent current={
+                    pathname === "/news"
+                    || pathname ==="/catalogue"
+                }>홍보센터</NavContent>
             </Link>
             <Link to="/quote-contact" style={{textDecoration: 'none'}}>
-                <NavContent>고객지원</NavContent>
+                <NavContent current={
+                    pathname === "/quote-contact"
+                    || pathname ==="/recruitment"
+                }>고객지원</NavContent>
             </Link>
             <HeaderDropBlock>
                 <HeaderNav/>
