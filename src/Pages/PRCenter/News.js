@@ -132,7 +132,7 @@ const MainImg = styled.div`
     height: 30vh;
     background: #282D27;
     background-image: url(${BackgroundImg});
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
@@ -208,7 +208,7 @@ const NewsCardBlock = styled.div`
 const NewsImg = styled.img`
     height: 198px;
     max-width: 350px;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center; 
     margin: 0 auto;

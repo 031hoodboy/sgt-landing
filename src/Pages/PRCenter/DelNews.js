@@ -1,5 +1,5 @@
 import React,{ useEffect, useState} from 'react';
-import { useHistory } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
@@ -19,7 +19,6 @@ class CustomerAdd extends React.Component {
     idx: '',
   }
     this.handleFormSubmit = this.handleFormSubmit.bind(this)
-    this.handleFileChange = this.handleFileChange.bind(this)
     this.handleValueChange = this.handleValueChange.bind(this)
     this.addCustomer = this.addCustomer.bind(this)
   }
@@ -32,12 +31,6 @@ class CustomerAdd extends React.Component {
     })
   }
 
-  handleFileChange(e) {
-    this.setState({
-    file: e.target.files[0],
-    fileName: e.target.value
-    });
-  }
 
   handleValueChange(e) {
     let nextState = {};
@@ -86,7 +79,14 @@ class CustomerAdd extends React.Component {
                   <Label>아이디</Label>
                   <Input type="text" name="idx" value={this.state.idx} onChange={this.handleValueChange} />
                 </InputWrapper>
-                <Button type="submit" onClick={Alert}>삭제하기</Button>
+
+                <Button type="submit" path={"?idx="+this.state.idx}>
+                <a href={`https://sgtapi.co.kr/news/newsdelete.do?idx=`+this.state.idx} style={{textDecoration: "none",  color: "#fff"}}>                    
+
+                    삭제하기
+                    </a>
+
+                    </Button>
               </form>
               </Blockwrapper>
             <Footer/>
