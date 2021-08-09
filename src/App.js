@@ -18,6 +18,7 @@ import Patent from './Pages/Technology/Patent';
 import Recruitment from './Pages/CustomerSupport/Recruitment';
 import QuoteContact from './Pages/CustomerSupport/QuoteContact';
 import News from './Pages/PRCenter/News';
+import DelNews from './Pages/PRCenter/DelNews';
 import NewsInfo from './Pages/PRCenter/NewsInfo';
 import AddNews from './Pages/PRCenter/AddNews';
 import UpdateNews from './Pages/PRCenter/UpdateNews';
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/recruitment" component={Recruitment}  />
         <Route path="/quote-contact" component={QuoteContact}  />
         <Route path="/news" component={News} />
+        <Route path="/news-delete" component={DelNews} />
         <Route path="/news-add" component={AddNews} />
         <Route path="/news-update" component={UpdateNews} />
         <Route path="/news-info" component={NewsInfo} />
