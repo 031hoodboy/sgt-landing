@@ -88,7 +88,7 @@ class CustomerAdd extends React.Component {
                 <PageTitle>게시글 추가</PageTitle>
             </PageTitleWrpper>
             <Blockwrapper>
-              <form onSubmit={this.handleFormSubmit}>
+              <form onSubmit={this.handleFormSubmit} encType="multipart/form-data">
                 <InputWrapper>
                   <Label>제목</Label>
                   <Input type="text" name="news_sub" value={this.state.news_sub} onChange={this.handleValueChange} />
