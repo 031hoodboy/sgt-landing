@@ -59,7 +59,7 @@ class CustomerAdd extends React.Component {
 
   const news_list = {
   headers: {
-  'content-type': 'multipart/form-data'
+  'Content-Type': 'multipart/form-data'
   }
   }
 
