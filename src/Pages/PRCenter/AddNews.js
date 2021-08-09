@@ -6,9 +6,10 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/prbackground.png';
-import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import { post } from 'axios';
+import {css} from '@emotion/react';
 
 class CustomerAdd extends React.Component {
 
@@ -51,19 +52,18 @@ class CustomerAdd extends React.Component {
 
   const url = 'https://sgtapi.co.kr/news/newsinsert.do';
   const formData = new FormData();
-  formData.append('main', this.state.files[0])
+  formData.append('main', this.state.file)
   formData.append('news_sub', this.state.news_sub)
   formData.append('news_con', this.state.news_con)
 
 
-  const news_list = {
+  const config = {
   headers: {
-    'Content-Type': 'multipart/form-data',        
-    "type": "formData"
-  }
+  'content-type': 'multipart/form-data'
+    }
   }
 
-  return post(url, formData, news_list)
+  return post(url, formData, config)
   }
   
   render() {
@@ -88,7 +88,7 @@ class CustomerAdd extends React.Component {
                 <PageTitle>게시글 추가</PageTitle>
             </PageTitleWrpper>
             <Blockwrapper>
-              <form onSubmit={this.handleFormSubmit} encType="multipart/form-data">
+              <form onSubmit={this.handleFormSubmit} encType="multipart/form-data" >
                 <InputWrapper>
                   <Label>제목</Label>
                   <Input type="text" name="news_sub" value={this.state.news_sub} onChange={this.handleValueChange} />
