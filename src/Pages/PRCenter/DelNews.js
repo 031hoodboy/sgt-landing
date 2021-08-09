@@ -1,15 +1,13 @@
-import React,{ useEffect, useState} from 'react';
-import { Route } from 'react-router-dom';
+import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/prbackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import { post } from 'axios';
-import {css} from '@emotion/react';
 
 class CustomerAdd extends React.Component {
 
@@ -56,7 +54,7 @@ class CustomerAdd extends React.Component {
 
   render() {
     const Alert = () => {
-        alert("삭제되었습니다.");
+        alert("페이지 이동 후 새로고침을 해주세요.");
         console.log(this.state.idx)
       }
     return (
@@ -79,14 +77,11 @@ class CustomerAdd extends React.Component {
                   <Label>아이디</Label>
                   <Input type="text" name="idx" value={this.state.idx} onChange={this.handleValueChange} />
                 </InputWrapper>
-
-                <Button type="submit" path={"?idx="+this.state.idx}>
-                <a href={`https://sgtapi.co.kr/news/newsdelete.do?idx=`+this.state.idx} style={{textDecoration: "none",  color: "#fff"}}>                    
-
-                    삭제하기
+                <Button type="submit" path={"?idx="+this.state.idx} onClick={Alert}>
+                    <a href={`https://sgtapi.co.kr/news/newsdelete.do?idx=`+this.state.idx} style={{textDecoration: "none",  color: "#fff"}}>                    
+                        삭제하기
                     </a>
-
-                    </Button>
+                </Button>
               </form>
               </Blockwrapper>
             <Footer/>
@@ -144,22 +139,6 @@ const NavBarWrapper = styled.div`
         top: calc(23vh); 
         height: 40px;
     }
-`;
-
-const TextArea = styled.textarea`
-    max-width: 490px;
-    width: calc(44vw - 40px) ;
-    height: 20vh;
-    padding: 10px 20px;
-    border: 1px solid #C9C9C9;
-    border-radius: 3px;
-    font-size: 20px;
-    @media screen and (max-width: 780px) {
-    padding: 5px 10px;
-    width: 90%;
-    height: 20px;
-    font-size: 16px;
-  }
 `;
 
 const NavBlock = styled.div`

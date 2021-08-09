@@ -191,10 +191,14 @@ const RegisDate = styled.div`
 `;
 
 const NewssContnet = styled.div`
+    max-width: 728px;
     padding: 5vh 0;
-    @media screen and (max-width: 780px) {
+    text-align: center;
+    @media screen and (max-width: 840px) {
+        width: 90vw;
         font-size: 14px;
-    }
+
+  }
 `;
 
 const BorderSubTitle = styled.div`

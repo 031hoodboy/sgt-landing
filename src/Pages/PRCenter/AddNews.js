@@ -1,15 +1,13 @@
-import React,{ useEffect, useState} from 'react';
-import { useHistory } from 'react-router-dom';
+import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/prbackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import { post } from 'axios';
-import {css} from '@emotion/react';
 
 class CustomerAdd extends React.Component {
 
@@ -55,7 +53,6 @@ class CustomerAdd extends React.Component {
   formData.append('main', this.state.file)
   formData.append('news_sub', this.state.news_sub)
   formData.append('news_con', this.state.news_con)
-
 
   const config = {
   headers: {

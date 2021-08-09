@@ -1,15 +1,13 @@
 
-import React, {useState, useEffect, Component} from 'react';
+import React, {Component} from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
-import Pagination from "react-js-pagination";
 import './Pagenation.css'
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/prbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2} from '../../components/PageStyle';
 import styled from '@emotion/styled';
-import NewsImg1 from '../../assets/newscard1.png';
 import axios from 'axios';
 import ReactPaginate from 'react-paginate';
 
@@ -242,14 +240,22 @@ const NewsContentWrapper = styled.div`
 
 const NewsContentTitle = styled.div`
     font-size: 18px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 `;
 
 const NewsContent = styled.div`
+
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     font-size: 14px;
     max-width: 305px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100px;
 `;
 
 const Paginate = styled.div`
