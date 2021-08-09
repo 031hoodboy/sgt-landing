@@ -76,6 +76,7 @@ const NewsInfo = ({location}) => {
                             <RegisDate>등록일: {newscards.regdate.split("", 10)}</RegisDate>
                         </BorderSubTitle>
                         <BoardContent>
+                            <NewsImg src={"http://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
                             <NewssContnet>{newscards.newscon}</NewssContnet>
                         </BoardContent>
                     </>
@@ -131,6 +132,25 @@ const BoardWrapper = styled.div`
   }
 `;
 
+const NewsImg = styled.img`
+    height: 400px;
+    max-width: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;  
+    &:hover{
+        background-size: 108%;
+    }
+    @media screen and (max-width: 840px) {
+        width: 90vw;
+  }
+  `;
+
 const BoardHeader = styled.div`
     width: 90vw;
     max-width: 1088px;
@@ -147,6 +167,7 @@ const BoardContent = styled.div`
     width: 90vw;
     max-width: 1088px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #000;

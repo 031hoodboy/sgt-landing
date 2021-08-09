@@ -70,7 +70,7 @@ const FourthSection = () => {
                             )
                         }    
                     >
-                        <NewsImg></NewsImg>
+                        <NewsImg src={"http://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
                         <Line/>
                         <NewsContentWrapper>
                         <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>
@@ -118,24 +118,25 @@ const NewsCardBlock = styled.div`
     transition: all .5s;
 `;
 
-const NewsImg = styled.div`
-    min-height: 198px;
+
+const NewsImg = styled.img`
+    height: 198px;
     max-width: 350px;
-    background-image: url(${NewsImg1});
-    background-size: 101%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    transform: scale(1);
     transition: all 0.3s ease-in-out;  
     &:hover{
-        background-size: 105%;
+        background-size: 108%;
     }
     @media screen and (max-width: 840px) {
         width: 90vw;
   }
   `;
+
 
 const News2 = styled(NewsImg)`
   background-image: url(${NewsImg2});

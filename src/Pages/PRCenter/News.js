@@ -46,14 +46,10 @@ export default class News extends Component {
                             //     })
                             //     }    
                         >
-                        <NewsImg src={newscards?.care_image_list?.[0].url} alt="">
- 
-                        </NewsImg>
+                        <NewsImg src={"http://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
                         <Line/>
                         <NewsContentWrapper>
                         <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>
-                        {newscards.idx}
-                        {newscards?.care_image_list?.[0].url}
                         <NewsContent>{newscards.newscon}</NewsContent>
                         </NewsContentWrapper>
                     </NewsCardBlock>
@@ -136,7 +132,7 @@ const MainImg = styled.div`
     height: 30vh;
     background: #282D27;
     background-image: url(${BackgroundImg});
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
@@ -210,14 +206,14 @@ const NewsCardBlock = styled.div`
 `;
 
 const NewsImg = styled.img`
-    min-height: 198px;
+    height: 198px;
     max-width: 350px;
-    background-size: 105%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    transform: scale(1);
     transition: all 0.3s ease-in-out;  
     &:hover{
         background-size: 108%;
