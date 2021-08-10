@@ -44,7 +44,7 @@ export default class News extends Component {
                             //     })
                             //     }    
                         >
-                        <NewsImg src={"http://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
+                        <NewsImg src={"https://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
                         <Line/>
                         <NewsContentWrapper>
                         <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>

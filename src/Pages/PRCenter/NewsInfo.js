@@ -76,7 +76,7 @@ const NewsInfo = ({location}) => {
                             <RegisDate>등록일: {newscards.regdate.split("", 10)}</RegisDate>
                         </BorderSubTitle>
                         <BoardContent>
-                            <NewsImg src={"http://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
+                            <NewsImg src={"https://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
                             <NewssContnet>{newscards.newscon}</NewssContnet>
                         </BoardContent>
                     </>
