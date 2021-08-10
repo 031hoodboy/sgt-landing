@@ -32,7 +32,7 @@ const FourthSection = () => {
         // loading 상태를 true 로 바꿉니다.
         setLoading(true);
         const response = await axios.get(
-            'https://118.67.132.125:8080/news/newslist.do'
+            'https://sgtapi.co.kr/news/newslist.do'
         );
         setNewscard(response.data); // 데이터는 response.data 안에 들어있습니다.
         } catch (e) {
@@ -70,7 +70,7 @@ const FourthSection = () => {
                             )
                         }    
                     >
-                        <NewsImg src={"https://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
+                        <NewsImg src={"https://sgtapi.co.kr/" + newscards?.care_image_list?.[0].url} alt=""/>
                         <Line/>
                         <NewsContentWrapper>
                         <NewsContentTitle>{newscards.news_sub}</NewsContentTitle>

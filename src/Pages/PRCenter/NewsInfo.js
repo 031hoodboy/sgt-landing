@@ -22,15 +22,13 @@ const NewsInfo = ({location}) => {
     useEffect(() => {
         const fetchNews = async () => {
         try {
-            // 요청이 시작 할 때에는 error 와 users 를 초기화하고
             setError(null);
             setNewscard(null);
-            // loading 상태를 true 로 바꿉니다.
             setLoading(true);
             const response = await axios.get(
             `https://www.sgtapi.co.kr/news/newslist.do`
             );
-            setNewscard(response.data); // 데이터는 response.data 안에 들어있습니다.
+            setNewscard(response.data); 
         } catch (e) {
             setError(e);
         }
@@ -76,7 +74,7 @@ const NewsInfo = ({location}) => {
                             <RegisDate>등록일: {newscards.regdate.split("", 10)}</RegisDate>
                         </BorderSubTitle>
                         <BoardContent>
-                            <NewsImg src={"https://118.67.132.125:8080" + newscards?.care_image_list?.[0].url} alt=""/>
+                            <NewsImg src={"https://sgtapi.co.kr" + newscards?.care_image_list?.[0].url} alt=""/>
                             <NewssContnet>{newscards.newscon}</NewssContnet>
                         </BoardContent>
                     </>
