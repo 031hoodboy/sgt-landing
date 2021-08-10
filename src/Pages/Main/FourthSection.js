@@ -48,9 +48,21 @@ const FourthSection = () => {
     if (error) return <div>에러가 발생했습니다</div>;
     if (!newscard) return null;
 
-    const newscardSlc = newscard.slice( newscard.length-3, newscard.length )
+    const reverse = [];
+    for(let i=newscard.length-1; i >= 0; i--) {
+    reverse.push(newscard[i]);
+    }
 
-    console.log(newscard[newscard.length-4])
+    const newscardSlc = reverse.slice( reverse.length-3, reverse.length )
+
+    const reverse2 = [];
+    for(let i=newscardSlc.length-1; i >= 0; i--) {
+    reverse2.push(newscardSlc[i]);
+    }
+
+    console.log(reverse2)
+
+
     return (
         <Background>
             <PageBlockWrapper>
@@ -59,7 +71,7 @@ const FourthSection = () => {
                     <Title>뉴스</Title>
                 </TitleWrpper>
                 <NewsCardWrapper>
-            {newscardSlc.map(newscards => (
+            {reverse2.map(newscards => (
                     <NewsCardBlock key={newscards.idx} 
                         onClick={() =>
                             history.push(
