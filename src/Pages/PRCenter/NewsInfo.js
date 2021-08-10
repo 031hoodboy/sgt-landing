@@ -146,6 +146,7 @@ const NewsImg = styled.img`
     }
     @media screen and (max-width: 840px) {
         width: 90vw;
+        height: 60vw;
   }
   `;
 
