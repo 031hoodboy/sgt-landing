@@ -247,7 +247,7 @@ const NewsContentTitle = styled.div`
 `;
 
 const NewsContent = styled.div`
-
+    height: 100px;
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +255,6 @@ const NewsContent = styled.div`
     max-width: 305px;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 100px;
 `;
 
 const Paginate = styled.div`
