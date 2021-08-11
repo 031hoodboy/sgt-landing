@@ -40,13 +40,11 @@ const History = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>연혁</PageTitle>
-                <PageSubTitle>더 나은 세상을 만들어가는 일,<br/>(주)에스지티가 먼저 시작합니다.</PageSubTitle>
-
             </PageTitleWrpper>
             <PageBlockWrapper>
                 <div id="timeline-content">
                     <ul class="timeline">
-                        <li class="event" data-date="2022&emsp;~2026">
+                        <li class="event" data-date="2022~">
                             <P>• 2차전지용 셀파우치필름 생산동 신축</P>
                             <P>- 600평 규모</P>
                             <P>- 연간생산 24,000m2</P>

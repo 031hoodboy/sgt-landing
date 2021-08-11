@@ -83,6 +83,7 @@ const MobileBackground = styled.div`
 const SloganWrapper = styled.div`
     margin-left: 20vw;
     z-index: 1;
+    margin-top: 5vh;
     @media screen and (max-width: 840px) {
         margin: 0 auto;
         margin-bottom: 60vh;
@@ -96,7 +97,7 @@ const SloganWrapper = styled.div`
 
 const Slogan = styled.div`
     color: #fff;
-    font-size: 45px;
+    font-size: 48px;
     font-weight: 700;
     @media screen and (max-width: 840px) {
         font-size: 27px;
