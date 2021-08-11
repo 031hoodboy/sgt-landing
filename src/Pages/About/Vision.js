@@ -61,7 +61,8 @@ const Vision = () => {
 
 const MainImg = styled.div`
     width: 100%;
-    height: 30vh;
+    height: 25vh;
+    background: #282D27;
     background-image: url(${BackgroundImg});
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,10 +74,17 @@ const MainImg = styled.div`
     color: #fff;
     font-size: 45px;
     font-weight: 600;
+    @font-face {
+        font-family: 'EliceDigitalBaeum_Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    font-family: 'EliceDigitalBaeum_Bold';
     @media screen and (max-width: 1024px) {
         height: 17vh;
         font-size: 26px;
-  }
+    }
 `;
 
 const Blockwrapper = styled.div`
