@@ -213,6 +213,26 @@ display: none;
 }
 `;
 
+export const Bar = styled.div`
+width: 1048px;
+height: 52px;
+padding: 0 20px;
+background: #F2F2F2;
+margin: 10vh auto 5vh auto;
+color: #930E14;
+display: flex;
+align-items: center;
+font-size: 24px;
+@media screen and (max-width: 1024px) {
+    padding: 0 10px;
+    width: calc(90vw - 40px);
+    height: 2vh;
+    min-height: 30px;
+    margin: 5vh 0;
+    font-size: 16px;
+}
+`;
+
 export const SubTitle3 = styled(Title)`
   font-size: 25px;
   font-weight: 300;

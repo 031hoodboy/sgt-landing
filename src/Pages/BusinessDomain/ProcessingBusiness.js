@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, Bar } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import ProcessImg1 from '../../assets/processimg1.jpg';
 import ProcessImg2 from '../../assets/processimg2.jpg';
@@ -26,7 +26,7 @@ const ProcessingBusiness = () => {
                         <NavBlock>장비제조사업</NavBlock>
                     </Link>
                     <Link to="/secondary-battery" style={{textDecoration: 'none', color: "#000"}}>
-                        <NavBlock>2차전지소재사업</NavBlock>
+                        <NavBlock>이차전지소재사업</NavBlock>
                     </Link>
                 </NavBarWrapper>
             </MainImg>
@@ -108,24 +108,6 @@ const SelectNavBlock = styled(NavBlock)`
     background: #930E14;
     color: #fff;
     border-left: 1px solid #930E14;
-`;
-
-const Bar = styled.div`
-    width: 1048px;
-    height: 52px;
-    padding: 0 20px;
-    background: #F2F2F2;
-    margin: 10vh auto 5vh auto;
-    color: #930E14;
-    display: flex;
-    align-items: center;
-    @media screen and (max-width: 1024px) {
-        width: calc(90vw - 40px);
-        height: 2vh;
-        min-height: 30px;
-        margin: 5vh 0;
-        font-size: 16px;
-  }
 `;
 
 const BarkWrapper = styled.div`

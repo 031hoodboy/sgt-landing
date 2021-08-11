@@ -81,14 +81,18 @@ const History = () => {
                             <br/>
                             <P>• 동결건조관련 기술 특허 등록 : 1건</P>
                         </li>
-                        <li class="event" id="date" data-date="2018&emsp;~2017">
+                        <li class="event" id="date" data-date="2018">
+                            <P>• 본사 이전</P>
+                            <P>- 충남 천안시 서북구 직산읍 모시1길 8</P>
+                            <br/>
+                            <P>• 정부지원 R&D 과제(산학연협력사업) 1건</P>
+                            <br/>
+                            <P>• 디스플레이 검사장비 제작</P>
+                        </li>
+                        <li class="event" id="date" data-date="2017">
                             <P>• 벤처기업 등록</P>
                             <br/>
-                            <P>• 특허 출원 2건</P>
-                            <br/>
-                            <P>• 본사 이전</P>
-                            <P>- 대지 2,400평</P>
-                            <P>- 건축 500평</P>
+                            <P>• 동결 건조기 개발 및 특허 출원 2건</P>
                             <br/>
                             <P>• ISO9001 인증</P>
                         </li>
@@ -97,6 +101,7 @@ const History = () => {
                             <br/>
                             <P>• 기업 부설 연구소 인증</P>
                             <br/>
+                            <P>• SFA(주) 협력업체 등록</P>
                         </li>
                         
                     </ul>

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
-import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, Bar } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import Film1 from '../../assets/film1.png';
 import Film2 from '../../assets/film2.png';
@@ -25,7 +25,7 @@ const SecondaryBattery = () => {
                         <NavBlock>장비제조사업</NavBlock>
                     </Link>
                     <Link to="/secondary-battery" style={{textDecoration: 'none', color: "#000"}}>
-                        <SelectNavBlock>2차전지소재사업</SelectNavBlock>
+                        <SelectNavBlock>이차전지소재사업</SelectNavBlock>
                     </Link>
                 </NavBarWrapper>
             </MainImg>
@@ -141,24 +141,6 @@ const Block2 = styled(Block)`
 
 const Block3 = styled(Block)`
     background-image: url(${Film3});
-`;
-
-const Bar = styled.div`
-    width: 1048px;
-    height: 52px;
-    padding: 0 20px;
-    background: #F2F2F2;
-    margin: 10vh auto 5vh auto;
-    color: #930E14;
-    display: flex;
-    align-items: center;
-    @media screen and (max-width: 1024px) {
-        width: calc(90vw - 40px);
-        height: 2vh;
-        min-height: 30px;
-        margin: 5vh 0;
-        font-size: 16px;
-  }
 `;
 
 const BarkWrapper = styled.div`
