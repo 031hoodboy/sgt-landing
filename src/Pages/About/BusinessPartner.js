@@ -15,11 +15,13 @@ const BusinessPartner = () => {
             <MainImg>
                 회사소개
                 <NavBarWrapper>
-                    <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
-                        <SelectNavBlock>인사말</SelectNavBlock>
+                <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
+                    <SelectNavBlock>인사말</SelectNavBlock>
+                    <Line/>
                     </Link>
                     <Link to="/vision" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>경영이념</NavBlock>
+                        <Line/>
                     </Link>
                     <Link to="/history" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>연혁</NavBlock>
@@ -30,8 +32,8 @@ const BusinessPartner = () => {
                     <Link to="/way-to-come" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>오시는 길</NavBlock>
                     </Link>
-                    {/* <Link to="/organize-chart" style={{textDecoration: 'none', color: "#000"}}>
-                        <NavBlock>조직도</NavBlock>
+                        {/* <Link to="/organize-chart" style={{textDecoration: 'none', color: "#000"}}>
+                    <NavBlock>조직도</NavBlock>
                     </Link> */}
                 </NavBarWrapper>
             </MainImg>
@@ -98,5 +100,11 @@ const Block = styled.div`
     height: 83px;
   }
 `;
+
+const Line = styled.div`
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+`;
+
 
 export default BusinessPartner;

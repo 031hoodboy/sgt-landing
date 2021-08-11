@@ -20,9 +20,11 @@ const Vision = () => {
                 <NavBarWrapper>
                 <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
                     <NavBlock>인사말</NavBlock>
+                    <Line/>
                     </Link>
                     <Link to="/vision" style={{textDecoration: 'none', color: "#000"}}>
                         <SelectNavBlock>경영이념</SelectNavBlock>
+                        <Line/>
                     </Link>
                     <Link to="/history" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>연혁</NavBlock>
@@ -75,6 +77,11 @@ const MainImg = styled.div`
         height: 17vh;
         font-size: 26px;
   }
+`;
+
+const Line = styled.div`
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
 `;
 
 const Chart1 = styled.div`

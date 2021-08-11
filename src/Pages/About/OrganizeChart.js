@@ -193,3 +193,4 @@ const NewsContent = styled.div`
     font-size: 14px;
     max-width: 305px;
 `;
+

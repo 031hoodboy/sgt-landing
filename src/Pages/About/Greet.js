@@ -19,9 +19,11 @@ const Greet = () => {
                 <NavBarWrapper>
                 <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
                     <SelectNavBlock>인사말</SelectNavBlock>
+                    <Line/>
                     </Link>
                     <Link to="/vision" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>경영이념</NavBlock>
+                        <Line/>
                     </Link>
                     <Link to="/history" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>연혁</NavBlock>
@@ -184,6 +186,11 @@ const SignWrapper = styled.div`
         margin: 5vh auto 20vh auto;
   }
   `;
+
+const Line = styled.div`
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+`;
 
 const Company = styled.div`
     color: #b3b3b3;

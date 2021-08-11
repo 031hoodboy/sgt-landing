@@ -15,11 +15,13 @@ const WayToCome = () => {
             <MainImg>
                 회사소개
                 <NavBarWrapper>
-                    <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
-                        <NavBlock>인사말</NavBlock>
+                <Link to="/greet" style={{textDecoration: 'none', color: "#000"}}>
+                    <NavBlock>인사말</NavBlock>
+                    <Line/>
                     </Link>
                     <Link to="/vision" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>경영이념</NavBlock>
+                        <Line/>
                     </Link>
                     <Link to="/history" style={{textDecoration: 'none', color: "#000"}}>
                         <NavBlock>연혁</NavBlock>
@@ -94,6 +96,10 @@ const InfoWrapper = styled.div`
     margin-top: 20px;
 `;
 
+const Line = styled.div`
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+`;
 
 const Info = styled.div`
     font-size: 18px;
