@@ -7,7 +7,6 @@ import FirstSection from './FirstSection';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';
 import FourthSection from './FourthSection';
-import Banner from './Banner';
 
 const Main = () => {
     return (
@@ -17,7 +16,6 @@ const Main = () => {
                 <SecondSection/>
                 <ThirdSection/>
                 <FourthSection/>
-                <Banner/>
             <Footer/>
         </PageWrapper>
     );
