@@ -7,9 +7,9 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/businessdomainbackground.png';
 import {PageTitleWrpper, PageTitle, Bar } from '../../components/PageStyle';
 import styled from '@emotion/styled';
-import ProcessImg1 from '../../assets/processimg1.jpg';
+import ProcessImg1 from '../../assets/processimg1.png';
 import ProcessImg2 from '../../assets/processimg2.jpg';
-import ProcessImg3 from '../../assets/processimg3.jpg';
+import ProcessImg3 from '../../assets/processimg3.png';
 import ProcessImg4 from '../../assets/processimg4.jpg';
 
 const ProcessingBusiness = () => {
@@ -37,12 +37,12 @@ const ProcessingBusiness = () => {
                 <Bar>정밀 가공</Bar>
                 <Blockwrapper>
                     <Block></Block>
-                    <Block2></Block2>
+                    {/* <Block2></Block2> */}
                 </Blockwrapper>
                 <Bar>품질 측정</Bar>
                 <Blockwrapper>
                     <Block3></Block3>
-                    <Block4></Block4>
+                    {/* <Block4></Block4> */}
                 </Blockwrapper>
             </BarkWrapper>
             <Footer/>
@@ -123,7 +123,7 @@ const Blockwrapper = styled.div`
     width: 1088px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 5vh auto 10vh auto;
     @media screen and (max-width: 1220px) {
         width: 90vw;
