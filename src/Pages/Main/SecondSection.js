@@ -22,7 +22,6 @@ const SecondSection = () => {
             <TitleWrpper>
                 <Remark>BUSINESS</Remark>
                 <Title>사업영역</Title>
-                <SubTitle>고객 만족을 최우선으로 혁신적 기술을 적용하여 세계적 품질을 추구합니다.</SubTitle>
             </TitleWrpper>
             <CardWrapper>
                 <Link to="/processing-business" style={{textDecoration: "none"}}>
@@ -44,8 +43,8 @@ const SecondSection = () => {
                 <Link to="/secondary-battery" style={{textDecoration: "none"}}>
                 <Card3>
                     <Card3Background>
-                        <CardTitle>2차전지소재사업</CardTitle>
-                        <CardSubTitle>2차전지 셀파우치필름 제조</CardSubTitle>
+                        <CardTitle>이차전지소재사업</CardTitle>
+                        <CardSubTitle>이차전지 셀파우치필름 제조</CardSubTitle>
                     </Card3Background>
                 </Card3>
                 </Link>
