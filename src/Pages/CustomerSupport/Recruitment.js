@@ -7,6 +7,7 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/customersupportbackground.png';
 import {PageTitleWrpper, PageTitle, SubTitle2 } from '../../components/PageStyle';
 import styled from '@emotion/styled';
+import RecruitmentImg from '../../assets/recruitment.png';
 
 const Recruitment = () => {
     return (
@@ -32,9 +33,6 @@ const Recruitment = () => {
             </PageTitleWrpper>
             <BarkWrapper>
                 <Blockwrapper>
-                    <Block/>
-                    <Block/>
-                    <Block/>
                     <Block/>
                 </Blockwrapper>
             </BarkWrapper>
@@ -124,21 +122,19 @@ const Blockwrapper = styled.div`
 `;
 
 const Block = styled.div`
-    width: 260px;
-    height: 260px;
+    width: 812px;
+    height: 285px;
     margin-bottom: 15px;
     border: 1px solid #DBDBDB;
-    @media screen and (max-width: 1220px) {
-    width: 90vw;
-    max-width: 360px;
-    height: 90vw;
-    max-height: 360px;
-  }
+    background-image: url(${RecruitmentImg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
   @media screen and (max-width: 780px) {
-    width: 40vw;
-    max-width: 174px;
-    height: 40vw;
-    max-height: 174px;
+    width: 90vw;
+    height: 67vw;
+    background-position: 80% 80%; 
+
   }
 `;
 
