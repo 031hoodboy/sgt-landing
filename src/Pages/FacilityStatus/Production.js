@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/facilitybackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2, Bar } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, Bar } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 const Production = () => {
@@ -28,9 +28,6 @@ const Production = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>생산 설비</PageTitle>
-                <SubTitle2>
-                (주)에스지티의 주요 생산 설비 현황입니다.
-                </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
                 <Bar>건식 표면처리기 (드라이 코터)</Bar>

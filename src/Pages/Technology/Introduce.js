@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/technologybackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2, SubTitle3, Bar } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, Bar } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import IntroImg1 from '../../assets/introimg1.png';
 import IntroImg2 from '../../assets/introimg2.png';
@@ -28,14 +28,6 @@ const Introduce = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>연구소 소개</PageTitle>
-                <SubTitle2>
-                    각종 산업용 장비 관련 부품 정밀 가공 기술 부터 소재 내후성 테스트 및 보관 건조기술과 이차전지분야 
-                    <br/>
-                    관련 기술까지 다양한 분야의 산업 기술의 개발 및 상용화를 위해 최선을 가치를 찾고자 노력합니다.
-                </SubTitle2>
-                <SubTitle3>
-                연구분야 :정밀가공기술, 소재 건조 기술, 반도체/디스플레이 측정·검사 기술, 이차전지소재기술 등  
-                </SubTitle3>
             </PageTitleWrpper>
             <BarkWrapper>
                 <Bar>산업용 건조기술 : 동결건조장비</Bar>

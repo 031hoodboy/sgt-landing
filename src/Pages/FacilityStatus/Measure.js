@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/facilitybackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2, Bar } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, Bar } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 import Measure1 from '../../assets/measure1.png';
@@ -32,9 +32,6 @@ const Measure = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>측정 설비</PageTitle>
-                <SubTitle2>
-                (주)에스지티의 주요 측정 설비 현황입니다.
-                </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
                 <Bar>하이트 게이지</Bar>
