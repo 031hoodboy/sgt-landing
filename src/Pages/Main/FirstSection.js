@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import BackgroundImg from '../../assets/mainbackgroundimg.png';
+import MobileBackgroundImg from '../../assets/mobilemainbackgroundimg.png';
 import Arrow from '../../assets/arrow.png'
 
 const FirstSection = () => {
@@ -15,14 +16,20 @@ const FirstSection = () => {
 
     return (
         <>
-        <Gradient/>
         <Background>
             <SloganWrapper>
-                <Slogan>숨겨진 <Emphasis>가치</Emphasis>를 찾는기업,</Slogan>
-                <Slogan>고객이 <Emphasis>신뢰</Emphasis>하는 기업</Slogan>
-                <SmallSlogan><Emphasis>S</Emphasis>ocial <Emphasis>G</Emphasis>ravity <Emphasis>T</Emphasis>echnology Corp.</SmallSlogan>
+                <Slogan>숨겨진 가치를 찾는기업,</Slogan>
+                <Slogan>고객이 신뢰하는 기업</Slogan>
+                <SmallSlogan>Social Gravity Technology Corp.</SmallSlogan>
             </SloganWrapper>
         </Background>
+        <MobileBackground>
+        <SloganWrapper>
+                <Slogan>숨겨진 가치를 찾는기업,</Slogan>
+                <Slogan>고객이 신뢰하는 기업</Slogan>
+                <SmallSlogan>Social Gravity Technology Corp.</SmallSlogan>
+            </SloganWrapper>
+        </MobileBackground>
         <ScrollDownIcon onClick={handleTop}/>
         </>
     );
@@ -49,17 +56,32 @@ const Background = styled.div`
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     flex-direction: column;
     @media screen and (max-width: 840px) {
-        height: 92vh;
+        display: none
   }
 `;
 
+const MobileBackground = styled.div`
+    width: 100%;
+    height: 92vh;
+    background: #282D27;
+    background-image: url(${MobileBackgroundImg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    @media screen and (max-width: 840px) {
+    display: flex;
+}
+`;
+
 const SloganWrapper = styled.div`
-    margin-right: 15vw;
-    margin-bottom: 20vh;
+    margin-left: 20vw;
     z-index: 1;
     @media screen and (max-width: 840px) {
         margin: 0 auto;
