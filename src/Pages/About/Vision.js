@@ -7,7 +7,8 @@ import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
 import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, PageSubTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
-import VisionImg from '../../assets/vision.png';
+import VisionImg from '../../assets/vision1.png';
+import VisionImg2 from '../../assets/vision2.png';
 import BigChart from '../../assets/bigchart.png';
 import SmallChart from '../../assets/smallchart.png';
 
@@ -44,11 +45,10 @@ const Vision = () => {
                 <PageTitle>경영이념</PageTitle>
             </PageTitleWrpper>
             <PageBlockWrapper>
-                <VisionCard/>
-                <CardTitle>
-                    숨겨진 가치를 찾는 기업,<br/>
-                    고객이 신뢰하는 기업
-                </CardTitle>
+                <Blockwrapper>
+                    <VisionCard/>
+                    <VisionCard2/>
+                </Blockwrapper>
                 <Descrip>
                     <Chart1/>
                     <Chart2/>
@@ -82,6 +82,18 @@ const MainImg = styled.div`
 const Line = styled.div`
     width: 100%;
     border-bottom: 1px solid #D9D9D9;
+`;
+
+const Blockwrapper = styled.div`
+    width: 1088px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5vh auto 10vh auto;
+    @media screen and (max-width: 1220px) {
+        width: 90vw;
+        justify-content: space-around;
+  }
 `;
 
 const Chart1 = styled.div`
@@ -126,33 +138,25 @@ const Chart2 = styled.div`
 `;
 
 const VisionCard = styled.div`
-    width: 695px;
-    height: 445px;
-    margin: 5vh auto;
+    width: 44vw;
+    max-width: 535px;
+    height: 30vw;
+    max-height: 350px;
     background-image: url(${VisionImg});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: column;
-    @media screen and (max-width: 840px) {
-    width: 90vw;
-    height: 52vw;
-    }
+    margin-bottom: 3vh;
+    @media screen and (max-width: 767px) {
+    max-width: 1000px;
+    width: 100vw;
+    height: 50vw;
+    min-height: 208px;
+  }
 `;
 
-export const CardTitle = styled.div`
-  font-size: 30px;
-  text-align: center;
-  padding: 5vh 0;
-  margin: 0 auto;
-  font-weight: 600;
-  @media screen and (max-width: 840px) {
-    width: 90vw;
-    font-size: 19px;
-    }
+const VisionCard2 = styled(VisionCard)`
+    background-image: url(${VisionImg2});
 `;
 
 const Descrip = styled.div`
