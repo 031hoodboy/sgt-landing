@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
-import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, PageSubTitle } from '../../components/PageStyle';
+import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, PageSubTitle, Line } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import './History.css';
 
@@ -151,11 +151,5 @@ const MainImg = styled.div`
 const P = styled.p`
     font-weight: 400;
 `;
-
-const Line = styled.div`
-    width: 100%;
-    border-bottom: 1px solid #D9D9D9;
-`;
-
 
 export default History;

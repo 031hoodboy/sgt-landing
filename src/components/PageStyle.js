@@ -204,6 +204,15 @@ export const SubTitle2 = styled(Title)`
     }
 `;
 
+export const Line = styled.div`
+width: 100%;
+border-bottom: 1px solid #D9D9D9;
+display: none;
+@media screen and (max-width: 1312px) {
+    display: flex;
+}
+`;
+
 export const SubTitle3 = styled(Title)`
   font-size: 25px;
   font-weight: 300;

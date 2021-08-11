@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import Map from '../../modules/MapContainer';
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
-import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock } from '../../components/PageStyle';
+import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, Line } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 const WayToCome = () => {
@@ -94,11 +94,6 @@ const InfoWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-`;
-
-const Line = styled.div`
-    width: 100%;
-    border-bottom: 1px solid #D9D9D9;
 `;
 
 const Info = styled.div`

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
-import {PageTitleWrpper, PageTitle, PageBlockWrapper } from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle, PageBlockWrapper, Line } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import ProfileImg from '../../assets/profile.png';
 import SignImg from '../../assets/sign.png';
@@ -186,12 +186,7 @@ const SignWrapper = styled.div`
         margin: 5vh auto 20vh auto;
   }
   `;
-
-const Line = styled.div`
-    width: 100%;
-    border-bottom: 1px solid #D9D9D9;
-`;
-
+  
 const Company = styled.div`
     color: #b3b3b3;
 `;

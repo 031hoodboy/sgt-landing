@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
-import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, PageSubTitle } from '../../components/PageStyle';
+import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, Line } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import VisionImg from '../../assets/vision1.png';
 import VisionImg2 from '../../assets/vision2.png';
@@ -77,11 +77,6 @@ const MainImg = styled.div`
         height: 17vh;
         font-size: 26px;
   }
-`;
-
-const Line = styled.div`
-    width: 100%;
-    border-bottom: 1px solid #D9D9D9;
 `;
 
 const Blockwrapper = styled.div`
