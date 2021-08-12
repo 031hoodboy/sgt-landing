@@ -67,7 +67,7 @@ const Patent = () => {
 
 const MainImg = styled.div`
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     background: #282D27;
     background-image: url(${BackgroundImg});
     background-size: cover;
@@ -80,10 +80,17 @@ const MainImg = styled.div`
     color: #fff;
     font-size: 45px;
     font-weight: 600;
+    @font-face {
+        font-family: 'EliceDigitalBaeum_Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    font-family: 'EliceDigitalBaeum_Bold';
     @media screen and (max-width: 1024px) {
         height: 17vh;
         font-size: 26px;
-  }
+    }
 `;
 
 const NavBarWrapper = styled.div`
@@ -95,12 +102,17 @@ const NavBarWrapper = styled.div`
     color: #000;
     font-size: 16px;
     font-weight: 400;
-    top: calc(30vh + 56px);
+    top: calc(25vh + 56px);
     box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    @media screen and (max-width: 1312px) {
+    height: 80px; 
+    flex-wrap: wrap;
+    top: calc(25vh + 42px); 
+    }
     @media screen and (max-width: 1024px) {
-        width: calc(90vw + 3px);
+        width: calc(90vw + 2px);
         top: calc(23vh); 
-        height: 40px;
     }
 `;
 
