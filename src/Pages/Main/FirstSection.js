@@ -35,18 +35,6 @@ const FirstSection = () => {
     );
 }
 
-const Gradient = styled.div`
-    position: absolute;
-    top: 65px;
-    width: 100%;
-    height: 40vh;
-    background: linear-gradient(#1D221C , 70%, transparent);
-    display: none;
-    @media screen and (max-width: 840px) {
-        display: flex;
-  }
-`;
-
 const Background = styled.div`
     width: 100%;
     height: 92vh;
@@ -81,12 +69,19 @@ const MobileBackground = styled.div`
 `;
 
 const SloganWrapper = styled.div`
-    margin-left: 20vw;
+    margin-left: 15vw;
     z-index: 1;
-    margin-top: 5vh;
+    margin-top: 25vh;  
+    @font-face {
+        font-family: 'EliceDigitalBaeum_Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    font-family: 'EliceDigitalBaeum_Bold';
     @media screen and (max-width: 840px) {
         margin: 0 auto;
-        margin-bottom: 60vh;
+        margin-bottom: 70vh;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -26,6 +26,8 @@ const Recruitment = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>채용안내</PageTitle>
+                <SubTitle2>
+                </SubTitle2>
             </PageTitleWrpper>
             <BarkWrapper>
                 <Blockwrapper>
