@@ -4,7 +4,7 @@ import BackgroundImg from '../../assets/mainsecondsection.png';
 import Card1Img from '../../assets/business1.png';
 import Card2Img from '../../assets/business2.png';
 import Card3Img from '../../assets/business3.png';
-import {TitleWrpper, Remark, Title, SubTitle, PageBlockWrapper } from '../../components/PageStyle';
+import {TitleWrpper, Remark, Title, PageBlockWrapper } from '../../components/PageStyle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/swiper.scss";
@@ -28,7 +28,6 @@ const SecondSection = () => {
                 <Card1>
                     <Card1Background>
                         <CardTitle>정밀가공사업</CardTitle>
-                        <CardSubTitle>반도체 검사, 자동화 설비</CardSubTitle>
                     </Card1Background>
                 </Card1>
                 </Link>
@@ -36,7 +35,6 @@ const SecondSection = () => {
                 <Card2>
                     <Card2Background>
                         <CardTitle>장비제조사업</CardTitle>
-                        <CardSubTitle>LCD/LED/OLED 제조장비 제작</CardSubTitle>
                     </Card2Background>
                 </Card2>
                 </Link>
@@ -44,7 +42,6 @@ const SecondSection = () => {
                 <Card3>
                     <Card3Background>
                         <CardTitle>이차전지소재사업</CardTitle>
-                        <CardSubTitle>이차전지 셀파우치필름 제조</CardSubTitle>
                     </Card3Background>
                 </Card3>
                 </Link>
@@ -60,7 +57,6 @@ const SecondSection = () => {
                         <Card1>
                             <Card1Background>
                                 <CardTitle>정밀가공사업</CardTitle>
-                                <CardSubTitle>반도체 검사, 자동화 설비</CardSubTitle>
                             </Card1Background>
                         </Card1>
                         </Link>
@@ -70,7 +66,6 @@ const SecondSection = () => {
                             <Card2>
                                 <Card2Background>
                                     <CardTitle>장비제조사업</CardTitle>
-                                    <CardSubTitle>LCD/LED/OLED 제조장비 제작</CardSubTitle>
                                 </Card2Background>
                             </Card2>
                         </Link>
@@ -80,7 +75,6 @@ const SecondSection = () => {
                             <Card3>
                                 <Card3Background>
                                     <CardTitle>2차전지소재사업</CardTitle>
-                                    <CardSubTitle>2차전지 셀파우치필름 제조</CardSubTitle>
                                 </Card3Background>
                             </Card3>
                         </Link>
@@ -149,9 +143,8 @@ const Card3 = styled(Card1)`
 `;
 
 const Card1Background = styled.div`
-    min-width: 285px;
-    min-height: 380px;
-    padding: 35px;
+    min-width: 355px;
+    min-height: 450px;
     background-image: url(${Card1Img});
     background-size: 101%;
     background-repeat: no-repeat;
@@ -174,9 +167,12 @@ const Card3Background = styled(Card1Background)`
 `;
 
 const CardTitle = styled.div`
+    min-width: 285px;
+    padding: 35px;
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
 `;
 
 const CardSubTitle = styled.div`
