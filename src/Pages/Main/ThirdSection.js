@@ -53,7 +53,7 @@ const CardWrapper = styled.div`
     max-width: 1088px;
     justify-content: space-between; 
     flex-wrap: wrap;
-    @media screen and (max-width: 840px) {
+    @media screen and (max-width: 999px) {
         justify-content: space-around; 
   }
 `;
@@ -61,9 +61,8 @@ const CardWrapper = styled.div`
 
 const Card1 = styled.div`
     max-width: 536px;
-    max-height: 198px;
-    min-height: 198px;
     min-width: 450px;
+    height: 198px;
     width: 38vw;
     margin: 0 auto;
     overflow: hidden;
@@ -73,7 +72,7 @@ const Card1 = styled.div`
     align-items: center;
     @media screen and (max-width: 840px) {
         width: 90vw;
-        min-height: 178px;
+        height: 178px;
         min-width: 0;
   }
 `;
@@ -85,21 +84,18 @@ const Card2 = styled(Card1)`
 
 const Card1Background = styled.div`
     max-width: 530px;
-    max-height: 198px;
-    min-height: 198px;
     min-width: 450px;
+    height: 198px;
     width: 38vw;
     background-image: url(${Tech1Img});
-    background-size: 105%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
-    justify-content: center;
-    align-items: center;
     transform: scale(1);
     transition: all 0.3s ease-in-out;  
     &:hover{
-        background-size: 110%;
+        background-size: 125%;
     }
 `;
 
@@ -112,6 +108,16 @@ const CardTitle = styled.div`
     color: #fff;
     font-size: 30px;
     font-weight: 600;
+    width: 100%;
+    max-height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 840px) {
+        padding-top: 10px;
+
+  }
 `;
 
 export default ThirdSection;
