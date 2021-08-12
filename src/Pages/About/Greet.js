@@ -190,7 +190,7 @@ const SignWrapper = styled.div`
     align-items: center;
     @media screen and (max-width: 780px) {
         justify-content: center;
-        margin: 5vh auto 20vh auto;
+        margin: 10vh auto 20vh auto;
   }
   `;
   
@@ -213,9 +213,8 @@ const Sign = styled.div`
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 20px;
     @media screen and (max-width: 780px) {
-    width: 130px;
+    width: 100px;
     height: 78px;  
     }
 `;
