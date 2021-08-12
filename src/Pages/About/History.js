@@ -45,7 +45,7 @@ const History = () => {
                 <div id="timeline-content">
                     <ul class="timeline">
                         <li class="event" data-date="2022~">
-                            <P>• 2차전지용 셀파우치필름 생산동 신축</P>
+                            <P>• 이차전지용 셀파우치필름 생산동 신축</P>
                             <P>- 600평 규모</P>
                             <P>- 연간생산 24,000m2</P>
                             <br/>
@@ -60,9 +60,9 @@ const History = () => {
                             <P>• 산업통상자원부 사업 재편 기업 승인</P> 
                             <P>- 미래차 분야</P>    
                             <br/>
-                            <P>• 2차전지용 셀파우치필름 사업 투자 유치</P>    
+                            <P>• 이차전지용 셀파우치필름 사업 투자 유치</P>    
                             <br/>
-                            <P>• 2차전지용 셀파우치필름 양산 설비 도입</P>    
+                            <P>• 이차전지용 셀파우치필름 양산 설비 도입</P>    
                             <P>- 검증 : 현대M, SKI, 삼성SDI, KOKAM 및 중국</P>    
                             <br/>
                             <P>• 셀파우치필름 수출</P>    
@@ -71,7 +71,7 @@ const History = () => {
                             <P>• INNO-BIZ 인증 취득</P>
                             <P>- 연계 지원사업 수행</P>
                             <br/>
-                            <P>• 2차전지 소재사업부 신설</P>
+                            <P>• 이차전지 소재사업부 신설</P>
                             <br/>
                             <P>•  셀파우치필름용 접착제 전용 실시권 등록</P>
                         </li>
@@ -139,24 +139,6 @@ const MainImg = styled.div`
         font-size: 26px;
     }
 `;
-
-// const Profile = styled.div`
-//     width: 400px;
-//     height: 450px;
-//     background: #282D27;
-//     background-image: url(${ProfileImg});
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center; 
-//     display: flex;
-//     align-items: flex-end;
-//     justify-content: center;
-//     flex-direction: column;
-//     margin-top: 50px;
-//     @media screen and (max-width: 780px) {
-//         display: none;
-//   }
-// `;
 
 const P = styled.p`
     font-weight: 400;
