@@ -30,7 +30,7 @@ const SecondaryBattery = () => {
                 </NavBarWrapper>
             </MainImg>
             <PageTitleWrpper>
-                <PageTitle>2차전지소재사업</PageTitle>
+                <PageTitle>이차전지소재사업</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
                 <Bar>셀파우치 필름</Bar>
