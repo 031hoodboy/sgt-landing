@@ -85,14 +85,10 @@ const NavBarWrapper = styled.div`
     top: calc(25vh + 56px);
     box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.1);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    @media screen and (max-width: 1312px) {
-    height: 80px; 
-    flex-wrap: wrap;
-    top: calc(25vh + 42px); 
-    }
     @media screen and (max-width: 1024px) {
-        width: calc(90vw + 2px);
+        width: calc(90vw + 3px);
         top: calc(23vh); 
+        height: 40px;
     }
 `;
 
