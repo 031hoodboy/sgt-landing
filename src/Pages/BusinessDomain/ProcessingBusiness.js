@@ -8,9 +8,9 @@ import BackgroundImg from '../../assets/businessdomainbackground.png';
 import {PageTitleWrpper, PageTitle, Bar } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import ProcessImg1 from '../../assets/processimg1.png';
-// import ProcessImg2 from '../../assets/processimg2.jpg';
+import ProcessImg2 from '../../assets/processimg2.jpg';
 import ProcessImg3 from '../../assets/processimg3.png';
-// import ProcessImg4 from '../../assets/processimg4.jpg';
+import ProcessImg4 from '../../assets/processimg4.jpg';
 
 const ProcessingBusiness = () => {
     return (
@@ -37,12 +37,12 @@ const ProcessingBusiness = () => {
                 <Bar>정밀 가공</Bar>
                 <Blockwrapper>
                     <Block></Block>
-                    {/* <Block2></Block2> */}
+                    <Block2></Block2>
                 </Blockwrapper>
                 <Bar>품질 측정</Bar>
                 <Blockwrapper>
                     <Block3></Block3>
-                    {/* <Block4></Block4> */}
+                    <Block4></Block4>
                 </Blockwrapper>
             </BarkWrapper>
             <Footer/>
@@ -135,7 +135,7 @@ const Blockwrapper = styled.div`
     width: 1088px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 5vh auto 10vh auto;
     @media screen and (max-width: 1220px) {
         width: 90vw;
@@ -144,8 +144,8 @@ const Blockwrapper = styled.div`
 `;
 
 const Block = styled.div`
-    width: 44vw;
-    max-width: 535px;
+    width: 43vw;
+    max-width: 537px;
     height: 30vw;
     max-height: 350px;
     background-image: url(${ProcessImg1});
@@ -162,19 +162,19 @@ const Block = styled.div`
   
 `;
 
-// const Block2 = styled(Block)`
-//     background-image: url(${ProcessImg2});
+const Block2 = styled(Block)`
+    background-image: url(${ProcessImg2});
 
-// `;
+`;
 
 const Block3 = styled(Block)`
     background-image: url(${ProcessImg3});
 
 `;
 
-// const Block4 = styled(Block)`
-//     background-image: url(${ProcessImg4});
+const Block4 = styled(Block)`
+    background-image: url(${ProcessImg4});
 
-// `;
+`;
 
 export default ProcessingBusiness;
