@@ -8,9 +8,9 @@ import BackgroundImg from '../../assets/businessdomainbackground.png';
 import {PageTitleWrpper, PageTitle, Bar } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import ProcessImg1 from '../../assets/processimg1.png';
-import ProcessImg2 from '../../assets/processimg2.jpg';
+import ProcessImg2 from '../../assets/processimg2.png';
 import ProcessImg3 from '../../assets/processimg3.png';
-import ProcessImg4 from '../../assets/processimg4.jpg';
+import ProcessImg4 from '../../assets/processimg4.png';
 
 const ProcessingBusiness = () => {
     return (
