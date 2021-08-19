@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Link, withRouter} from 'react-router-dom';
 import SgtNoneImg from '../assets/sgtnone.png'
-import {css, keyframes} from '@emotion/react';
+import {css} from '@emotion/react';
 
 export default withRouter(({location: {pathname}}) => (
         <>

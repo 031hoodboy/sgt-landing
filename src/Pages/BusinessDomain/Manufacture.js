@@ -35,7 +35,7 @@ const Manufacture = () => {
                 <PageTitle>장비제조사업</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>반도체/디스플레이</Bar>
+                <Bar>반도체/디스플레이 장비</Bar>
                 <Blockwrapper>
                     <SmallRemarkWrapper>
                         <SmallBlock/>
@@ -164,6 +164,7 @@ const Block = styled.div`
     background-repeat: no-repeat;
     background-position: center; 
     max-height: 550px;
+    border: 1px solid #D0D0D0;
     @media screen and (max-width: 767px) {
     background-size: 100%;
     max-width: 1000px;

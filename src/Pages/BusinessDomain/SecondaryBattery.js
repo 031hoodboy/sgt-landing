@@ -33,7 +33,7 @@ const SecondaryBattery = () => {
                 <PageTitle>이차전지소재사업</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>셀파우치 필름</Bar>
+                <Bar>battery cell pouch film</Bar>
                 <Blockwrapper>
                     <Block/>
                     <Block2/>

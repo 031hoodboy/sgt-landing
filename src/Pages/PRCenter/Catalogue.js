@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/prbackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2} from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle} from '../../components/PageStyle';
 import styled from '@emotion/styled';
 
 
@@ -27,9 +27,6 @@ const Catalogue = () => {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>E-카탈로그</PageTitle>
-                <SubTitle2>
-                (주)에스지티를 소개하는 카탈로그입니다.
-                </SubTitle2>
             </PageTitleWrpper>
             <Blockwrapper>
                 <Card></Card>

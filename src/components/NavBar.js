@@ -77,6 +77,7 @@ const NavContent = styled.div`
     text-align: center;
     cursor: pointer;
     color: #000;
+    font-weight: 600;
     font-size: 18px;
     &:hover {
         color: #930E14;

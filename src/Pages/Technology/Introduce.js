@@ -237,6 +237,12 @@ const RemarkWrapper = styled.div`
     border: 1px solid #DBDBDB;
     padding-bottom: 15px;
     margin-bottom: 5vh;
+    height: 50vh;
+    max-height: 400px;
+    min-height: 365px;
+    @media screen and (max-width: 1220px) {
+        max-height: 365px;
+  }
 `;
 
 const BlockContent = styled.div`
@@ -245,7 +251,6 @@ const BlockContent = styled.div`
     @media screen and (max-width: 1220px) {
     width: 90vw;
     max-width: 360px;
-    height: 316px;
   }
 `;
 

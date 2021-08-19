@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import './Pagenation.css'
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/prbackground.png';
-import {PageTitleWrpper, PageTitle, SubTitle2} from '../../components/PageStyle';
+import {PageTitleWrpper, PageTitle} from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import axios from 'axios';
 import ReactPaginate from 'react-paginate';
@@ -93,10 +93,6 @@ export default class News extends Component {
             </MainImg>
             <PageTitleWrpper>
                 <PageTitle>뉴스</PageTitle>
-                <SubTitle2>
-                고효율 태양광 셀과 고출력 태양광 모듈 신기술을 상용화 함으로써<br/>
-                화석 연료의 사용을 감축할 수 있도록 기술개발과 상용화에 매진하고 있습니다.
-                </SubTitle2>
             </PageTitleWrpper>
             <NewsCardWrapper>
                 <CardWrapper>

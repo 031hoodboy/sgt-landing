@@ -168,16 +168,11 @@ const Card3Background = styled(Card1Background)`
 
 const CardTitle = styled.div`
     min-width: 285px;
-    padding: 35px;
+    padding: 25px;
     color: #fff;
     font-size: 30px;
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0.5);
 `;
 
-const CardSubTitle = styled.div`
-    color: #fff;
-    margin-top: 18px;
-    font-size: 15px;
-`;
 export default SecondSection;

@@ -45,7 +45,6 @@ const WayToCome = () => {
                     <Map />
                     <InfoWrapper>
                         <Info><b>주소</b> 충청남도 천안시 서북구 직산읍 모시리 215번지</Info>
-                        <Info><b>tel</b> 041-548-012</Info>
                     </InfoWrapper>
                 </MapContainer>
             </PageBlockWrapper>

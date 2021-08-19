@@ -34,7 +34,7 @@ const Measure = () => {
                 <PageTitle>측정 설비</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>하이트 게이지</Bar>
+                <Bar>height gauge</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block></Block>
@@ -49,7 +49,7 @@ const Measure = () => {
                         <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
-                <Bar>3차원 좌표 측정기</Bar>
+                <Bar>Coordinate Measuring Machine</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block3/>

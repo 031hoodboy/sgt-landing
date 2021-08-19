@@ -30,11 +30,11 @@ const Production = () => {
                 <PageTitle>생산 설비</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>건식 표면처리기 (드라이 코터)</Bar>
+                <Bar>건식 표면처리기 (dry coater)</Bar>
                 <Blockwrapper>
                     준비중입니다.
                 </Blockwrapper>
-                <Bar>건식 코팅 합지기1 (드라이 라미네이터)</Bar>
+                <Bar>건식 코팅 합지기1 (dry laminator)</Bar>
                 <Blockwrapper>
                     준비중입니다.
                 </Blockwrapper>

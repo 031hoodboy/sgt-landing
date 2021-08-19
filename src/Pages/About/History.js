@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {PageWrapper} from '../../components/PageStyle';
 import BackgroundImg from '../../assets/aboutbackground.png';
-import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, PageSubTitle, Line } from '../../components/PageStyle';
+import {PageTitleWrpper, PageBlockWrapper, PageTitle, NavBarWrapper, NavBlock, SelectNavBlock, Line } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import './History.css';
 
@@ -44,28 +44,13 @@ const History = () => {
             <PageBlockWrapper>
                 <div id="timeline-content">
                     <ul class="timeline">
-                        <li class="event" data-date="2022~">
-                            <P>• 이차전지용 셀파우치필름 생산동 신축</P>
-                            <P>- 600평 규모</P>
-                            <P>- 연간생산 24,000m2</P>
-                            <br/>
-                            <P>•  매출 1,300억</P>
-                            <P> - 소재사업부 : 1,200억</P>
-                            <P> - 가공사업부 : 100억</P>
-                            <br/>
-                            <P>• IPO : 기술 상장</P>
-
-                        </li>
                         <li class="event" data-date="2021">
                             <P>• 산업통상자원부 사업 재편 기업 승인</P> 
                             <P>- 미래차 분야</P>    
                             <br/>
                             <P>• 이차전지용 셀파우치필름 사업 투자 유치</P>    
                             <br/>
-                            <P>• 이차전지용 셀파우치필름 양산 설비 도입</P>    
-                            <P>- 검증 : 현대M, SKI, 삼성SDI, KOKAM 및 중국</P>    
-                            <br/>
-                            <P>• 셀파우치필름 수출</P>    
+                            <P>• 이차전지용 셀파우치필름 양산 설비 도입</P>       
                         </li>
                         <li class="event" id="date" data-date="2020">
                             <P>• INNO-BIZ 인증 취득</P>

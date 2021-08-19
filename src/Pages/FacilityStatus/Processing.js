@@ -41,7 +41,7 @@ const Processing = () => {
                 <PageTitle>가공 설비</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>Machining Center : 9대</Bar>
+                <Bar>Machining Center : &nbsp;<Num>9대</Num></Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block/>
@@ -74,7 +74,7 @@ const Processing = () => {
                         <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
-                <Bar>CNC : 3대</Bar>
+                <Bar>CNC : &nbsp;<Num>3</Num>대</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block6/>
@@ -95,7 +95,7 @@ const Processing = () => {
                         <Remark>보유 현황 : 1대</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
-                <Bar>기타 가공 장비 : 3대</Bar>
+                <Bar>기타 가공 장비 : &nbsp;<Num>3</Num>대</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block9/>
@@ -224,6 +224,10 @@ const Block = styled.div`
     max-width: 360px;
     height: 316px;
   }
+`;
+
+const Num = styled.span`
+    font-size: 26px;
 `;
 
 const Block2 = styled(Block)`
