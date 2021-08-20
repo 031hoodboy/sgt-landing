@@ -244,7 +244,7 @@ const NewsContentWrapper = styled.div`
 
 const NewsContentTitle = styled.div`
     font-size: 18px;
-    height: 20px;
+    height: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
