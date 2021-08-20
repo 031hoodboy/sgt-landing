@@ -214,7 +214,7 @@ const Block = styled.div`
     @media screen and (max-width: 1220px) {
     width: 90vw;
     max-width: 360px;
-    height: 316px;
+    height: 320px;
   }
 `;
 
