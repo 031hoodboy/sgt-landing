@@ -9,8 +9,8 @@ import {PageTitleWrpper, PageTitle } from '../../components/PageStyle';
 import styled from '@emotion/styled';
 import PatentImg1 from '../../assets/patentimg1.png';
 import PatentImg2 from '../../assets/patentimg3.png';
-import PatentImg3 from '../../assets/patentimg2.png';
-import PatentImg4 from '../../assets/patentimg4.png';
+import PatentImg4 from '../../assets/patentimg2.png';
+import PatentImg3 from '../../assets/patentimg4.png';
 import PatentImg5 from '../../assets/patentimg5.png';
 import PatentImg6 from '../../assets/patentimg6.png';
 

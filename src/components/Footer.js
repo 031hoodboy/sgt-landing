@@ -21,6 +21,9 @@ const FooterBcakgroundBlock = styled.div`
     padding: 5vh 0vw;
     background: #333;  
     display: flex;
+    @media screen and (max-width: 840px) {
+        padding: 3vh 0vw;
+  }
 `;
 
 const FooterBlock = styled.div`

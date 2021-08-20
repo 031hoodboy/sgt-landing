@@ -92,7 +92,7 @@ const Blockwrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 5vh auto 10vh auto;
+    margin: 5vh auto 5vh auto;
     @media screen and (max-width: 1220px) {
         width: 90vw;
         justify-content: space-around;
@@ -101,7 +101,7 @@ const Blockwrapper = styled.div`
 
 const Chart1 = styled.div`
     width: 60vw;
-    height: 60vw;
+    height: 40vw;
     margin: 0 auto;
     background-image: url(${BigChart});
     background-size: contain;
@@ -121,7 +121,7 @@ const Chart1 = styled.div`
 
 const Chart2 = styled.div`
     width: 100vw;
-    height: 100vw;
+    height: 60vw;
     background-image: url(${SmallChart});
     background-size: contain;
     background-repeat: no-repeat;

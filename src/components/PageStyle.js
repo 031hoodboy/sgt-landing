@@ -223,6 +223,7 @@ color: #930E14;
 display: flex;
 align-items: center;
 font-size: 24px;
+text-align: center;
 @media screen and (max-width: 1024px) {
     padding: 0 10px;
     width: calc(90vw - 40px);

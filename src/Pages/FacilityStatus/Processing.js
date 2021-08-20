@@ -41,7 +41,7 @@ const Processing = () => {
                 <PageTitle>가공 설비</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>Machining Center : &nbsp;<Num>9대</Num></Bar>
+                <Bar>Machining Center : &nbsp;<Num>9</Num>대</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block/>
@@ -228,6 +228,9 @@ const Block = styled.div`
 
 const Num = styled.span`
     font-size: 26px;
+    @media screen and (max-width: 1024px) {
+    font-size: 18px;
+}
 `;
 
 const Block2 = styled(Block)`
