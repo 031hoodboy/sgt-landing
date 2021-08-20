@@ -237,9 +237,7 @@ const RemarkWrapper = styled.div`
     border: 1px solid #DBDBDB;
     padding-bottom: 15px;
     margin-bottom: 5vh;
-    height: 50vh;
-    max-height: 400px;
-    min-height: 365px;
+    height: 395px;
     @media screen and (max-width: 1220px) {
         max-height: 365px;
   }
