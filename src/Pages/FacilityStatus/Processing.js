@@ -41,7 +41,7 @@ const Processing = () => {
                 <PageTitle>가공 설비</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>Machining Center 대대: &nbsp;<Num>9</Num>대</Bar>
+                <Bar>Machining Center : &nbsp;<Num>9</Num>대</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block/>
