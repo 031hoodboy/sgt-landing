@@ -34,7 +34,7 @@ const Measure = () => {
                 <PageTitle>측정 설비</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>height gauge</Bar>
+                <Bar>Height gauge</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block></Block>
