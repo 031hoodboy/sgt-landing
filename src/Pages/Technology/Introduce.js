@@ -10,6 +10,8 @@ import styled from '@emotion/styled';
 import IntroImg1 from '../../assets/introimg1.png';
 import IntroImg2 from '../../assets/introimg2.png';
 import IntroImg3 from '../../assets/introimg3.png';
+import TitleImg4 from '../../assets/titleimg4.png';
+import MobileTitleImg4 from '../../assets/mobiletitleimg4.png';
 
 const Introduce = () => {
     return (
@@ -29,6 +31,8 @@ const Introduce = () => {
             <PageTitleWrpper>
                 <PageTitle>연구소 소개</PageTitle>
             </PageTitleWrpper>
+            <TitlePhoto />
+            <MobileTitlePhoto />
             <BarkWrapper>
                 <Bar>산업용 건조기술 : 동결건조장비</Bar>
                 <Blockwrapper>
@@ -258,6 +262,40 @@ const Contnet = styled.div`
     @media screen and (max-width: 780px) {
         font-size: 16px;
   }
+`;
+
+
+const TitlePhoto = styled.div`
+    width: 1048px;
+    height: 115px;
+    padding: 0 20px;
+    margin: 10vh auto 5vh auto;
+    color: #930E14;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    background-image: url(${TitleImg4});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    @media screen and (max-width: 1024px) {
+        display: none;
+}
+`;
+
+const MobileTitlePhoto = styled(TitlePhoto)`
+        display: none;
+        background-image: url(${MobileTitleImg4});
+@media screen and (max-width: 1024px) {
+    display: flex;
+    width: 90vw;
+    height: 12vw;
+    padding: 0;
+    min-height: 30px;
+    margin: 5vh auto;
+    font-size: 16px;
+}
 `;
 
 export default Introduce;
