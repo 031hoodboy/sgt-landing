@@ -11,6 +11,8 @@ import ProcessImg1 from '../../assets/processimg1.png';
 import ProcessImg2 from '../../assets/processimg2.png';
 import ProcessImg3 from '../../assets/processimg3.png';
 import ProcessImg4 from '../../assets/processimg4.png';
+import TitleImg1 from '../../assets/titleimg1.png';
+import MobileTitleImg1 from '../../assets/mobiletitleimg1.png';
 
 const ProcessingBusiness = () => {
     return (
@@ -33,6 +35,8 @@ const ProcessingBusiness = () => {
             <PageTitleWrpper>
                 <PageTitle>정밀가공사업</PageTitle>
             </PageTitleWrpper>
+            <TitlePhoto />
+            <MobileTitlePhoto />
             <BarkWrapper>
                 <Bar>정밀 가공</Bar>
                 <Blockwrapper>
@@ -173,4 +177,36 @@ const Block4 = styled(Block)`
 
 `;
 
+const TitlePhoto = styled.div`
+    width: 1048px;
+    height: 115px;
+    padding: 0 20px;
+    margin: 10vh auto 5vh auto;
+    color: #930E14;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    background-image: url(${TitleImg1});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    @media screen and (max-width: 1024px) {
+        display: none;
+}
+`;
+
+const MobileTitlePhoto = styled(TitlePhoto)`
+        display: none;
+        background-image: url(${MobileTitleImg1});
+@media screen and (max-width: 1024px) {
+    display: flex;
+    width: 90vw;
+    height: 12vw;
+    padding: 0;
+    min-height: 30px;
+    margin: 5vh auto;
+    font-size: 16px;
+}
+`;
 export default ProcessingBusiness;
