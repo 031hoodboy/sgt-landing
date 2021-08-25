@@ -192,7 +192,7 @@ const MobileTitlePhoto = styled(TitlePhoto)`
     height: calc(14vw);
     padding: 0;
     min-height: 30px;
-    margin: 5vh auto;
+    margin: 3vh auto 5vh auto;
     font-size: 16px;
     border-top: 1px solid #851F1C;
     border-bottom: 1px solid #851F1C;
