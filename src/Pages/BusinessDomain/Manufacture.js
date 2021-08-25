@@ -253,13 +253,15 @@ const MobileTitlePhoto = styled(TitlePhoto)`
         background-image: url(${MobileTitleImg2});
 @media screen and (max-width: 1024px) {
     display: flex;
-    width: 90vw;
-    height: 12vw;
+    width:  90vw;
+    height: calc(14vw);
     padding: 0;
     min-height: 30px;
     margin: 5vh auto;
     font-size: 16px;
-}
+    border-top: 1px solid #851F1C;
+    border-bottom: 1px solid #851F1C;
+    }
 `;
 
 export default Manufacture;
