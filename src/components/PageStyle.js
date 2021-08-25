@@ -226,7 +226,7 @@ font-size: 24px;
 text-align: center;
 @media screen and (max-width: 1024px) {
     padding: 0 10px;
-    width: calc(90vw - 40px);
+    width: calc(90vw - 20px);
     height: 2vh;
     min-height: 30px;
     margin: 5vh 0;
