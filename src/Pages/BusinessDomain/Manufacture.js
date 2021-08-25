@@ -12,6 +12,8 @@ import ManufactureImg2 from '../../assets/manufactureimg2.png';
 import ManufactureImg3 from '../../assets/manufactureimg3.png';
 import ManufactureImg4 from '../../assets/manufactureimg4.png';
 import ManufactureImg5 from '../../assets/manufactureimg5.png';
+import TitleImg2 from '../../assets/titleimg2.png';
+import MobileTitleImg2 from '../../assets/mobiletitleimg2.png';
 
 const Manufacture = () => {
     return (
@@ -34,6 +36,8 @@ const Manufacture = () => {
             <PageTitleWrpper>
                 <PageTitle>장비제조사업</PageTitle>
             </PageTitleWrpper>
+            <TitlePhoto />
+            <MobileTitlePhoto />
             <BarkWrapper>
                 <Bar>반도체/디스플레이 장비</Bar>
                 <Blockwrapper>
@@ -224,4 +228,38 @@ const SmallBlock4 = styled(SmallBlock)`
     background-image: url(${ManufactureImg4});
 
 `;
+
+const TitlePhoto = styled.div`
+    width: 1048px;
+    height: 115px;
+    padding: 0 20px;
+    margin: 10vh auto 5vh auto;
+    color: #930E14;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    background-image: url(${TitleImg2});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    @media screen and (max-width: 1024px) {
+        display: none;
+}
+`;
+
+const MobileTitlePhoto = styled(TitlePhoto)`
+        display: none;
+        background-image: url(${MobileTitleImg2});
+@media screen and (max-width: 1024px) {
+    display: flex;
+    width: 90vw;
+    height: 12vw;
+    padding: 0;
+    min-height: 30px;
+    margin: 5vh auto;
+    font-size: 16px;
+}
+`;
+
 export default Manufacture;

@@ -10,6 +10,8 @@ import styled from '@emotion/styled';
 import Film1 from '../../assets/film1.png';
 import Film2 from '../../assets/film2.png';
 import Film3 from '../../assets/film3.png';
+import TitleImg3 from '../../assets/titleimg3.png';
+import MobileTitleImg3 from '../../assets/mobiletitleimg3.png';
 
 const SecondaryBattery = () => {
     return (
@@ -32,6 +34,8 @@ const SecondaryBattery = () => {
             <PageTitleWrpper>
                 <PageTitle>이차전지소재사업</PageTitle>
             </PageTitleWrpper>
+            <TitlePhoto />
+            <MobileTitlePhoto />
             <BarkWrapper>
                 <Bar>battery cell pouch film</Bar>
                 <Blockwrapper>
@@ -157,6 +161,40 @@ const BarkWrapper = styled.div`
         width: 90vw;
         margin: 0 auto 20vh auto;
   }
+`;
+
+
+const TitlePhoto = styled.div`
+    width: 1048px;
+    height: 115px;
+    padding: 0 20px;
+    margin: 10vh auto 5vh auto;
+    color: #930E14;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    background-image: url(${TitleImg3});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    @media screen and (max-width: 1024px) {
+        display: none;
+}
+`;
+
+const MobileTitlePhoto = styled(TitlePhoto)`
+        display: none;
+        background-image: url(${MobileTitleImg3});
+@media screen and (max-width: 1024px) {
+    display: flex;
+    width: 90vw;
+    height: 12vw;
+    padding: 0;
+    min-height: 30px;
+    margin: 5vh auto;
+    font-size: 16px;
+}
 `;
 
 export default SecondaryBattery;
