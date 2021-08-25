@@ -254,13 +254,13 @@ const MobileTitlePhoto = styled(TitlePhoto)`
 @media screen and (max-width: 1024px) {
     display: flex;
     width:  90vw;
-    height: calc(14vw);
+    height: calc(12vw);
     padding: 0;
     min-height: 30px;
     margin: 3vh auto 5vh auto;
     font-size: 16px;
-    border-top: 1px solid #851F1C;
-    border-bottom: 1px solid #851F1C;
+    border-top: 1.5px solid #851F1C;
+    border-bottom: 1.5px solid #851F1C;
     }
 `;
 
