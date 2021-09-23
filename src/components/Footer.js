@@ -8,8 +8,8 @@ const Footer = () => {
             <FooterBlock>
             <InfoWrapper>
                 <ContentTitle>(주)에스지티</ContentTitle>
-                <Content>Tel 041-548-0127(대표)&nbsp;&nbsp;&nbsp;<Content>Fax 041-548-1234</Content> </Content>
-                <Content>주소 : 충청남도 천안시 서북구 직산읍 모시리 215번지</Content>
+                <Content>Tel 041-548-0127(대표)&nbsp;&nbsp;&nbsp;<Content>Fax 041-548-0128</Content> </Content>
+                <Content>주소 : 충청남도 천안시 서북구 직산읍 모시 1길 8</Content>
                 <Content>Copyright 2021 SGT CO. All Rights Reserved. </Content>
             </InfoWrapper>
             <Logo/>

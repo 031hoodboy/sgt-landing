@@ -37,7 +37,7 @@ const SecondaryBattery = () => {
             <TitlePhoto />
             <MobileTitlePhoto />
             <BarkWrapper>
-                <Bar>battery cell pouch film</Bar>
+                <Bar>Battery cell pouch film</Bar>
                 <Blockwrapper>
                     <Block/>
                     <Block2/>

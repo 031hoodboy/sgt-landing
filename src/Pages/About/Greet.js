@@ -66,7 +66,7 @@ const Greet = () => {
                 <Profile2/>
                 <SignWrapper>
                     <Company>(주)에스지티</Company>
-                    <Ceo>대표 이사 김곤</Ceo>
+                    <Ceo>대표이사 김곤</Ceo>
                     <Sign/>
                 </SignWrapper>
             </PageBlockWrapper>
@@ -195,7 +195,7 @@ const SignWrapper = styled.div`
   `;
   
 const Company = styled.div`
-    color: #b3b3b3;
+
 `;
 
 const Ceo = styled.div`

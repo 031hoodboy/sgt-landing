@@ -79,7 +79,7 @@ const Introduce = () => {
                         <Contnet>
                             • 장비 사용 용도<br/>
                             - 건조 시료별 수분 함유량 분석 및 최적 레시피 제작<br/>
-                            - 식품, 제약 등 바이오산업 및 소재 산업 수분 제어 기술 활용<br/>
+                            - 식품, 제약 등 바이오산업 및 소재 산업 활용<br/>
                         </Contnet>
                     </BlockContent>
                 </Blockwrapper>
