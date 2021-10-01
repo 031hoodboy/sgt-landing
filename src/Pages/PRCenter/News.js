@@ -33,17 +33,8 @@ export default class News extends Component {
                 const data = res.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
                 const postData = slice.map(newscards => 
-
                     <Link to={{pathname: `/news-info/${newscards.idx}`, props: {id: newscards.idx}}} style={{textDecoration: "none", color: "#000"}}>
-                        <NewsCardBlock key={newscards.idx} 
-                            // onClick={
-                            //     this.props.history.push(
-                            //     {
-                            //         pathname: `/news-info/${newscards.idx}`,
-                            //         props: {id: newscards.idx}
-                            //     })
-                            //     }    
-                        >
+                        <NewsCardBlock key={newscards.idx} >
                         <NewsImg src={"https://sgtapi.co.kr" + newscards?.care_image_list?.[0].url} alt=""/>
                         <Line/>
                         <NewsContentWrapper>
