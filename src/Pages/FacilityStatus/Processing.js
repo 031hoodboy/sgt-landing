@@ -41,79 +41,79 @@ const Processing = () => {
                 <PageTitle>가공 설비</PageTitle>
             </PageTitleWrpper>
             <BarkWrapper>
-                <Bar>Machining Center : &nbsp;<Num>9</Num>대</Bar>
+                <Bar>Machining Center &nbsp;: &nbsp;<Num>9</Num>대</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block/>
-                        <Remark>제조사 : 두산, 화천기계</Remark>
-                        <Remark>규격 : DNM, VASTA (4.5호기)</Remark>
-                        <Remark>보유 현황 : 2대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사&nbsp; &nbsp;:&nbsp; 두산, 화천기계</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; DNM, VASTA (4.5호기)</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 2대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block2/>
-                        <Remark>제조사 : 두산메카텍</Remark>
-                        <Remark>규격 : RAVO 51P (5호기)</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사&nbsp; &nbsp;:&nbsp; 두산메카텍</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; RAVO 51P (5호기)</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 1대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block3/>
-                        <Remark>제조사 : 두산, 화천기계</Remark>
-                        <Remark>규격 : MYNX, VASTA (5.5호기)</Remark>
-                        <Remark>보유 현황 : 4대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사&nbsp; &nbsp;:&nbsp; 두산, 화천기계</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; MYNX, VASTA (5.5호기)</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 4대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block4/>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : DNM 5700 (6호기)</Remark>
-                        <Remark>보유 현황 : 2대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사&nbsp; &nbsp;:&nbsp; 두산</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; DNM 5700 (6호기)</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 2대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block5/>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : DNM 750L (7.5호기)</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사&nbsp; &nbsp;:&nbsp; 두산</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; DNM 750L (7.5호기)</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 1대</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
-                <Bar>CNC : &nbsp;<Num>3</Num>대</Bar>
+                <Bar>CNC &nbsp;: &nbsp;<Num>3</Num>대</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block6/>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : PUMA 280LM</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사&nbsp; &nbsp;:&nbsp; 두산</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; PUMA 280LM</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 1대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block7/>
-                        <Remark>제조사 : 한화</Remark>
-                        <Remark>규격 : XD38II</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사 &nbsp;:&nbsp; 한화</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; XD38II</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 1대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block8/>
-                        <Remark>제조사 : 두산</Remark>
-                        <Remark>규격 : PUMA 240B</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사 &nbsp;:&nbsp; 두산</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; PUMA 240B</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 1대</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
-                <Bar>기타 가공 장비 : &nbsp;<Num>3</Num>대</Bar>
+                <Bar>기타 가공 장비 &nbsp;: &nbsp;<Num>3</Num>대</Bar>
                 <Blockwrapper>
                     <RemarkWrapper>
                         <Block9/>
-                        <Remark>제조사 : 화천기계</Remark>
-                        <Remark>규격 : HMT-1100</Remark>
-                        <Remark>보유 현황 : 2대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사 &nbsp;:&nbsp; 화천기계</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; HMT-1100</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 2대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block10/>
-                        <Remark>제조사 : 남선기계</Remark>
-                        <Remark>규격 : 400-1060</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사 &nbsp;:&nbsp; 남선기계</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; 400-1060</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 1대</Remark>
                     </RemarkWrapper>
                     <RemarkWrapper>
                         <Block11/>
-                        <Remark>제조사 : 금광톱기계</Remark>
-                        <Remark>규격 : KHA-340</Remark>
-                        <Remark>보유 현황 : 1대</Remark>
+                        <Remark>제&nbsp;&nbsp;조&nbsp;&nbsp;사 &nbsp;:&nbsp; 금광톱기계</Remark>
+                        <Remark>규&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;격 &nbsp;:&nbsp; KHA-340</Remark>
+                        <Remark>보유 현황 &nbsp;:&nbsp; 1대</Remark>
                     </RemarkWrapper>
                 </Blockwrapper>
             </BarkWrapper>
